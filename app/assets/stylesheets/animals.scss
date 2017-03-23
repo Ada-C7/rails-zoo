@@ -77,7 +77,7 @@ footer {
   padding: 5px;
 }
 
-.button-save-form {
+.button-save-form, .button-new-animal {
   padding-top: 20px;
 }
 
@@ -90,6 +90,8 @@ footer {
 }
 
 .content {
+  text-align: center;
+  padding-top: 50px;
   display: block;
   margin-left: 204px;
 }

@@ -8,7 +8,9 @@
 
   <section class="sidebar-main">
     <p class="meet-the-animals">meet the animals</p>
-
+    <p class="button-new-animal">
+      <%= link_to "add new animal", animals_new_path, method: :get %>
+    </p>
     <ul class="index-animal-sidebar">
       <% @animals.each do |animal| %>
         <li class="animal-title-sidebar">

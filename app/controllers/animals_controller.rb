@@ -29,15 +29,15 @@ class AnimalsController < ApplicationController
 
   def create
     @animal = Animal.create(animal_params)
-  end
-
-  def new
-    @animal = Animal.create(animal_params)
     if @animal.save
       redirect_to animals_path
     else
       render :new
     end
+  end
+
+  def new
+    @animal = Animal.new
   end
 
   def destroy
