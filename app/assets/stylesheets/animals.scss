@@ -65,8 +65,20 @@ footer {
   text-align: center;
 }
 
-.side-bar header {
+.side-bar header, .edit-form h2 {
   padding: 15px 0;
+}
+
+.edit-form {
+  padding-left: 40px;
+}
+
+.edit-form li {
+  padding: 5px;
+}
+
+.button-save-form {
+  padding-top: 20px;
 }
 
 .animal-title-sidebar {
@@ -78,11 +90,7 @@ footer {
 }
 
 .content {
-  // clear: both;
   display: block;
-  // width: 80em;
-  // float: right;
-  // padding-left: 204px;
   margin-left: 204px;
 }
 
