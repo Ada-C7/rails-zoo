@@ -1,15 +1,16 @@
-<h1>virtual zoo</h1>
-<p>fun with virtual animals!</p>
+<%= render partial: "sidebar", locals: {zone: @zone} %>
 
-<% @animals.each do |animal| %>
+<section class="content all-zoo-animals">
+  <% @animals.each do |animal| %>
 
-  <ul>
-    <li>
-      <%= link_to animal.name, animal_path(animal.id) %>
-    </li>
-    <li>
-      <%= image_tag animal.image %>
-    </li>
-  </ul>
+    <ul class="index-animal">
+      <li class="animal-image-thumbnail">
+        <%= image_tag animal.image %>
+      </li>
+      <li class="animal-main-title">
+        <%= link_to animal.name, animal_path(animal.id) %>
+      </li>
+    </ul>
 
-<% end %>
+  <% end %>
+</section>

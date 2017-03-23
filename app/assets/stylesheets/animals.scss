@@ -6,4 +6,70 @@
   font-family: courier;
   padding: 0;
   margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.animal-image-thumbnail img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 30px;
+  border: 3px black solid;
+}
+
+.animal-main-title {
+  text-align: center;
+}
+
+.index-animal {
+  width: 300px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.all-zoo-animals {
+  // clear: both;
+  display: block;
+}
+
+.content {
+  width: 80em;
+  float: right;
+  padding-left: 200px;
+  margin-left: 200px;
+}
+
+.side-bar {
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  color: forestgreen;
+  background-color: white;
+  min-height: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.sidebar-main {
+  padding-bottom: 75px;
+}
+
+footer {
+  height: 75px;
+  width: 100%;
+  bottom: 0;
+  font-size: .8em;
+  position: absolute;
+}
+
+.side-bar p, h1 {
+  text-align: center;
 }
