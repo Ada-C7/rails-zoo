@@ -1,2 +1,12 @@
-<h1>Animals#show</h1>
-<p>Find me in app/views/animals/show.html.erb</p>
+<h3 class="animal-name"><%= @animal.name %></h1>
+
+<section class="animal-data">
+  <%= image_tag @animal.image %>
+  <p>
+    Age: <%= @animal.age %>
+  </p>
+  <p>
+    Species: <%= @animal.species %>
+  </p>
+
+</section>
