@@ -1,15 +1,19 @@
-<h3 class="animal-name"><%= @animal.name %></h1>
+<%= render partial: "sidebar", locals: {zone: @zone} %>
 
-<section class="animal-data">
-  <%= image_tag @animal.image %>
-  <p>
-    Age: <%= @animal.age %>
-  </p>
-  <p>
-    Species: <%= @animal.species %>
-  </p>
+<section class="show-animal content">
+  <h3 class="animal-name"><%= @animal.name %></h1>
 
-</section>
-<section class="animals-nav">
-  <%= link_to "main zoo", animals_path %>
+  <section class="animal-data">
+    <%= image_tag @animal.image %>
+    <p>
+      Age: <%= @animal.age %>
+    </p>
+    <p>
+      Species: <%= @animal.species %>
+    </p>
+
+  </section>
+  <section class="animals-nav">
+    <%= link_to "main zoo", animals_path %>
+  </section>
 </section>

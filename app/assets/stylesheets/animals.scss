@@ -79,9 +79,13 @@ footer {
 
 .content {
   // clear: both;
-  display: inline-block;
+  display: block;
   // width: 80em;
   // float: right;
   // padding-left: 204px;
   margin-left: 204px;
+}
+
+.home-button {
+  padding-bottom: 20px;
 }

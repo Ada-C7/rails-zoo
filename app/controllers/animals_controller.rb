@@ -1,13 +1,16 @@
 class AnimalsController < ApplicationController
+
   def index
     @animals = Animal.all
   end
 
   def show
+    @animals = Animal.all
     @animal = Animal.find(params[:id])
   end
 
   def edit
+    @animals = Animal.all
     @animal = Animal.find(params[:id])
   end
 
@@ -25,6 +28,7 @@ class AnimalsController < ApplicationController
   end
 
   def new
+    @animals = Animal.all
     @animal = Animal.create(animal_params)
     if @animal.save
       redirect_to animals_path
