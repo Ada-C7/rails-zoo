@@ -11,8 +11,12 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
+a:hover {
+  color: forestgreen;
+}
 
 .animal-image-thumbnail img {
   width: 200px;
@@ -26,40 +30,13 @@ a {
 }
 
 .index-animal {
-  width: 300px;
+  // width: 300px;
   display: inline-block;
   padding: 10px;
 }
 
-.all-zoo-animals {
-  // clear: both;
-  display: block;
-}
-
-.content {
-  width: 80em;
-  float: right;
-  padding-left: 200px;
-  margin-left: 200px;
-}
-
-.side-bar {
-  position: fixed;
-  height: 100%;
-  width: 200px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  color: forestgreen;
-  background-color: white;
-  min-height: 100%;
-  position: relative;
-  height: 100%;
-}
-
-.sidebar-main {
-  padding-bottom: 75px;
+.index-animal-sidebar {
+  padding: 20px 0;
 }
 
 footer {
@@ -70,6 +47,41 @@ footer {
   position: absolute;
 }
 
+.side-bar {
+  position: fixed;
+  text-align: center;
+  height: 100%;
+  width: 200px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  color: forestgreen;
+  background-color: white;
+  border-right: 4px black solid;
+}
+
 .side-bar p, h1 {
   text-align: center;
+}
+
+.side-bar header {
+  padding: 15px 0;
+}
+
+.animal-title-sidebar {
+  padding: 3px 0;
+}
+
+.index-animal-sidebar {
+  overflow: scroll;
+}
+
+.content {
+  // clear: both;
+  display: inline-block;
+  // width: 80em;
+  // float: right;
+  // padding-left: 204px;
+  margin-left: 204px;
 }
