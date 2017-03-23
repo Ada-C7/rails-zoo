@@ -1,10 +1,10 @@
 <%= render partial: "sidebar", locals: {zone: @zone} %>
 
 <section class="show-animal content">
-  <h3 class="animal-name"><%= @animal.name %></h1>
+  <h3 class="show-animal animal-name">Hi, I'm <%= @animal.name %>!</h1>
 
-  <section class="animal-data">
-    <%= image_tag @animal.image %>
+  <section class="show-animal animal-data">
+    <%= image_tag @animal.image, class: "show-animal-image" %>
     <p>
       Age: <%= @animal.age %>
     </p>
@@ -13,7 +13,11 @@
     </p>
 
   </section>
-  <section class="animals-nav">
-    <%= link_to "main zoo", animals_path %>
+  <section class="show-animal animals-nav">
+    <ul>
+      <li class="edit-animal-button">
+        <%= link_to "edit animal", edit_animal_path, method: :get %>
+      </li>
+    </ul>
   </section>
 </section>
