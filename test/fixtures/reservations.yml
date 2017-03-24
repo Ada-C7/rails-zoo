@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_guest_first_name: MyString
+  first_guest_last_name: MyString
+  second_guest_first_name: MyString
+  second_guest_last_name: MyString
+  third_guest_first_name: MyString
+  third_guest_last_name: MyString
+  fourth_guest_first_name: MyString
+  fourth_guest_last_name: MyString
+  email: MyString
+  phone: MyString
+  message: MyString
+  diet: MyString
+  status: MyString
+  paid: false
+
+two:
+  first_guest_first_name: MyString
+  first_guest_last_name: MyString
+  second_guest_first_name: MyString
+  second_guest_last_name: MyString
+  third_guest_first_name: MyString
+  third_guest_last_name: MyString
+  fourth_guest_first_name: MyString
+  fourth_guest_last_name: MyString
+  email: MyString
+  phone: MyString
+  message: MyString
+  diet: MyString
+  status: MyString
+  paid: false
