@@ -7,10 +7,10 @@
   </tr>
   <% @animals.each do |animal| %>
     <tr>
-      <td><%= animal.name %></td>
+      <td><%= link_to animal.name, animal_path(animal.id) %></td>
       <td><%= animal.species %></td>
     </tr>
   <% end %>
 </table>
 
-<%= button_to "Add a Salmon", new_animal_path, method: :get %> 
+<%= button_to "Add a Salmon", new_animal_path, method: :get %>

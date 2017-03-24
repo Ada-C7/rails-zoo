@@ -1,29 +1,3 @@
 <h1>Enter a New Salmon</h1>
 
-<table>
-  <%= form_for @animal do |f| %>
-    <tr>
-      <td>Name</td>
-      <td><%= f.text_field :name %></td>
-    </tr>
-    <tr>
-      <td>Species</td>
-      <td><%= f.text_field :species %></td>
-    </tr>
-    <tr>
-      <td>Scientific Name</td>
-      <td><%= f.text_field :scientific_name %></td>
-    </tr>
-    <tr>
-      <td>Age</td>
-      <td><%= f.text_field :age %></td>
-    </tr>
-    <tr>
-      <td>Photo URL</td>
-      <td><%= f.text_field :photo_url %></td>
-    </tr>
-</table>
-
-<%= f.submit %>
-
-<% end %>
+<%= render partial: "form", locals: { action_name: "New" } %>

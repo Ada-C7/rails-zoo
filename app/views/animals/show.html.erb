@@ -1,2 +1,23 @@
-<h1>Animals#show</h1>
-<p>Find me in app/views/animals/show.html.erb</p>
+<h1>Salmon Profile</h1>
+<h3><%= @animal.name %></h3>
+<%= image_tag(@animal.photo_url) unless @animal.photo_url.empty? %>
+<table>
+
+  <% if !@animal.species.empty? %>
+    <tr>
+      <td>Species</td>
+      <td><%= @animal.species %>
+      <% unless @animal.scientific_name.empty? %>
+        (<em><%= @animal.scientific_name %></em>)</td>
+      <% end %>
+    </tr>
+  <% end %>
+
+  <% if !@animal.age.nil? %>
+    <tr>
+      <td>Age</td>
+      <td><%= @animal.age %> years</td>
+    </tr>
+  <% end %>
+
+</table>

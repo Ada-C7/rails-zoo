@@ -6,7 +6,7 @@ class AnimalsController < ApplicationController
   def create
     @animal = Animal.new(animal_params)
     if @animal.save
-      redirect_to animals_index_path
+      redirect_to animals_path
     else
       render :new
     end
@@ -20,6 +20,7 @@ class AnimalsController < ApplicationController
   end
 
   def show
+    @animal = Animal.find(params[:id])
   end
 
   def update
