@@ -46,6 +46,8 @@ a:hover {
 
 .new-animal-header, .edit-animal-header {
   padding-bottom: 20px;
+  padding-left: 40px;
+  font-size: 2.25em;
 }
 
 footer {
@@ -58,10 +60,6 @@ footer {
 
 .button-new-animal {
   padding: 30px 0;
-}
-
-.button-new-animal:hover {
-  background-image: url("https://img.clipartfest.com/c8046f35a2834e6106f41cadd595d393_good-pix-for-outline-of-black-bear-outline-clipart_1615-900.jpeg");
 }
 
 .home-button {
@@ -94,15 +92,16 @@ footer {
   padding: 15px 0;
 }
 
-.edit-form {
-  padding-left: 40px;
+.container .new-form {
+  background-image: url("https://www.thesun.co.uk/wp-content/uploads/2016/10/nintchdbpict000272062433.jpg?w=960&strip=all");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.edit-form li {
-  padding: 5px;
+.input-form {
+  font-size: 1.5em;
+  height: 600px;;
 }
-
-
 
 .button-save-form {
   margin-top: 30px;
@@ -131,13 +130,21 @@ footer {
   margin-left: 204px;
 }
 
+.show-animal {
+  text-align: center;
+}
+
+.edit-form {
+  padding-left: 40px;
+}
+
+.edit-form li {
+  padding: 5px;
+}
+
 .edit-form, .new-form {
   text-align: left;
   padding-left: 100px;
-}
-
-.show-animal {
-  text-align: center;
 }
 
 .show-animal.animals-nav {
