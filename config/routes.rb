@@ -3,6 +3,9 @@ Rails.application.routes.draw do
 
 root to: 'static#index'
 
+get '/reservations/new', to: 'reservations#new', as: 'add_reservation'
+post '/reservations', to: 'reservations#create'
+
 get '/reservations', to: 'reservations#index'
 get '/reservations/:id', to: 'reservations#show', as: 'reservation'
 
