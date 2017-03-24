@@ -1,6 +1,6 @@
 <%= render partial: "sidebar", locals: {zone: @zone} %>
 
 <section class="content edit-form">
-  <h2>editing "<%= @animal.name %>"</h2>
+  <h2 class="edit-animal-header">editing "<%= @animal.name %>"</h2>
   <%= render partial: "form", locals: {zone: @zone} %>
 </section>

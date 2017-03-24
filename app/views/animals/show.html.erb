@@ -14,10 +14,11 @@
 
   </section>
   <section class="show-animal animals-nav">
-    <ul>
-      <li class="edit-animal-button">
-        <%= link_to "edit animal", edit_animal_path, method: :get %>
-      </li>
-    </ul>
+    <p class="edit-animal-button">
+      <%= link_to "edit", edit_animal_path, method: :get %>
+    </p>
+    <p class="delete-animal-button">
+      <%= link_to "delete", animal_delete_path(@animal.id), method: :delete, data: { confirm: "Really delete this animal?" } %>
+    </p>
   </section>
 </section>

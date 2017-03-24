@@ -14,17 +14,8 @@ class AnimalsController < ApplicationController
     @animal = Animal.find(params[:id])
   end
 
-  def edit
-    @animal = Animal.find(params[:id])
-  end
-
-  def update
-    @animal = Animal.find(params[:id])
-    if @animal.update(animal_params)
-      redirect_to animals_path
-    else
-      render :edit
-    end
+  def new
+    @animal = Animal.new
   end
 
   def create
@@ -36,8 +27,17 @@ class AnimalsController < ApplicationController
     end
   end
 
-  def new
-    @animal = Animal.new
+  def edit
+    @animal = Animal.find(params[:id])
+  end
+
+  def update
+    @animal = Animal.find(params[:id])
+    if @animal.update(animal_params)
+      redirect_to animals_path
+    else
+      render :edit
+    end
   end
 
   def destroy

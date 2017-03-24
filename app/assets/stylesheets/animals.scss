@@ -1,16 +1,20 @@
-// Place all the styles related to the animals controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre|Caveat+Brush|Gochi+Hand|Itim|Scope+One');
+
+// font-family: 'Gochi Hand', cursive;
+// font-family: 'Abhaya Libre', serif;
+// font-family: 'Caveat Brush', cursive;
+// font-family: 'Itim', cursive;
+// font-family: 'Scope One', serif;
 
 * {
-  font-family: courier;
-  padding: 0;
+  font-family: 'Caveat Brush', cursive;
   margin: 0;
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  font-size: 1.25em;
   color: black;
 }
 
@@ -21,12 +25,13 @@ a:hover {
 .animal-image-thumbnail img {
   width: 200px;
   border-radius: 50%;
-  margin: 30px;
+  margin: 30px 30px 10px 30px;
   border: 3px black solid;
 }
 
 .animal-main-title {
   text-align: center;
+  font-size: 2em;
 }
 
 .index-animal {
@@ -39,12 +44,32 @@ a:hover {
   padding: 20px 0;
 }
 
+.new-animal-header, .edit-animal-header {
+  padding-bottom: 20px;
+}
+
 footer {
-  height: 75px;
+  height: 200px;
   width: 100%;
   bottom: 0;
   font-size: .8em;
   position: absolute;
+}
+
+.button-new-animal {
+  padding: 30px 0;
+}
+
+.button-new-animal:hover {
+  background-image: url("https://img.clipartfest.com/c8046f35a2834e6106f41cadd595d393_good-pix-for-outline-of-black-bear-outline-clipart_1615-900.jpeg");
+}
+
+.home-button {
+  padding-bottom: 30px;
+}
+
+.button-new-animal, .home-button {
+  font-size: 1.25em;
 }
 
 .side-bar {
@@ -77,8 +102,14 @@ footer {
   padding: 5px;
 }
 
-.button-save-form, .button-new-animal {
-  padding-top: 20px;
+
+
+.button-save-form {
+  margin-top: 30px;
+}
+
+.website-title {
+  font-size: 2em;
 }
 
 .animal-title-sidebar {
@@ -89,15 +120,20 @@ footer {
   overflow: scroll;
 }
 
+.all-zoo-animals {
+  margin-bottom: 50px;
+}
+
 .content {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
   display: block;
   margin-left: 204px;
 }
 
-.home-button {
-  padding-bottom: 20px;
+.edit-form, .new-form {
+  text-align: left;
+  padding-left: 100px;
 }
 
 .show-animal {
@@ -105,7 +141,16 @@ footer {
 }
 
 .show-animal.animals-nav {
-  padding-top: 30px;
+  padding-top: 20px;
+}
+
+.animals-nav p {
+  display: inline-block;
+  padding: 0 15px 10px 15px;
+}
+
+.animal-data p {
+  font-size: 2em;
 }
 
 .show-animal-image {
@@ -115,5 +160,5 @@ footer {
 }
 
 .show-animal.animal-name {
-  padding-top: 30px;
+  font-size: 3em;
 }
