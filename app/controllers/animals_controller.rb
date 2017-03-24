@@ -8,4 +8,8 @@ class AnimalsController < ApplicationController
     @result_animal = Animal.find(params[:id])
   end
 
+  def create
+    animal = Animal.create animal_params
+  end
+
 end
