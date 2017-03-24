@@ -9,6 +9,8 @@
   Age: <%= @result_animal.age %>
 </p>
 
+<!-- maybe use a case statement instead: -->
+
 <% if @result_animal.name == "Spirit" %>
 <p>
   Something incredible is waiting to be known qui dolorem ipsum quia dolor
@@ -24,8 +26,10 @@
 
 <% elsif @result_animal.name == "Leo" %>
 <p>Leo is stinky.</p>
+<% elsif @result_animal.name == "Bangles" %>
+<p>Bangles is always cold!</p>
 <% else %>
-<p>Bangles is always cold.</p>
+<p>Flume is fluffy!</p>
 
 <% end %>
 
