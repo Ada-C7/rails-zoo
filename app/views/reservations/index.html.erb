@@ -1,2 +1,9 @@
 <h1>Reservations#index</h1>
-<p>Find me in app/views/reservations/index.html.erb</p>
+<ul>
+     <% @reservations.each do | reservation | %>
+          <li>
+               <p> <%= reservation.first_guest_first_name %> <%= reservation.first_guest_last_name %> </p>
+               <p> <%= reservation.second_guest_first_name %> <%= reservation.second_guest_last_name %> </p>
+          </li>
+     <% end %>
+</ul>
