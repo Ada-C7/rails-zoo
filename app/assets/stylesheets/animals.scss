@@ -49,6 +49,7 @@ a:hover {
   padding-bottom: 20px;
   padding-left: 40px;
   font-size: 2.25em;
+  color: #CC5600;
 }
 
 footer {
@@ -104,6 +105,13 @@ input {
   background-size: cover;
 }
 
+.grey-box {
+  display: inline-block;
+  background-color: lightgrey;
+  opacity: .5;
+  height: 400px;
+}
+
 .edit-container {
   background-image: url("http://cdn.pcwallart.com/images/cute-baby-puffins-wallpaper-1.jpg");
   background-repeat: no-repeat;
@@ -112,7 +120,10 @@ input {
 
 .input-form {
   font-size: 1.5em;
-  height: 600px;;
+}
+
+.content {
+  height: 650px;
 }
 
 .button-save-form {
