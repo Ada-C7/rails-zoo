@@ -3,7 +3,8 @@
 <ul>
   <% @animals.each do |animal| %>
   <li>
-    "<%= animal.name %>", <%= animal.species %>, <%= animal.age %> years old
+    "<%= link_to animal.name, animal_path(animal.id) %>", <%= animal.species %>,
+    <%= animal.age %> years old
   </li>
   <% end %>
 </ul>
