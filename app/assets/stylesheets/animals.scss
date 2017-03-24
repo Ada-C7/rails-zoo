@@ -42,6 +42,7 @@ a:hover {
 
 .index-animal-sidebar {
   padding: 20px 0;
+  overflow: scroll;
 }
 
 .new-animal-header, .edit-animal-header {
@@ -92,8 +93,19 @@ footer {
   padding: 15px 0;
 }
 
+input {
+  margin-left: 10px;
+  font-size: 1em;
+}
+
 .container .new-form {
   background-image: url("https://www.thesun.co.uk/wp-content/uploads/2016/10/nintchdbpict000272062433.jpg?w=960&strip=all");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.edit-container {
+  background-image: url("http://cdn.pcwallart.com/images/cute-baby-puffins-wallpaper-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -138,7 +150,7 @@ footer {
   padding-left: 40px;
 }
 
-.edit-form li {
+.edit-form li, .new-form li {
   padding: 5px;
 }
 
@@ -168,4 +180,8 @@ footer {
 
 .show-animal.animal-name {
   font-size: 3em;
+}
+
+.edit-animal-header {
+  margin-left: 40px;
 }

@@ -7,7 +7,7 @@ class AnimalsController < ApplicationController
   end
 
   def index
-    @animals = Animal.all
+    @animals = Animal.all    
   end
 
   def show

@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170323165224) do
+ActiveRecord::Schema.define(version: 20170324063534) do
 
   create_table "animals", force: :cascade do |t|
     t.string   "name"
     t.string   "species"
     t.integer  "age"
-    t.string   "image"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "image",      default: "https://hushpuppyoil.com/wp-content/uploads/2016/10/HP-Image-Coming-soon-holder.jpg"
+    t.datetime "created_at",                                                                                                 null: false
+    t.datetime "updated_at",                                                                                                 null: false
   end
 
 end
