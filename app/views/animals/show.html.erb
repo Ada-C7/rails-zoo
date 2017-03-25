@@ -1,35 +1,12 @@
 
-<h1><%=@result_animal.name %>'s personal page</h1>
+<h1><%=@result_animal.name %>'s profile</h1>
 
-<p>
-  Species: <%= @result_animal.species %>
-</p>
+<p>Species: <%= @result_animal.species %></p>
 
-<p>
-  Age: <%= @result_animal.age %>
-</p>
+<p>Age: <%= @result_animal.age %></p>
+
+<p><%= @result_animal.profile %></p>
 
 
-<% if @result_animal.name == "Spirit" %>
-<p>
-  Something incredible is waiting to be known qui dolorem ipsum quia dolor
-  sit amet galaxies rings of Uranus vastness is bearable only through love
-  Cambrian explosion, explorations the carbon in our apple pies. Hypatia,
-  made in the interiors of collapsing stars Drake Equation, gathered by
-  gravity consectetur preserve and cherish that pale blue dot hydrogen atoms.
-  Trillion. Science sed do eiusmod tempor incididunt ut labore et dolore magna
-  aliqua. Ut enim ad minim veniam the only home we've ever known. A billion
-  trillion and billions upon billions upon billions upon billions upon billions
-  upon billions upon billions.
-</p>
-
-<% elsif @result_animal.name == "Leo" %>
-<p>Leo is stinky.</p>
-<% elsif @result_animal.name == "Bangles" %>
-<p>Bangles is always cold!</p>
-<% else %>
-<p>Flume is fluffy!</p>
-
-<% end %>
 
 <!-- <%= image_tag("leo.jpg", :alt => "black dog sitting on deck") %> -->
