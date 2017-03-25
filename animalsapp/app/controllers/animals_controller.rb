@@ -8,16 +8,16 @@ class AnimalsController < ApplicationController
   end
 
   def create
-  Task.create(task_params)
-  redirect_to tasks_path
+  Animal.create(animal_params)
+  redirect_to animals_path
   end
 
 
 
 
 private
-def task_params
-  return params.require(:task).permit(:name, :deadline, :completed)
+def animal_params
+  return params.require(:animal).permit(:name, :species, :age)
 end
 
 end

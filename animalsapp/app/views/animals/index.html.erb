@@ -1,2 +1,6 @@
 <h1>Animals#index</h1>
-<p>Find me in app/views/animals/index.html.erb</p>
+<%@animals.each_with_index do |animal, number|%>
+<ul>
+  <li><%= "Animal ##{number + 1}: #{animal.name} is a #{animal.age} year old #{animal.species}."%></li>
+</ul>
+<%end%>

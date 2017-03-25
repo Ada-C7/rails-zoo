@@ -1,0 +1,16 @@
+<section>
+  <%= form_for @animal do |f| %>
+
+  Name:<%= f.text_field :name%>
+  Species: <%= f.text_field :species%>
+  Age: <%= f.text_field :age%>
+  <%= f.submit value: "#{submit_text}"%>
+<br>
+<br>
+  <%=link_to "Return to Animal: #{@animal.id}",animals_path(@animals)%>
+  <% end %>
+
+
+
+  <%=link_to "Return Home", animals_path%>
+</section>
