@@ -1,6 +1,9 @@
 <h1>Animals#index</h1>
-<%@animals.each_with_index do |animal, number|%>
+<%@animals.each_with_index do | number|%>
 <ul>
-  <li><%= "Animal ##{number + 1}: #{animal.name} is a #{animal.age} year old #{animal.species}."%></li>
+
+  <li> <%=link_to " Animal ##{number.id}: #{number.name} is a #{number.age} year old #{number.species}.", animal_path(number.id)%></li>
 </ul>
 <%end%>
+
+<%=link_to "Add an animal", new_animal_path=%>
