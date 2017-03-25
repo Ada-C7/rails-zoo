@@ -20,6 +20,7 @@ class AnimalsController < ApplicationController
     redirect_to animals_path
   end
 
+  # Create an animal needs authentication, "the Internet is a bad place"
   private
   def animal_params
     return params.require(:animal).permit(:name, :species, :age)
