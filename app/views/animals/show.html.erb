@@ -1,4 +1,6 @@
 
 <h2><%= @animal.name %></h2>
 <p><%= @animal.name %> is a <%= @animal.species %> that is <%= @animal.age %> years old. </p>
+<%= link_to "Edit #{@animal.name}'s information", edit_animal_path %>
+<%= link_to "Delete #{@animal.name}", animal_path(@animal), method: :delete, data: { confirm: "Are you sure you want to delete #{@animal.name}?"} %>
 <%= link_to "Back to all animals", animals_path %>
