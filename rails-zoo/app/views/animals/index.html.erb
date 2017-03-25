@@ -1,0 +1,7 @@
+<h2>Behold God's wonderful creatures!</h2>
+
+<ul>
+  <% @animals.each do |animal| %>
+  <li><%= animal[:name] %>, the <%= animal[:species]%>:  <%= animal[:age]%> years old</li>
+  <% end %>
+</ul>
