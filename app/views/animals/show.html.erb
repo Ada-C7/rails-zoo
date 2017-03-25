@@ -1,12 +1,12 @@
 
 <h1><%=@result_animal.name %>'s profile</h1>
 
+<!-- image size doesn't work for all pictures, neither does alt -->
+<%= image_tag @result_animal.name.downcase + ".jpg",
+alt: "black dog sitting on deck", width: 300, height: 500 %>
+
 <p>Species: <%= @result_animal.species %></p>
 
 <p>Age: <%= @result_animal.age %></p>
 
 <p><%= @result_animal.profile %></p>
-
-
-
-<!-- <%= image_tag("leo.jpg", :alt => "black dog sitting on deck") %> -->
