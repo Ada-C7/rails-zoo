@@ -8,8 +8,14 @@ class AnimalsController < ApplicationController
   end
 
   def create
-  Animal.create(animal_params)
+  Animal.create animal_params
   redirect_to animals_path
+  end
+
+  def show
+    id = params[:id].to_i
+
+  @animal = Animal.find(id)
   end
 
 
