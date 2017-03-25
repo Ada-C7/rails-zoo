@@ -11,8 +11,14 @@
 <h3> Message </h3>
 <p> <%= @reservation.message %> </p>
 <h3> Diet </h3>
-<p> <%= if @reservation.diet == nil then "No dietary restrictions."; end %> </p>
+<p> <%= if @reservation.diet == nil || @reservation.diet == "" then "No dietary restrictions."; end %> </p>
 <h3> Status </h3>
-<p> <%= if @reservation.status == nil then "Not yet responded."; end %> </p>
+<p> <%= if @reservation.status == nil || @reservation.status == "" then "Not yet responded."; end %> </p>
 <h3> Paid </h3>
 <p> <%= @reservation.paid ? "Paid" : "Not yet paid." %> </p>
+
+<%= link_to "Edit", edit_reservation_path(@reservation.id) %>
+<%= link_to "Delete", delete_reservation_path(@reservation.id),
+     data: { confirm: "Are you confident you'd like to delete this reservation?" },
+     method: :delete
+%>

@@ -2,6 +2,12 @@
 <ul>
      <% @reservations.each do | reservation | %>
           <li>
+               <span><%= link_to "View", reservation_path(reservation.id) %></span>
+               <span><%= link_to "Edit", edit_reservation_path(reservation.id) %></span>
+               <span><%= link_to "Delete", delete_reservation_path(reservation.id),
+                    data: { confirm: "Are you confident you'd like to delete this reservation?" },
+                    method: :delete %></span>
+               <span>Reservation 0<%= reservation.id %></span>
                <p> <%= reservation.first_guest_first_name %> <%= reservation.first_guest_last_name %> </p>
                <p> <%= reservation.second_guest_first_name %> <%= reservation.second_guest_last_name %> </p>
           </li>
