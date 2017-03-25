@@ -1,0 +1,10 @@
+<h2>Anna Wolf's Impressive Zoo</h2>
+
+
+<% @animals.each do |animal| %>
+<p>
+<%= link_to "#{animal.name} the #{animal.species}", animal_path(animal.id) %>
+</p>
+<% end %>
+
+<%= button_to "Add a new animal", new_animal_path, method: :get %>
