@@ -3,6 +3,7 @@
 <ul>
   <li>
     <%= link_to animal.name, animal_path(animal.id)%>
+    <%= link_to "Delete", delete_animal_path(animal.id), class: "delete", data: { confirm: "Are you sure you want to delete this animal?"}, method: :delete %>
   </li>
 </ul>
 <% end %>
