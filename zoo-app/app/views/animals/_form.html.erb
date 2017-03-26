@@ -1,14 +1,24 @@
 <%= form_for @animal do |f| %>
-
+<p>
 <%= f.label :name %>
 <%= f.text_field :name %>
-
+</p>
+<p>
 <%= f.label :species %>
 <%= f.text_field :species %>
+</p>
+<p>
 
 
 <%= f.label :age %>
 <%= f.text_field :age%>
+</p>
+<p>
+<%= f.label :snack %>
+<%= f.text_field :snack%>
+
+</p>
+
 
 <%= f.submit action_name %>
 

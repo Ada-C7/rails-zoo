@@ -5,5 +5,14 @@
 
 </section>
 <p>
-  <%= @animal.name  %> is a <%= @animal.age  %> year old <%= @animal.species  %> whose favorite snack is ____.
+  <%= @animal.name  %> is a <%= @animal.age  %> year old <%= @animal.species  %> whose favorite snack is <%= @animal.snack  %>.
+</p>
+<p>
+
+  <%= link_to "Edit #{@animal.name}", edit_animal_path %>
+</p>
+<p>
+
+  <%= link_to "Back to List", animals_path %>
+
 </p>
