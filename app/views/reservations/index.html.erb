@@ -1,15 +1,26 @@
-<h1>Reservations#index</h1>
-<ul>
+<ul class="content">
+     <li class="title"><h1>RSVP List</h1></li>
      <% @reservations.each do | reservation | %>
           <li>
-               <span><%= link_to "View", reservation_path(reservation.id) %></span>
-               <span><%= link_to "Edit", edit_reservation_path(reservation.id) %></span>
-               <span><%= link_to "Delete", delete_reservation_path(reservation.id),
-                    data: { confirm: "Are you confident you'd like to delete this reservation?" },
-                    method: :delete %></span>
-               <span>Reservation 0<%= reservation.id %></span>
-               <p> <%= reservation.first_guest_first_name %> <%= reservation.first_guest_last_name %> </p>
-               <p> <%= reservation.second_guest_first_name %> <%= reservation.second_guest_last_name %> </p>
+               <%= link_to reservations_path do %>
+                    Reservation 0<%= reservation.id %>
+               <% end %>
+               <p>
+                    <%= reservation.first_guest_first_name %> <%= reservation.first_guest_last_name %>
+
+                    <%= reservation.second_guest_first_name == nil || reservation.second_guest_first_name == "" ? "" : "and" %>
+
+                    <%= reservation.second_guest_first_name == nil || reservation.second_guest_first_name == "" ? "" : reservation.second_guest_first_name %>
+
+                    <%= reservation.second_guest_first_name == nil || reservation.second_guest_first_name == "" ? "" : reservation.second_guest_last_name %>
+               </p>
           </li>
+          <li>
+               <button class="button-small"><%= link_to "Edit", edit_reservation_path(reservation.id) %></button>
+               <button class="button-small"><%= link_to "Delete", delete_reservation_path(reservation.id),
+                    data: { confirm: "Are you confident you'd like to delete this reservation?" },
+                    method: :delete %></button>
+          </li>
+
      <% end %>
 </ul>

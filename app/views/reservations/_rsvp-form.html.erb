@@ -1,30 +1,30 @@
 <%=form_for @reservation, method: form_method do | f | %>
 
-<%= f.label :first_guest_first_name %>
-<%= f.text_field :first_guest_first_name %>
+<%= f.label :first_guest_first_name, class: 'hidden' %>
+<%= f.text_field :first_guest_first_name, placeholder: 'first name' %>
 
-<%= f.label :first_guest_last_name %>
-<%= f.text_field :first_guest_last_name %>
+<%= f.label :first_guest_last_name, class: 'hidden'  %>
+<%= f.text_field :first_guest_last_name, placeholder: 'last name' %>
 
-<%= f.label :second_guest_first_name %>
-<%= f.text_field :second_guest_first_name %>
+<%= f.label :second_guest_first_name, class: 'hidden'  %>
+<%= f.text_field :second_guest_first_name, placeholder: 'first name' %>
 
-<%= f.label :second_guest_last_name %>
-<%= f.text_field :second_guest_last_name %>
+<%= f.label :second_guest_last_name, class: 'hidden'  %>
+<%= f.text_field :second_guest_last_name, placeholder: 'last name' %>
 
-<%= f.label :email %>
-<%= f.text_field :email %>
+<%= f.label :email, class: 'hidden'  %>
+<%= f.text_field :email, placeholder: 'email' %>
 
-<%= f.label :phone %>
-<%= f.text_field :phone %>
+<%= f.label :phone, class: 'hidden'  %>
+<%= f.text_field :phone, placeholder: 'phone' %>
 
-<%= f.label :message %>
-<%= f.text_area :message %>
+<%= f.label :message, class: 'hidden'  %>
+<%= f.text_area :message, placeholder: 'message to bride and groom' %>
 
-<%= f.label :diet %>
-<%= f.text_area :diet %>
+<%= f.label :diet, class: 'hidden'  %>
+<%= f.text_area :diet, placeholder: 'dietary concerns' %>
 
-<%= f.label :status %>
+<%= f.label :status, class: 'hidden'  %>
 <%= f.text_area :status %>
 
 <%= f.submit submit_text %>

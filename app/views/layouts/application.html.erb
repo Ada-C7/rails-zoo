@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsZoo</title>
+
+    <title>Janice + Mark</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <% stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Gravitas+One|Source+Sans+Pro' %>
+
   </head>
 
-  <body>
-    <%= yield %>
-  </body>
+     <body class= "flexbox wedding">
+
+          <header class="header">
+
+               <div class="logo">
+                    <%= link_to root_path do %>
+                         <%= image_tag "logo.png"%>
+                    <% end %>
+               </div>
+                    <nav class="navigation">
+                         <ul>
+                         <li><%= link_to "Home", root_path %></li>
+                         <li><%= link_to "RSVP", reservations_path %></li>
+                         </ul>
+                    </nav>
+               </header>
+
+               <main class="main">
+                     <div class="placeholder"></div>
+
+                    <section>
+                         <%= yield %>
+                    </section> -->
+               </main>-->
+
+          <section class="section">
+               <ul class="feature">
+               <%= yield :feature%>
+               </ul>
+          </section>
+
+          <footer class="footer">
+               <div class="copyright"><h6> &copy; 2017 Wedding of the year. All rights reserved. </h6></div>
+
+               <ul class="social">
+                    <li class="social-facebook">
+                    <a class="social-link" href="#facebook" target="_blank"></a>
+                    </li>
+                    <li class="social-twitter">
+                    <a class="social-link" href="#twitter" target="_blank"></a>
+                    </li>
+                    <li class="social-mail">
+                    <a class="social-link" href="mailto:janiceandmark@zawistoski.com"></a>
+                    </li>
+               </ul>
+
+          </footer>
+
+     </body>
+
 </html>
