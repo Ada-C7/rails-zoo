@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  root 'animals#index'
+
   get '/animals', to: 'animals#index'
 
-  get 'animals/new'
+  get 'animals/new', to: 'animals#new', as: 'new_animal'
 
-  get 'animals/show'
+  get 'animals/:id', to: 'animals#show', as: 'animal'
 
   get 'animals/update'
 
