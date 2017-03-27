@@ -3,7 +3,7 @@
 <ul>
   <% @animals.each_with_index do |animal| %>
   <li>
-    <%= animal.name %> the <%= animal.species %>
+    <%= link_to "#{animal.name} the #{animal.species}", animal_path(animal.id) %>
   </li>
   <% end %>
 </ul>
