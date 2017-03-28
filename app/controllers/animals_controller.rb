@@ -9,13 +9,13 @@ class AnimalsController < ApplicationController
 
   def edit
     @animal = Animal.find(params[:id])
-
   end
 
   def update
     animal = Animal.find(params[:id])
     if animal.update(animal_params)
       redirect_to animals_path
+    end  
 
   end
 
