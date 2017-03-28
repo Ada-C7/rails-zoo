@@ -3,7 +3,7 @@
 <ul class="animal-list  ">
 
 <% @animals.each do |animal| %>
-<li> <%= link_to animal.name, home_path(animal.id) %>
+<li> <%= link_to animal.name, animal_path(animal.id) %>
 <% end %>
 
 </ul>
