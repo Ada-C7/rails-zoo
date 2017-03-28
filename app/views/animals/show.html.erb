@@ -1,11 +1,23 @@
 <header>
+<h1><%= @animal[:name] %></h1>
 </header>
 
 <main>
-  <nav>
-    <%= link_to "Home", "/animals" %>
-  </nav>
+
+
+  <section>
+  <h2>About</h2>
+
+    <ul>
+      <li>Species: <%= @animal[:species] %></li>
+      <li>Age: <%= @animal[:age] %></li>
+    </ul>
+
+  </section>
 </main>
 
 <footer>
+  <nav>
+    <%= link_to "Home", "/animals" %>
+  </nav>
 </footer>
