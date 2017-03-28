@@ -4,7 +4,7 @@ class CreateAnimals < ActiveRecord::Migration[5.0]
       t.string :name
       t.string :species
       t.integer :age
-      t.string :type
+      t.string :animaltype
 
       t.timestamps
     end

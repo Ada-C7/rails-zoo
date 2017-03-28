@@ -4,10 +4,10 @@ one:
   name: MyString
   species: MyString
   age: 1
-  type: 
+  animaltype: MyString
 
 two:
   name: MyString
   species: MyString
   age: 1
-  type: 
+  animaltype: MyString
