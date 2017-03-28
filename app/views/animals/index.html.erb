@@ -18,7 +18,7 @@
 
 <% @animals.each do |animal|%>
   <tr>
-    <td><%= animal.name %></td>
+    <td><%= link_to animal.name, animal_path(animal.id) %></td>
 
     <td><%= animal.species %></td>
 
