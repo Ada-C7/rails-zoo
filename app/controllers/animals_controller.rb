@@ -13,28 +13,32 @@ class AnimalsController < ApplicationController
   end
 
   def show
-    # id = params[:id]to_i
-    # @animal= Animal.find(id)
-    @animal = Animal.find(params[:id])
+    @animal = find_animal
   end
 
   def edit
-    @animal = Animal.find(params[:id])
+    # show
+    @animal = find_animal
   end
 
   def update
-    animal = Animal.find(params[:id])
+    animal = find_animal
+
     animal.update_attributes(animal_params)
     animal.save
   end
 
   def destroy
-    Object.find(params[:id]).destroy
+    Animal.find(params[:id]).destroy
   end
 
 private
 
   def animal_params
     return params.require(:animal).permit(:name, :species, :age)
+  end
+
+  def find_animal
+    Animal.find(params[:id])
   end
 end
