@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   patch 'animals/:id', to: 'animals#update'
 
   #Delete an Animal
+  delete 'animals/:id', to: 'animals#destroy'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

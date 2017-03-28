@@ -32,6 +32,12 @@ class AnimalsController < ApplicationController
     redirect_to animal_path(animal)
   end
 
+  #Delete an animal
+  def destroy
+    Animal.find(params[:id]).destroy
+    redirect_to animals_path
+  end
+
   # Create an animal needs authentication, "the Internet is a bad place"
   private
   def animal_params
