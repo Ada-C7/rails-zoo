@@ -8,7 +8,8 @@ class AnimalsController < ApplicationController
   end
 
   def create
-    animal.create(animal_params)
+    Animal.create(animal_params)
+    redirect_to animals_path
   end
 
   def show
@@ -29,5 +30,11 @@ class AnimalsController < ApplicationController
 
   def destroy
     Object.find(params[:id]).destroy
+  end
+
+private
+
+  def animal_params
+    return params.require(:animal).permit(:name, :species, :age)
   end
 end
