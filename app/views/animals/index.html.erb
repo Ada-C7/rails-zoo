@@ -1,2 +1,13 @@
 <h1>This is the index file</h1>
-<p>Find me in app/views/animals/index.html.erb</p>
+<table>
+<% @animals.each do |animal|%>
+    <ul><li>
+
+    <%= animal.name %></li>
+  <li><%= animal.species %></li>
+<li><%= animal.age %></li></ul>
+
+
+
+</table>
+  <% end %>
