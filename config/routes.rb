@@ -2,11 +2,9 @@ Rails.application.routes.draw do
   # View all animals
   get 'animals', to: 'animals#index', as: 'animals'
 
-
-
   #Create an animal
   get 'animals/new', to: 'animals#new', as:'new_animal'
-  get 'animals', to: 'animals#create'
+  post 'animals', to: 'animals#create'
 
   # View one animal
   get 'animals/:id', to: 'animals#show', as: 'animal'

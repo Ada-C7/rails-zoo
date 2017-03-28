@@ -14,6 +14,7 @@ class AnimalsController < ApplicationController
   def new
     @animal = Animal.new
   end
+
   def create
     Animal.create(animal_params)
     redirect_to animals_path
