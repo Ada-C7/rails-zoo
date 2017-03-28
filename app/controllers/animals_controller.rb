@@ -7,8 +7,7 @@ class AnimalsController < ApplicationController
 
   # View one animal
   def show
-    id = params[:id].to_i
-    @animal = Animal.find(id)
+    @animal = Animal.find(params[:id])
   end
 
   # Create an animal
