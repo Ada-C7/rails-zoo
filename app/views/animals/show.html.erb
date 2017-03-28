@@ -4,4 +4,7 @@
   <p>
     <%= @animal.name %> is <%= @animal.age %> years old.
   </p>
+  <p>
+    <%= link_to "Edit " + @animal.name, edit_animal_path %>
+  </p>
 </main>

@@ -16,6 +16,15 @@ class AnimalsController < ApplicationController
     redirect_to animals_path unless animal.id == nil
   end
 
+  def edit
+    @animal = Animal.find(params[:id])
+  end
+
+  def update
+    animal = Animal.find(params[:id])
+    redirect_to animal_path if animal.update(animal_params)
+  end
+
   private
 
   def animal_params
