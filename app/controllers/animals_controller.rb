@@ -9,6 +9,7 @@ class AnimalsController < ApplicationController
 
   def create
     Animal.create(task_params)
+    redirect_to animals_path
   end
 
   def show
