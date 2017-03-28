@@ -1,7 +1,10 @@
 <h1>About This Animal</h1>
 
-<p>
+
+  <p>
   <%= @animal.name  %></br>
   <%=@animal.species %></br>
-  <%=@animal.age %></br>
+  <%=@animal.age %>
+</br>
 </p>
+<p><%= image_tag @animal.image_link, width:"400" %></p>

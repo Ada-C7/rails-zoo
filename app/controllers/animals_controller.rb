@@ -7,7 +7,13 @@ class AnimalsController < ApplicationController
     @animal = Animal.find(params[:id])
   end
 
+  def new
 
+  end
+
+  def create
+    
+  end
 
 
 
