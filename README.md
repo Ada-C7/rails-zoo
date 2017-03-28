@@ -51,7 +51,10 @@ def change
 ### View All Animals
 **Think**:
 - Which route (including controller#action) do you use for viewing _all_ of a given resource?
-- Which _model method_ do you use to retrieve _every item_ from the database?
+Index.  Route is get '/animals', to: 'animals#index'
+
+- Which _model method_ do you use to retrieve _every item_ from the database? 
+Animal.all
 
 **Create**:
 1. the route

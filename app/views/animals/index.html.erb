@@ -1,2 +1,7 @@
 <h1>Animals#index</h1>
-<p>Find me in app/views/animals/index.html.erb</p>
+
+<% @animals.each do |animal| %>
+  <p>
+  <%= animal.name %> is a <%= animal.species %> who is <%= animal.age %> years old.
+  </p>
+<% end %>
