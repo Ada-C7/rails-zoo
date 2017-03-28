@@ -17,8 +17,24 @@ Each requirements section of this assignment has three sections: **think, create
 ## Primary Requirements
 ### Create Controller & Model
 **Think**:
-- What Rails CLI command do we use to generate a new controller? Are controllers supposed to be singular or plural?
-- What Rails CLI command do we use to generate a new model? Are models supposed to be singular or plural? Where do we put the fields in the migration?
+- What Rails CLI command do we use to generate a new controller?
+ Rails Generate controller name(s) action(optional)
+
+Are controllers supposed to be singular or plural?  
+Plural according to conventions.
+
+- What Rails CLI command do we use to generate a new model?
+rails generate model name(singular) data columnns
+
+Are models supposed to be singular or plural?
+Models are singular.
+
+Where do we put the fields in the migration?
+In the migration file, you put name of table, name of column, and data type as such:   
+def change
+    add_column :tasks, :complete_by, :date
+    add_column :tasks, :status, :string
+  end
 
 **Create**:
 1. a rails controller with the name `animals`
