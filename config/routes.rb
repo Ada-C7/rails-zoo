@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # get "/animals/new", to: "animals#new"
   # post "animals", to: "animals#create"
 
-  get "/animals/:id/edit", to: "animals#edit",  as:"edit_task"
+  get "/animals/:id/edit", to: "animals#edit",  as:"edit_animal"
   patch "animals/:id", to: "animals#update"
 
 

@@ -25,6 +25,15 @@
     <td><%= animal.age %></td>
 
     <td><%= animal.age_unit %></td>
+    <td>
+    <%= button_to "Update", edit_animal_path(animal.id), :class => "button", :method => :get %></td>
+
   </tr>
   <% end %>
+
+
+
+
 </table>
+
+<button_to
