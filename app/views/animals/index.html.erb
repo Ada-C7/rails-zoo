@@ -1,9 +1,9 @@
 <h1>List of Animals</h1>
 
-<ul class="animal-list  ">
+<ul class="animal-list">
 
 <% @animals.each do |animal| %>
-<li> <%= link_to animal.name, animal_path(animal.id) %>
+<li class="individual-animal"> <%= link_to animal.name, animal_path(animal.id) %>
 <% end %>
 </ul>
 
