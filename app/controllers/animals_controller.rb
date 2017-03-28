@@ -31,7 +31,12 @@ class AnimalsController < ApplicationController
     # if animal.create(animal_params)
     #   redirect_to animals_path
     # end
+  end
 
+  def destroy
+    Animal.destroy(params[:id])
+
+    redirect_to animals_path
   end
 
   private

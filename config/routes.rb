@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get "/animals/:id", to: "animals#show", as:"animal"
 
+  delete "/animals/:id", to: "animals#destroy", as:"delete_animal"
+
 
 
 
