@@ -1,13 +1,30 @@
 <h1>This is the index file</h1>
+
 <table>
+  <tr>
+    <th>
+     Name
+    </th>
+    <th id="table_head2">
+    Species
+    </th>
+    <th>
+    Age
+    </th>
+    <th>
+    unit
+    </th>
+  </tr>
+
 <% @animals.each do |animal|%>
-    <ul><li>
+  <tr>
+    <td><%= animal.name %></td>
 
-    <%= animal.name %></li>
-  <li><%= animal.species %></li>
-<li><%= animal.age %></li></ul>
+    <td><%= animal.species %></td>
 
+    <td><%= animal.age %></td>
 
-
-</table>
+    <td><%= animal.age_unit %></td>
+  </tr>
   <% end %>
+</table>
