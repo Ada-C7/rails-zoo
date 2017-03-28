@@ -3,8 +3,8 @@
 <ul class="animal-list">
 
 <% @animals.each do |animal| %>
-<li class="individual-animal"> <%= link_to animal.name, animal_path(animal.id) %>
+<li><%= link_to animal.name, animal_path(animal.id) %></li>
 <% end %>
 </ul>
 
-<%= link_to "Would you like to create a new animal?", new_animal_path %>
+<%= button_to "Would you like to create a new animal?", new_animal_path, class: "button", method: :get %>
