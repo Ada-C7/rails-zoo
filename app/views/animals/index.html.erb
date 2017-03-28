@@ -5,5 +5,6 @@
 <% @animals.each do |animal| %>
 <li> <%= link_to animal.name, animal_path(animal.id) %>
 <% end %>
-
 </ul>
+
+<% link_to "Would you like to create a new animal?", new_animal_path %>
