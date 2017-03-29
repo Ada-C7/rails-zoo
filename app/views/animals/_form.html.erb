@@ -1,0 +1,27 @@
+<ul>
+  <%= form_for @animal do |f| %>
+    <li>
+      <%= f.label :name, "Name: " %>
+      <%= f.text_field :name %>
+    </li>
+    <li>
+      <%= f.label :species, "Species: " %>
+      <%= f.text_field :species %>
+    </li>
+    <li>
+      <%= f.label :age, "Age: " %>
+      <%= f.text_field :age %>
+    </li>
+    <li>
+      <%= f.label :mood, "Mood: " %>
+      <%= f.text_field :mood %>
+    </li>
+    <li>
+      <%= f.label :img, "Image URL: " %>
+      <%= f.text_field :img %>
+    </li>
+    <li>
+      <%= f.submit %>
+    </li>
+  <% end %>
+</ul>
