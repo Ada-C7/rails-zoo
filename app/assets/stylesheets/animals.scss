@@ -1,3 +1,79 @@
 // Place all the styles related to the Animals controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Dosis|Knewave');
+
+// scss
+// @mixin centerer {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+// background colors + fonts
+html {
+  background-color: #8EBDAB;
+  font-size: 18px;
+}
+
+article {
+  background-color: #E6F7BF;
+}
+
+h1 {
+  font-family: 'Knewave', cursive;
+  color: #0B3F54;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  color: #0B3F54;
+  margin: 5% 10%;
+}
+
+// links
+a {
+  text-decoration: none;
+  color: #0B3F54;
+}
+
+a:hover {
+  color: #913e3e;
+}
+
+// index layout
+header, p, footer, h1  {
+  text-align: center;
+}
+
+section.zoo {
+  margin: 5% 20%;
+  position: relative;
+}
+
+p {
+  padding: 2%;
+}
+
+article.animal {
+  // @include centerer;
+}
+
+img {
+  height: 300px;
+  margin: 2% 15% 5% 15%;
+  // @include centerer;
+  // left: 50%;
+}
+
+// show layout
+ul {
+  list-style: none;
+}
+
+section.profile {
+  text-align: center;
+}

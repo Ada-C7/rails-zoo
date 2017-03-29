@@ -5,7 +5,9 @@
 <section class="zoo">
   <% @animals.each do |animal| %>
     <article class="animal">
-      <%= link_to "#{animal.name} the #{animal.species}", animal_path(animal.id) %>
+      <p>
+        <%= link_to "#{animal.name} the #{animal.species}", animal_path(animal.id) %>
+      </p>
 
       <%= link_to animal_path(animal.id) do %>
         <%= image_tag "#{animal.img}", alt: "#{animal.species}" %>
