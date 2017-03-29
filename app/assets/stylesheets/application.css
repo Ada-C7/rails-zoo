@@ -38,6 +38,10 @@ body{
    margin-left: 50px;
 
  }
+ .index-img img {
+   width:200px;
+   border-radius: 50%;
+ }
 
  a {
    text-decoration: none;
