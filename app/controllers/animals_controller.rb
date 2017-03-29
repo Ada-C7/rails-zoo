@@ -20,13 +20,17 @@ class AnimalsController < ApplicationController
 
   def edit
     @animal = Animal.find(params[:id])
+    session.delete(:return_to)
+    session[:return_to] ||= request.referer
+    @back_url = session[:return_to]
   end
 
   def update
     animal = Animal.find(params[:id])
     animal.update_attributes(animal_params)
     animal.save
-    redirect_to animal_path(animal)
+    # redirect_to animal_path(animal)
+    redirect_to session[:return_to]
   end
 
   def destroy
