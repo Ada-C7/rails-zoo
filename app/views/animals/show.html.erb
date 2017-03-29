@@ -1,0 +1,14 @@
+<section id="show">
+
+  <h1> <%= @result_animal.name %></h1>
+
+  <p>
+    <strong>Species:</strong> <%= @result_animal.species %>
+  </p>
+  <p>
+    <strong>Age:</strong> <%= @result_animal.age %>
+  </p>
+  <p>
+    <%= link_to "Back to list", animals_path %>
+  </p>
+</section>
