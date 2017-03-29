@@ -18,10 +18,11 @@
 body{
    /*background-image:  url('nature_scene.jpg');*/
    background-image:  url('grass.jpg');
-   /*width: 100%;*/
    font-family: "Baloo Bhaina", fantasy, "sans-serif";
    color : #870000;
    color : #f7ff00;
+   color : white;
+   /*color: black;*/
    font-weight: bolder;
    font-size: 1.1em;
    margin-left: 70px;
