@@ -6,3 +6,7 @@
   <li>Species: <%= @animal.species %></li>
   <li>Age: <%= @animal.age %></li>
 </ul>
+
+<%= link_to "Delete", delete_animal_path(@animal.id) %>
+<%= link_to "Update", update_animal_path(@animal.id) %>
+<%= link_to "Home", animals_path %>
