@@ -53,7 +53,7 @@ def change
 - Which route (including controller#action) do you use for viewing _all_ of a given resource?
 Index.  Route is get '/animals', to: 'animals#index'
 
-- Which _model method_ do you use to retrieve _every item_ from the database? 
+- Which _model method_ do you use to retrieve _every item_ from the database?
 Animal.all
 
 **Create**:
@@ -67,8 +67,8 @@ Animal.all
 
 ### View One Animal
 **Think**:
-- Which route (including controller#action) do you use for viewing a _single_ resource?
-- Which _model method_ do you use to retrieve a _single_ item from the database?
+- Which route (including controller#action) do you use for viewing a _single_ resource? get '/animals/:id', to: 'animals#show'
+- Which _model method_ do you use to retrieve a _single_ item from the database? Animal.find(:id)
 
 **Create**:
 1. the route (including the param)
