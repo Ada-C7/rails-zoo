@@ -1,4 +1,4 @@
-<h2>Animals</h2>
+<h2>Rails Zoo</h2>
 
 <section>
   <% @animals.each do |animal| %>
@@ -7,3 +7,5 @@
     <%= ", #{animal.species} (#{animal.age})" %></p>
   <% end %>
 </section>
+
+<button><%= link_to "Add an animal", new_animal_path %></button>
