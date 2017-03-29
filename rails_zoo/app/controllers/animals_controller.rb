@@ -28,6 +28,7 @@ class AnimalsController < ApplicationController
     animal.name = params[:animal][:name]
     animal.species = params[:animal][:species]
     animal.age = params[:animal][:age]
+    animal.image = params[:animal][:image]
 
     if animal.save
       redirect_to animal_path(animal.id)
@@ -43,7 +44,7 @@ class AnimalsController < ApplicationController
   private
 
   def animal_params
-    params.require(:animal).permit(:name, :species, :age)
+    params.require(:animal).permit(:name, :species, :age, :image)
   end
 
 end
