@@ -1,0 +1,11 @@
+<h1>A Closer Look!</h1>
+
+<img src=http://lorempixel.com/400/200/animals />
+
+<p>
+<%= @animal.name %> is a <%= @animal.species %> who is <%= @animal.age %> years old.
+</p>
+
+<%= link_to "Edit", edit_animal_path(@animal.id) %>
+
+<%= link_to "Home", animals_path %>
