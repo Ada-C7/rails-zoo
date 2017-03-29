@@ -18,7 +18,10 @@ Each requirements section of this assignment has three sections: **think, create
 ### Create Controller & Model
 **Think**:
 - What Rails CLI command do we use to generate a new controller? Are controllers supposed to be singular or plural?
+>Answer: You would use the command 'rails generate controller plural_noun'. Plural form is used because the controller will be referencing multiple instances of the object.
+
 - What Rails CLI command do we use to generate a new model? Are models supposed to be singular or plural? Where do we put the fields in the migration?
+>Answer: You would use the command 'rails generate model singular_noun'. The tables will be labeled with the plural format but the model itself should be singular.
 
 **Create**:
 1. a rails controller with the name `animals`
