@@ -1,0 +1,7 @@
+<h2>Animals</h2>
+
+<section>
+  <% @animals.each do |animal| %>
+    <p><%= "#{animal.name.upcase}, #{animal.species} (#{animal.age})" %></p>
+  <% end %>
+</section>
