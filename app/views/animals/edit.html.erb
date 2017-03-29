@@ -1,0 +1,15 @@
+<main>
+
+
+<h4>Add a new animal</h4>
+<%= form_for @animal, method: :put do |f| %>
+<li><%= f.label :name %>
+<%= f.text_field :name %></li>
+<li><%= f.label :species %>
+<%= f.text_field :species %></li>
+<li><%= f.label :age %>
+<%= f.number_field :age %></li>
+<li><%= f.submit "edit" %></li>
+<% end %>
+
+</main>

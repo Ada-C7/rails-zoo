@@ -3,8 +3,28 @@ class AnimalsController < ApplicationController
     @animals = Animal.all
   end
 
+  def show
+    @selected_animal = Animal.find params[:id]
+  end
+
   def new
     @animal = Animal.new
+  end
+
+  def edit
+    @animal = Animal.find params[:id]
+  end
+
+  def update
+    animal = Animal.find params[:id]
+
+    animal.name = animal_params[:name]
+    animal.species = animal_params[:species]
+    animal.age = animal_params[:age]
+
+    if animal.save
+      redirect_to animal_path(animal.id)
+    end
   end
 
   def create
@@ -15,12 +35,16 @@ class AnimalsController < ApplicationController
     end
   end
 
-  def show
-    @animal = Animal.find params[:id]
+  def destroy
+    Animal.destroy(params[:id])
+
+    redirect_to animals_path
   end
 
-  def update
-  end
+
+
+
+
 
   private
   def animal_params

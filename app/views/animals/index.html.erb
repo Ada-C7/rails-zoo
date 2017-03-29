@@ -1,14 +1,14 @@
-<h1>Animals at the zoo/h1>
+<main>
+
+
 
 <ul>
 
 <% @animals.each do |animal| %>
-   <li><%= animal.name  %></li>
-   <li><%= animal.species %></li>
-   <li><%= animal.age %></li>
+   <li><%= link_to animal.name, animal_path(animal.id)  %> the <%= animal.species %> </li>
    <% end %>
 
 
 </ul>
 
-<h4><%= link_to "new animal", new_animal_path %></h4>
+</main>

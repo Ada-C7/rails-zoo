@@ -1,4 +1,12 @@
-<h1>Animals#show</h1>
-<p><%= @animal.name %></p>
-<p><%= @animal.species %></p>
-<p><%= @animal.age %></p>
+<main>
+
+
+<h4>Animal</h4>
+<p>Name: <%= @selected_animal.name %></p>
+<p>Species: <%= @selected_animal.species %></p>
+<p>Age: <%= @selected_animal.age %></p>
+<nav>
+  <h4><%= link_to 'edit', edit_animal_path(@selected_animal.id) %> </h4>
+  <h4><%= link_to 'delete', delete_animal_path(@selected_animal.id), data: {confirm: "Are you sure you want to delete this animal?"}, method: :delete  %></h4>
+</nav>
+</main>
