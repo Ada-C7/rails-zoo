@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'animals/edit/:id', to: 'animals#edit', as: 'edit_animal'
   put 'animals/:id', to: 'animals#update'
 
+  delete 'animals/:id', to: 'animals#destroy', as: 'delete_animal'
+
 
 
   # get '/animals/edit/:id', to: 'animals#edit', as: 'edit_animal'
