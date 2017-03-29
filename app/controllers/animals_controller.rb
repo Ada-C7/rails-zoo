@@ -22,7 +22,6 @@ class AnimalsController < ApplicationController
     if animal.save
       redirect_to animal_path
     end
-    
   end
 
   def new
@@ -35,6 +34,11 @@ class AnimalsController < ApplicationController
     unless animal.id == nil
       redirect_to animals_path
     end
+  end
+
+  def destroy
+    Animal.destroy(params[:id])
+    redirect_to animals_path
   end
 
   private
