@@ -5,6 +5,10 @@ class AnimalsController < ApplicationController
     @animals = Animal.all
   end
 
+  def show
+    @animal = Animal.find(params[:id])
+  end
+
   #### PRIVATE
   private
   def animal_params
