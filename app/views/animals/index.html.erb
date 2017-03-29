@@ -1,11 +1,12 @@
-<h1>All of the animals</h1>
+<section class="container">
 
-<% @animals.each do |animal| %>
-  <img class="animalpic" src="<%= animal.image %>"
-  <br/>
-  <p>Name: <%= animal.name %></p>
-  <p>Species: <%= animal.species %></p>
-  <p>Scientific name: <%= animal.sci_name %></p>
-  <p>Age: <%= animal.age %></p>
-  <br/>
-<% end %>
+  <h1>All of the animals</h1>
+
+  <% @animals.each do |animal| %>
+    <%= link_to animal.name, animal_path(animal.id) %>
+    <br/>
+  <% end %>
+  <div class="spacer">
+    
+  </div>
+</section>
