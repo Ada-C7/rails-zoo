@@ -4,8 +4,11 @@
 <ul>
 <% @animals.each do |animal| %>
   <li>
-    Name: <%= animal.name %>, Species: <%= animal.species %>, Age: <%= animal.age %>, Birthday: <%= animal.birthday %>
+    <%= link_to animal.name, animal %>, 
+    Species: <%= animal.species %>, Age: <%= animal.age %>, Birthday: <%= animal.birthday %>
   </li>
 
 <% end %>
 </ul>
+
+<%= link_to "Add new animal", new_animal_path %>

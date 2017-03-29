@@ -1,1 +1,18 @@
 <h1>Animals#edit</h1>
+
+<%= form_for @animal, method: :put do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :species %>
+<%= f.text_field :species %>
+
+<%= f.label :age %>
+<%= f.text_field :age %>
+
+<%= f.label :birthday %>
+<%= f.date_field :birthday %>
+
+<%= f.submit "Update animal" %>
+
+<% end %>

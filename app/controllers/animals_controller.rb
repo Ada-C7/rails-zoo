@@ -7,20 +7,38 @@ class AnimalsController < ApplicationController
     @result_animal = Animal.find(params[:id])
   end
 
-  # def edit
-  #   @result_animal = Animal.find(params[:id])
-  # end
+  def edit
+    @animal = Animal.find(params[:id])
+  end
 
   def new
     @animal = Animal.new
   end
 
   def create
-    @animal = Animal.new name: params[:animal][:name], age: params[:animal][:age], birthday: params[:animal][:birthday], species: params[:animal][:species]
+    @animal = Animal.create animal_params
 
-    if @animal.save
+    redirect_to animals_path
+
+  end
+
+  def update
+    animal = Animal.find(params[:id])
+    animal.name = params[:animal][:name]
+    animal.birthday = params[:animal][:birthday]
+    animal.age = params[:animal][:age]
+    animal.species = params[:animal][:species]
+
+    if animal.save
       redirect_to animals_path
     end
+  end
+
+
+  private
+
+  def animal_params
+    params.require(:animal).permit(:name, :species, :birthday, :age)
   end
 
 end
