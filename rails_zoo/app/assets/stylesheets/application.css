@@ -14,10 +14,11 @@
  *= require_self
  */
 
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Covered+By+Your+Grace|Homemade+Apple|Macondo|Marck+Script|Nova+Oval|Permanent+Marker|Ruslan+Display|Satisfy|Sue+Ellen+Francisco');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Sue+Ellen+Francisco');
 
 body {
   background-color: ghostwhite;
+  font-family: 'Sue Ellen Francisco', cursive;
 }
 
 header {
@@ -25,18 +26,33 @@ header {
 }
 
 h1 {
-  /*font-family: 'Macondo', cursive;*/
-  /*font-family: 'Nova Oval', cursive;*/
-  /*font-family: 'Abril Fatface', cursive;*/
-  /*font-family: 'Satisfy', cursive;*/
-  /*font-family: 'Permanent Marker', cursive;*/
-  /*font-family: 'Covered By Your Grace', cursive;*/
-  /*font-family: 'Marck Script', cursive;*/
-  /*font-family: 'Homemade Apple', cursive;*/
-  /*font-family: 'Ruslan Display', cursive;*/
-  /*font-family: 'Monoton', cursive;*/
-  font-family: 'Sue Ellen Francisco', cursive;
   text-align: center;
   color: floralwhite;
-  font-size: 50px;
+  font-size: 4vw;
+}
+
+p {
+  font-size: 2.5vw;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 1.5vw;
+}
+
+a:hover {
+  color: khaki;
+}
+
+li {
+  font-family: 'Permanent Marker', cursive;
+}
+
+#x-remove {
+  color: #cccccc;
+}
+
+#x-remove:hover {
+  color: red;
 }
