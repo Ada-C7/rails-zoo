@@ -1,7 +1,10 @@
 <h1><%= @animal.name %> the <%= @animal.species %></h1>
 
-<img src="http://lorempixel.com/400/200/animals" alt="">
-
+<!-- <% if @animal.image == nil %>
+  <img src="http://lorempixel.com/400/200/animals" alt="animal photo">
+<% else %> -->
+  <%= image_tag(@animal.image, alt:"animal photo") %>
+<!-- <% end %> -->
 <p>
   <%= @animal.name %> the <%= @animal.species %> is <%= @animal.age %> years old.
 </p>
