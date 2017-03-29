@@ -1,0 +1,51 @@
+<body>
+  <main>
+    <h1>add a new ann-imal</h1>
+    <%= form_for @animal do |f| %>
+
+    <section class="forms">
+      <%= f.label :name, "Name" %>
+      <div class="box">
+        <%= f.text_field :name %>
+      </div>
+    </section>
+
+    <section class="forms">
+      <%= f.label :age, "Age" %>
+      <div class="box">
+        <%= f.number_field :age %>
+      </div>
+    </section>
+
+    <section class="forms">
+      <%= f.label :species, "species" %>
+      <div class="box">
+        <%= f.text_field :species %>
+      </div>
+    </section>
+
+    <section class="forms">
+      <%= f.label :fave_food, "Favorite Food" %>
+      <div class="box">
+        <%= f.text_field :fave_food %>
+      </div>
+    </section>
+
+
+    <section class="forms">
+      <%= f.submit "Submit"%>
+    <section class="forms">
+
+
+
+    <% end %>
+
+    <h2><%= link_to "nevermind...", animals_path %></h2>
+  </main>
+
+  <footer>
+    copyright ann dai 2017
+  </footer>
+
+
+</body>
