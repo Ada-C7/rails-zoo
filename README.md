@@ -55,7 +55,10 @@ Each requirements section of this assignment has three sections: **think, create
 ### View One Animal
 **Think**:
 - Which route (including controller#action) do you use for viewing a _single_ resource?
+> get '/animals/:id', to: 'animals#show', as: 'animal'
+
 - Which _model method_ do you use to retrieve a _single_ item from the database?
+> Animal.find(id)
 
 **Create**:
 1. the route (including the param)
