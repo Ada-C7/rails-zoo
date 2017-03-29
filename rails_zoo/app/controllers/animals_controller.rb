@@ -28,7 +28,7 @@ class AnimalsController < ApplicationController
     animal.name = params[:animal][:name]
     animal.species = params[:animal][:species]
     animal.age = params[:animal][:age]
-    animal.image = params[:animal][:img_link]
+    animal.img_link = params[:animal][:img_link]
 
     if animal.save
       redirect_to animal_path(animal.id)

@@ -51,8 +51,13 @@ li {
 
 #x-remove {
   color: #cccccc;
+  font-size: 2vw;
 }
 
 #x-remove:hover {
   color: red;
+}
+
+h2 a {
+  font-size: 2vw;
 }
