@@ -1,3 +1,5 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Spirax');
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -15,6 +17,18 @@
  */
 body {
   margin: 20px 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+#back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+  z-index: 1;
 }
 
 a {
@@ -27,14 +41,38 @@ a {
 
 h1 {
   margin-top: 30px;
+  font-family: 'Spirax', cursive;
+  font-size: 2em;
+  padding-top: 10px;
+}
+
+main {
+  clear: both;
+}
+
+/*index page*/
+.index {
+  background-color: pink;
+  position: relative;
+  left: 33%;
+  z-index: 2;
+  width: 40%;
+  border-radius: 10%;
+  text-align: center;
 }
 
 /*Navigation Bar*/
-.navbar {
+#navbar {
   list-style: none;
   float: right;
+  z-index: 3;
+  position: relative;
+  opacity: 1;
+  background-color: grey;
+  padding: 5px;
 }
 
-.navbar li {
+#navbar li {
   display: inline-block;
+  padding: 2px 10px;
 }

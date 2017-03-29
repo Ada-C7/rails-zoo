@@ -10,7 +10,7 @@
 
   <body>
     <header>
-      <ul class="navbar">
+      <ul id="navbar">
         <li>
           <%= link_to "Home", animals_path %>
         </li>
@@ -19,7 +19,9 @@
         </li>
       </ul>
     </header>
-
-    <%= yield %>
+    <main>
+    <%= image_tag("animals.jpg", id: "back", alt: "background-image") %>
+      <%= yield %>
+    </main>
   </body>
 </html>

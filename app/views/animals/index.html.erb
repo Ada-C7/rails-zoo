@@ -1,14 +1,15 @@
-<h1>My Zoo</h1>
+<article class="index">
+  <h1>My Zoo</h1>
+  <% @animals.each do |animal| %>
+    <p>
+    <%= animal.name %> the <%= animal.species %>
+    </p>
 
-<% @animals.each do |animal| %>
+    <%= link_to "Details", animal_path(animal.id) %>
+
+  <% end %>
+
   <p>
-  <%= animal.name %> is a <%= animal.species %> who is <%= animal.age %> years old.
+    <%= link_to "Add an Animal", new_animal_path %>
   </p>
-
-  <%= link_to "Details", animal_path(animal.id) %>
-
-<% end %>
-
-<p>
-  <%= link_to "Add an Animal", new_animal_path %>
-</p>
+</article>
