@@ -13,3 +13,66 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+
+body{
+   /*background-image:  url('nature_scene.jpg');*/
+   background-image:  url('grass.jpg');
+   /*width: 100%;*/
+   font-family: "Baloo Bhaina", fantasy, "sans-serif";
+   color : #870000;
+   color : #f7ff00;
+   font-weight: bolder;
+   font-size: 1.1em;
+   margin-left: 70px;
+   background-repeat: no-repeat;
+   /*background: linear-gradient(to right,#6190E8,#A7BFE8);
+   /*background-color: salmon;*/
+
+ }
+
+ h1 {
+   font-size: 2.2em;
+   margin-top: 100px;
+   margin-left: 50px;
+
+ }
+
+ a {
+   text-decoration: none;
+   color: yellow;
+ }
+
+.animal_pic img{
+
+  width: 500px;
+  border-radius: 40%;
+}
+
+p.animal_pic {
+  display: inline-block;
+  width :50%;
+}
+
+.details {
+
+  display: inline-block;
+  float : right;
+  margin-top: 70px;
+  margin-right: 300px;
+
+
+}
+
+table {
+  margin-left: 50px;
+
+}
+
+tr {
+  line-height: 50px;
+  text-align: center;
+}
+td {
+  padding-right: 20px;
+}
