@@ -2,6 +2,8 @@
 
 <section>
   <% @animals.each do |animal| %>
-    <p><%= "#{animal.name.upcase}, #{animal.species} (#{animal.age})" %></p>
+    <p><%= link_to "#{animal.name.upcase}", animal_path(animal) %>
+    <!-- The need to not say animal_path(animal.id). Is that also a Ruby magic thing? -->
+    <%= ", #{animal.species} (#{animal.age})" %></p>
   <% end %>
 </section>
