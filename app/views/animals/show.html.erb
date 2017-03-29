@@ -1,0 +1,17 @@
+<h1>Animals#show</h1>
+
+<%= @result_animal.name %>
+
+<ul>
+  <li>
+    Species: <%= @result_animal.species %>
+  </li>
+  <li>
+    Age: <%= @result_animal.age %>
+  </li>
+  <li>
+    Birthday: <%= @result_animal.birthday %>
+  </li>
+</ul>
+
+<%= link_to "Back to all animals", animals_path %>
