@@ -1,0 +1,59 @@
+body{
+  background: linear-gradient(to left, #d53369 , #cbad6d);
+}
+h1{
+  color: #FFFFFF;
+  text-align: center;
+}
+h2{
+  color: #E5DF27;
+  text-align: center;
+}
+#all_animals, #see_animal, #add_edit_section{
+  display: inline-block;
+  border-style: dashed;
+  border-color: #DA4167;
+  border-width: thin;
+  padding: 3% 4% 2% 5%;
+  margin:0 0 3% 5%;
+  width: 30%;
+  vertical-align: top;
+  background-color: #F0EFF4;
+  line-height: 1.5em;
+}
+
+#all_animals p, #see_animal p {
+font-size: 1.5em;
+}
+.back_to_link{
+  float:left;
+}
+
+#edit_link{
+  float: right;
+}
+
+img{
+  width: 100%;
+}
+
+#add_button{
+  font-size: 2em;
+  margin-left: 42%;
+  width: 150px;
+}
+#delete_button{
+  float: right;
+  width: 100px;
+}
+a{
+  color:#DA4167;
+}
+a:hover{
+  color: white;
+  background-color: #DA4167;
+}
+
+input {
+   display: block;
+}
