@@ -38,7 +38,10 @@ Each requirements section of this assignment has three sections: **think, create
 ### View All Animals
 **Think**:
 - Which route (including controller#action) do you use for viewing _all_ of a given resource?
+> get '/animals', to: 'animals#index'
+
 - Which _model method_ do you use to retrieve _every item_ from the database?
+> Animal.all
 
 **Create**:
 1. the route
