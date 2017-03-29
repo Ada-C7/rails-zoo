@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Covered+By+Your+Grace|Homemade+Apple|Macondo|Marck+Script|Nova+Oval|Permanent+Marker|Ruslan+Display|Satisfy|Sue+Ellen+Francisco');
+
+body {
+  background-color: ghostwhite;
+}
+
+header {
+  background-color: lightgreen;
+}
+
+h1 {
+  /*font-family: 'Macondo', cursive;*/
+  /*font-family: 'Nova Oval', cursive;*/
+  /*font-family: 'Abril Fatface', cursive;*/
+  /*font-family: 'Satisfy', cursive;*/
+  /*font-family: 'Permanent Marker', cursive;*/
+  /*font-family: 'Covered By Your Grace', cursive;*/
+  /*font-family: 'Marck Script', cursive;*/
+  /*font-family: 'Homemade Apple', cursive;*/
+  /*font-family: 'Ruslan Display', cursive;*/
+  /*font-family: 'Monoton', cursive;*/
+  font-family: 'Sue Ellen Francisco', cursive;
+  text-align: center;
+  color: floralwhite;
+  font-size: 50px;
+}

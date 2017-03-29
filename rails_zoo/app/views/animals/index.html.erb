@@ -1,9 +1,11 @@
-<h1>Rails Zoo</h1>
+<header>
+  <h1>Rails Zoo</h1>
+</header>
 <p>Animals currently at the zoo:</p>
 <ul>
     <% @animals.each do |animal| %>
       <li>
-        Name: <%= animal.name %> | Species: <%= animal.species %> | Age: <%= animal.age %> years old | <%= link_to "Learn more!", animal_path(animal.id) %> <%= link_to "Delete", delete_animal_path(animal.id), data: { confirm: "Are you sure you want to delete this animal?" }, method: :delete %>
+        Name: <%= animal.name %> | Species: <%= animal.species %> | Age: <%= animal.age %> year(s) old | <%= link_to "Learn more!", animal_path(animal.id) %> <%= link_to "Remove", delete_animal_path(animal.id), data: { confirm: "Are you sure you want to remove this animal?" }, method: :delete %>
       </li>
 
     <% end %>
