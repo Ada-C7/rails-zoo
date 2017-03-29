@@ -4,6 +4,7 @@
       <%= link_to animal.name, animal_path(animal.id)%>
       <%= animal.species %>
       <%= animal.age %>
+      <%= link_to "Edit", edit_animal_path(animal)%>
     </li>
   <% end %>
 </ul>
