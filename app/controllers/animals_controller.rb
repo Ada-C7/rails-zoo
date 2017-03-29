@@ -8,6 +8,23 @@ class AnimalsController < ApplicationController
     @animal = Animal.find(params[:id])
   end
 
+  def edit
+    @animal = Animal.find(params[:id])
+  end
+
+  def update
+    animal = Animal.find(params[:id])
+
+    animal.name = animal_params[:name]
+    animal.species = animal_params[:species]
+    animal.age = animal_params[:age]
+
+    if animal.save
+      redirect_to animal_path
+    end
+    
+  end
+
   def new
     @animal = Animal.new
   end
