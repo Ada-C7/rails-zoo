@@ -83,8 +83,16 @@ Animal.all
 
 ### Create an Animal
 **Think**:
-- Which **routes** (including controller#action) do you use for creating a new resource? What is the purpose of each route and how do they work together to complete the whole action?
+- Which **routes** (including controller#action) do you use for creating a new resource?
+get '/animals/new', to: animals#new, as: new_animal
+post '/animals', to: animals#create
+
+What is the purpose of each route and how do they work together to complete the whole action?
+Get gets the form to fill out the info for a new Animal.
+Post posts that information and saves it to the database.
+
 - Which _model methods_ do you use to create and save a new item to the database?
+Animal.new and Animal.save
 
 **Create**:
 1. the routes

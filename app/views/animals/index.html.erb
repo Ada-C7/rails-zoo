@@ -4,4 +4,6 @@
   <p>
   <%= animal.name %> is a <%= animal.species %> who is <%= animal.age %> years old.
   </p>
+
+  <%= link_to "Details", animal_path(animal.id) %>
 <% end %>
