@@ -5,7 +5,7 @@
 <ul class: "animals">
   <% @animals.each do |animal| %>
     <li>
-    <%= animal.name %> | <%= animal.species %> | <%= animal.age %>
+    <%= link_to animal.name, animal_path(animal.id) %> | <%= animal.species %> | <%= animal.age %>
     </li>
   <% end %>
 </ul>
