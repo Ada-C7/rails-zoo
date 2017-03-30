@@ -1,2 +1,12 @@
-<h1>Animals#show</h1>
-<p>Find me in app/views/animals/show.html.erb</p>
+<h1>Meet <%= @animal[:name]%></h1>
+
+<%= image_tag "http://lorempixel.com/400/200/animals", alt: "Photo of animal" %>
+
+<p><%= "#{@animal[:name]} is a/n #{@animal[:species]}." %></p>
+<p><%= " #{@animal[:name]} is #{@animal[:age]} year/s old." %></p>
+
+<p><%= " Favorite Toy: #{@animal[:toy]} " %></p>
+
+<p><%= "Favorite Food: #{@animal[:food]}" %></p>
+
+<p><%= link_to "Get to Know More of Our Animals", animals_path%></p>
