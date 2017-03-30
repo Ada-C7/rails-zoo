@@ -26,12 +26,9 @@ class AnimalsController < ApplicationController
 
   def update
     animal = Animal.find(params[:id])
-    
-    animal.name = params[:animal][:name]
-    animal.species = params[:animal][:species]
-    animal.age = params[:animal][:age]
+    animal.update animal_params
 
-    if animal.save
+    unless animal.id == nil
       redirect_to animal_path(animal.id)
     end
   end
