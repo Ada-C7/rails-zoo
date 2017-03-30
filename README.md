@@ -98,6 +98,19 @@ Each requirements section of this assignment has three sections: **think, create
 
 ## Optional
 - Complete the edit/update action
+
+> (R) Add routes in routes.rb edit/update
+> get 'animals/:id/edit', to: 'animals#edit', as: 'edit_animal' AND
+> patch 'animals/:id', to: 'animals#update'
+
+> (C) Add methods in animals Controller (edit/update)
+> edit method will find a specific record (to edit) AND
+> update will find a specific record and update + save new values + redirect AND
+> create private method to designate which params to allow
+
+> (V) Add new View file for edit
+> add form to update the record with user input
+
 - Complete the delete action
 - Add an image field to the model for an Animal
   - this field will store the location of an image on the internet and be used to display the image on the animal's show page
