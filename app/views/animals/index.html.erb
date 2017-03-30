@@ -1,2 +1,11 @@
-<h1>Animals#index</h1>
-<p>Find me in app/views/animals/index.html.erb</p>
+<h1>All Animals</h1>
+<p> Rails Zoo is an online animal rescue bulletin board focused on connecting anminals to the best care physicans, assiting animals back to their natural habitat, the best home and care for the animals who unfrotunely can't return home. </p>
+<p> Browse our current postings to learn more about each animal </p>
+
+<ul class: "animals">
+  <% @animals.each do |animal| %>
+    <li>
+    <%= animal.name %> | <%= animal.species %> | <%= animal.age %>
+    </li>
+  <% end %>
+</ul>
