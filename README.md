@@ -65,7 +65,11 @@ Each requirements section of this assignment has three sections: **think, create
 ### Create an Animal
 **Think**:
 - Which **routes** (including controller#action) do you use for creating a new resource? What is the purpose of each route and how do they work together to complete the whole action?
+  - get /animals/new animals#new new_animal
+  - post /animals animals#create
 - Which _model methods_ do you use to create and save a new item to the database?
+  - _new_ - creates a new instance of an animal
+  - _create_ - accepts params for the new instance and saves them to the database  
 
 **Create**:
 1. the routes
