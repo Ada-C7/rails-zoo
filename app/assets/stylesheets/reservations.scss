@@ -240,6 +240,8 @@ html, body {
 			flex-direction: row;
 
 			align-items: center;
+			padding: 3em;
+
 			background-color: #1d1110;
 			/*margin: auto;*/
 		}
@@ -256,8 +258,7 @@ html, body {
 				background-color: white;
 				width: 1em;
 				height: 8em;
-				margin-left: 3em;
-				margin-right: 3em;
+				margin: 0 3em;
 			}
 
 			.description {
@@ -391,6 +392,7 @@ h1 {
 	font-family: 'Gravitas One', serif;
 	font-size: 4.8em;
 	letter-spacing: -.04em;
+	line-height: 1.1em;
 	text-transform: lowercase;
 }
 
@@ -404,6 +406,7 @@ h2 {
 	font-family: 'Gravitas One', serif;
 	font-size: 3.6em;
 	letter-spacing: -.04em;
+	line-height: 1.1em;
 	text-transform: lowercase;
 }
 
@@ -497,7 +500,7 @@ button {
 }
 
 	button:hover {
-		background-color: #749f88;
+		background-color: #ca5839;
 	}
 
 .button-small {
