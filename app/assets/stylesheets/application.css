@@ -17,16 +17,16 @@
 
 body{
    /*background-image:  url('nature_scene.jpg');*/
-   background-image:  url('grass.jpg');
+   background-image:  url('background.png');
    font-family: "Baloo Bhaina", fantasy, "sans-serif";
    color : #870000;
    color : #f7ff00;
-   color : white;
-   /*color: black;*/
+   /*color : white;*/
+   color: black;
    font-weight: bolder;
    font-size: 1.1em;
    margin-left: 70px;
-   background-repeat: no-repeat;
+   background-repeat: repeat;
    /*background: linear-gradient(to right,#6190E8,#A7BFE8);
    /*background-color: salmon;*/
 
@@ -34,8 +34,15 @@ body{
 
  h1 {
    font-size: 2.2em;
-   margin-top: 100px;
+   margin-top: 50px;
    margin-left: 50px;
+
+ }
+
+ .home_img img{
+   width:200px;
+   border-radius: 70%;
+
 
  }
  .index-img img {
@@ -45,7 +52,7 @@ body{
 
  a {
    text-decoration: none;
-   color: yellow;
+   color: black;
  }
 
 .animal_pic img{
@@ -80,4 +87,7 @@ tr {
 }
 td {
   padding-right: 20px;
+}
+.button td{
+  color: blue;
 }
