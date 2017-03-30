@@ -4,6 +4,10 @@ class AnimalsController < ApplicationController
   end
 
   def new
-    @animals = Animal.new
+    @animal = Animal.new
+  end
+
+  def show
+    @animal = Animal.find(params[:id])
   end
 end

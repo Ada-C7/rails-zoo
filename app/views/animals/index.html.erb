@@ -10,7 +10,7 @@
     <h2> All of the Animals </h2>
     <ul>
       <% @animals.each do |animal| %>
-        <li><%=  "Name: #{animal.name}, Species: #{animal.species}, Age: #{animal.age}" %></li>
+        <li><%= link_to "Name: #{animal.name}", animal_path(animal.id) %></li>
       <% end %>
     </ul>
   </main>
