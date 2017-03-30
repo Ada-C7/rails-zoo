@@ -4,7 +4,7 @@ class AnimalsController < ApplicationController
   end
   def create
     animal = Animal.create animal_params
-    if Animal.save
+    if animal.save
       redirect_to animals_path
     else
       render :new
