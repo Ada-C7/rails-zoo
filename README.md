@@ -112,5 +112,12 @@ Each requirements section of this assignment has three sections: **think, create
 > add form to update the record with user input
 
 - Complete the delete action
+
+> (R) Add routes in routes.rb for delete
+
+> (C) Add a method in the animals Controller (destroy)
+
+> (V) Create a link calling the destroy method for each animal in the index.html
+
 - Add an image field to the model for an Animal
   - this field will store the location of an image on the internet and be used to display the image on the animal's show page
