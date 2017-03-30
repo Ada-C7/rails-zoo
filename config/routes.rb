@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   patch '/animals/:id', to: 'animals#update'
 
   #destroy
+  delete '/animals/:id', to: 'animals#destory', as: 'delete_animal'
 end
 
 # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
