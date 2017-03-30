@@ -1,0 +1,7 @@
+<h1>Cuddly Creature: <%= @animal.name%></h1>
+
+<%= image_tag "http://lorempixel.com/400/200/animals", alt:"random animal pic"%>
+
+<br />
+<br />
+<%=button_to "Back to list of our crazy creatures", animals_path, method: :get %>
