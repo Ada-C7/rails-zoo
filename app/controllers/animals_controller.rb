@@ -25,6 +25,10 @@ class AnimalsController < ApplicationController
       redirect_to animal_path
     end
   end
+  def destroy
+    task.destroy(params[:id])
+    redirect_to animals_path
+  end
 end
 
 private
