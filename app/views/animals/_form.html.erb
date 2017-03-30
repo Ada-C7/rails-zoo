@@ -1,0 +1,19 @@
+<ul>
+  <%= form_for @animal, method: form_method do |f| %>
+  <li>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </li>
+  <li>
+    <%= f.label :species %>
+    <%= f.text_field :species %>
+  </li>
+  <li>
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+  </li>
+  <li>
+    <%= f.submit action_name %>
+  </li>
+  <% end %>
+</ul>

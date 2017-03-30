@@ -1,21 +1,3 @@
 <h1>Editing Animal</h1>
 
-<ul>
-  <%= form_for @animal, method: :put do |f| %>
-  <li>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </li>
-  <li>
-    <%= f.label :species %>
-    <%= f.text_field :species %>
-  </li>
-  <li>
-    <%= f.label :age %>
-    <%= f.text_field :age %>
-  </li>
-  <li>
-    <%= f.submit "Edit Animal" %>
-  </li>
-  <% end %>
-</ul>
+<%= render partial: "form", locals: { action_name: "Edit Animal", form_method: :put } %>
