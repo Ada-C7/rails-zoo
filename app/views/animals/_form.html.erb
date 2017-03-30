@@ -1,0 +1,10 @@
+<%= form_for @animal, method: patch do |f| %>
+<%= f.lable :name %>
+<%= f.text_field :name %>
+<%= f.lable :species %>
+<%= f.text_field :species %>
+<%= f.lable :age %>
+<%= f.text_field %>
+<%= f.submit %>
+
+<% end %>
