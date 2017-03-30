@@ -1,0 +1,30 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #eddbaa;
+  font-family: Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.banner{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*container for text*/
+.text {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*container for bio images*/
+.bio-photo {
+  width: 30%;
+}

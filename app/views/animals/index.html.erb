@@ -6,6 +6,7 @@
       <p><%= link_to "#{animal.name.upcase}", animal_path(animal) %>
       <!-- The need to not say animal_path(animal.id). Is that also a Ruby magic thing? -->
       <%= ", #{animal.species} (#{animal.age})" %>
+      <button><%= link_to "edit", edit_animal_path(animal) %></button>
       <button><%= link_to "delete", animal_path(animal), method: :delete, data: { confirm: "Are you SURE?" }%></button></p>
     <% end %>
   </section>
