@@ -113,11 +113,19 @@ Each requirements section of this assignment has three sections: **think, create
 
 - Complete the delete action
 
-> (R) Add routes in routes.rb for delete
+> (R) Add a route in routes.rb for delete
+> delete 'animal/:id', to: 'animal#destroy'
 
-> (C) Add a method in the animals Controller (destroy)
+> (C) Add a method in the animals Controller (destroy) + link back to all animals
 
-> (V) Create a link calling the destroy method for each animal in the index.html
+> (V) Create a link to delete each animal in the index.html AND
+> call the destroy method AND display popup warning
 
 - Add an image field to the model for an Animal
   - this field will store the location of an image on the internet and be used to display the image on the animal's show page
+
+> (M) Add a new column to store a URL (as string?)
+
+> (V) Add a way to get user input for the URL in new/edit forms
+
+> (V) Display image of the animal (if one exists) in the show page
