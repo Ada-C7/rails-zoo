@@ -88,6 +88,8 @@ Each requirements section of this assignment has three sections: **think, create
 
 ## Optional
 - Complete the edit/update action
+  - edit to find the book & render edit form
+  - update to accept updates to parameters and save info to database. 
 - Complete the delete action
 - Add an image field to the model for an Animal
   - this field will store the location of an image on the internet and be used to display the image on the animal's show page
