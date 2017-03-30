@@ -3,6 +3,6 @@ class AnimalsController < ApplicationController
     @animals = Animal.all
   end
   def show
-    @task = Task.find(params[:id])
+    @animal = Animal.find(params[:id])
   end
 end
