@@ -10,6 +10,10 @@
 
 <nav>
   <div class="navlink">
-    <%= link_to "[return to all of the animals]", animals_path %>
+    <%= link_to "[return to all animals]", animals_path %> |
+    <%= link_to "[edit animal]", edit_animal_path %> |
+    <%= link_to "[delete animal]", delete_animal_path(@animal.id),
+    data: {confirm: "Delete this animal?"},
+    method: :delete %>
   </div>
 </nav>
