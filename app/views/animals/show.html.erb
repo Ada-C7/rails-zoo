@@ -9,8 +9,8 @@
 
 <p><%= "Favorite Food: #{@animal[:food]}" %></p>
 
-<p><%= link_to "Update Animal Info", edit_animal_path %></p>
+<p class="links"><%= link_to "Update Animal Info", edit_animal_path %></p>
 
-<p><%= link_to "Release Animal Into the Wild", animal_path(@animal), method: :delete, data: { confirm: "Are you sure you want to release #{@animal.name} into the wild? You may never see them again." } %></p>
+<p class="links"><%= link_to "Release Animal Into the Wild", animal_path(@animal), method: :delete, data: { confirm: "Are you sure you want to release #{@animal.name} into the wild? You may never see them again." } %></p>
 
-<p><%= link_to "Get to Know More of Our Animals", animals_path%></p>
+<p class="links"><%= link_to "Get to Know More of Our Animals", animals_path%></p>

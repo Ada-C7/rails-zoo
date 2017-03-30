@@ -4,12 +4,15 @@
 <h2>Our Animal Residents</h2>
 
   <ul>
+
     <% @animals.each do |animal| %>
+    <div>
       <%= link_to animal[:name], animal_path(animal.id) %>
       <li>
         <%= animal[:species] %>
       </li>
     <% end %>
+  </div>
   </ul>
 
-  <p><%= link_to "Add a new animal", new_animal_path%></p>
+  <p class="links"><%= link_to "Add a new animal", new_animal_path%></p>
