@@ -1,18 +1,22 @@
 <h1>The Vegetarian Animal Zoo</h1>
-<!-- <p>Find me in app/views/animals/index.html.erb</p> -->
 
 <h2>Our Animal Residents</h2>
 
   <ul>
-
     <% @animals.each do |animal| %>
-    <div>
-      <%= link_to animal[:name], animal_path(animal.id) %>
-      <li>
-        <%= animal[:species] %>
-      </li>
+      <div>
+        <p id="image">
+          <%=  image_tag "http://lorempixel.com/400/200/animals", alt: "Photo of animal"%>
+        </p>
+        <p>
+          <%= link_to animal[:name], animal_path(animal.id) %>
+        </p>
+        <li>
+          <%= animal[:species] %>
+        </li>
+      </div>
     <% end %>
-  </div>
+
   </ul>
 
-  <p class="links"><%= link_to "Add a new animal", new_animal_path%></p>
+  <p class="links"><%= button_to "Add a new animal", new_animal_path, :class => "button", :method => :get %></p>
