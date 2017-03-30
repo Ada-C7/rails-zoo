@@ -52,4 +52,25 @@ nav {
 }
 .animalpic {
   width: 300px;
+  border: solid 1px #731f63;
+}
+label {
+  display: inline-block;
+  text-align: left;
+  width: 20%;
+}
+input {
+  display: inline-block;
+  width: 75%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.submit {
+  width: 75%;
+}
+.button {
+  width: 100px;
+  background-color: #a2c161;
+  border-width: 1px;
+  margin-top: 10px;
+  margin-left: -10%;
 }
