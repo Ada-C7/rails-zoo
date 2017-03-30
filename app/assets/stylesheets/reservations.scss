@@ -68,12 +68,6 @@ html, body {
 	    }
 	}
 
-	.hero {
-		display: flex;
-		flex-direction: column;
-		flex: 1 1 auto;
-	}
-
 		.header {
 		    display: flex;
 		    flex-direction: row;
@@ -327,17 +321,17 @@ html, body {
 					background-image: asset-data-url("social-mail-hover.png");
 				}
 
-			.social-twitter{
+			.social-instagram{
 				margin-right: 3em;
 
-				background-image: asset-data-url("social-twitter.png");
+				background-image: asset-data-url("social-instagram.png");
 				background-size: cover;
 				height: 4em;
 				width: 4em;
 			}
 
-				.social-twitter:hover {
-					 background-image: asset-data-url("social-twitter-hover.png");
+				.social-instagram:hover {
+					 background-image: asset-data-url("social-instagram-hover.png");
 				}
 
 			.social-link {
@@ -347,9 +341,9 @@ html, body {
 				height: 3em;
 				width: 3em;
 			}
-.married {
+.bride-and-groom {
 	background-color: #2c5c58;
-	background-image: asset-data-url("wedding.png");
+	background-image: asset-data-url("bride-and-groom.png");
 	background-position: center top;
 	background-size: cover;
 }
