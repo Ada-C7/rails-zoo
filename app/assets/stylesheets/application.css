@@ -88,6 +88,9 @@ tr {
 td {
   padding-right: 20px;
 }
-.button td{
-  color: blue;
+.button {
+  width: 150px;
+  color: black;
+  background-color: #B06AB3;
+
 }
