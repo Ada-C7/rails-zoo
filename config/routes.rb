@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   #update
   get '/animals/:id/edit', to: 'animals#edit', as: 'edit_animal'
-  patch '/animals/:id', to: 'animals#patch'
+  patch '/animals/:id', to: 'animals#update'
 
   #destroy
 end
