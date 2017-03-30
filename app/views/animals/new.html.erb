@@ -1,20 +1,19 @@
-<article class="form">
-
 <h1>Add an Animal</h1>
 
+<article class="form">
 <%= form_for @animal do |f| %>
 
 <%= f.label :name %>
-<%= f.text_field :name %>
+<%= f.text_field :name %><br /><br />
 
 <%= f.label :species %>
-<%= f.text_field :species %>
+<%= f.text_field :species %><br /><br />
 
 <%= f.label :age %>
-<%= f.text_field :age %>
+<%= f.text_field :age %><br /><br />
 
-<%= f.label :image %>
-<%= f.text_field :image %>
+<%= f.label :image, "Image URL" %>
+<%= f.text_field :image %><br /><br />
 
 <%= f.submit "Save" %>
 
