@@ -9,4 +9,6 @@ get 'animals/:id/edit', to: 'animals#edit', as: 'edit_animal'
 
 post '/animals', to: 'animals#create'
 patch 'animals/:id', to: 'animals#update'
+
+delete 'animals/:id', to: 'animals#destroy'
 end
