@@ -12,13 +12,21 @@ class AnimalsController < ApplicationController
   end
 
   def create
-    @animal = Animal.create name: params[:animal][:name], species: params[:animal][:species], age: params[:animal][:age]
+    # @animal = Animal.create name: params[:animal][:name], species: params[:animal][:species], age: params[:animal][:age]
+
+    @animal = Animal.create strong_params
 
     unless animal.id == nil
-      redirect_to animal_path #show page
+      redirect_to animals_path #index page
     end
   end
 
+private
+
+def strong_params
+  params.require(:animal).permit(:name, :species, :age)
+
+end
 
 
 end
