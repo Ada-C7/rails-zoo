@@ -1,3 +1,7 @@
-<h1>Edit Animal Info</h1>
+<h1 class="banner">Edit Animal Profile</h1>
 
 <%= render partial: "form", locals: { form_method: :patch } %>
+
+<div class="options">
+  <h2><%= link_to "Home", animals_path %></h2>
+</div>
