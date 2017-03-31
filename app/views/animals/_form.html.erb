@@ -1,0 +1,12 @@
+<%= form_for @animal do |animal| %>
+  <%= animal.label :name %>
+  <%= animal.text_field :name %>
+
+  <%= animal.label :species %>
+  <%= animal.text_field :species %>
+
+  <%= animal.label :age %>
+  <%= animal.text_field :age %>
+
+  <%= animal.submit value: "#{action_name} Animal" %>
+<% end %>

@@ -5,15 +5,15 @@
     <title> Ting's Animal Zoo </title>
   </head>
   <body>
-    <body>
-  <main>
-    <h2> All of the Animals </h2>
-    <ul>
-      <% @animals.each do |animal| %>
-        <li><%= link_to "Name: #{animal.name}", animal_path(animal.id) %></li>
-      <% end %>
-    </ul>
-  </main>
-</body>
+    <main>
+      <h2> All of the Animals </h2>
+      <ul>
+        <% @animals.each do |animal| %>
+          <li><%= link_to "Name: #{animal.name}", animal_path(animal.id) %></li>
+        <% end %>
+      </ul>
+      <%= button_to "Add new animal", new_animal_path, method: :get %>
+
+    </main>
   </body>
 </html>
