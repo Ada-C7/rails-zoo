@@ -4,8 +4,21 @@ class AnimalsController < ApplicationController
     @animals = Animal.all
   end
 
+  def new
+    @animal = Animal.new
+  end
+
+  def create
+    Animal.create(animal_params)
+    redirect_to animals_path
+  end
+
   def show
     @animal = Animal.find(params[:id])
   end
 
+  private
+  def animal_params
+    return params.require(:animal).permit(:name, :age, :species, :color)
+  end
 end

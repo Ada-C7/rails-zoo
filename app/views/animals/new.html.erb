@@ -1,0 +1,19 @@
+<h2>Make our zoo a home for a new captivating critter:</h2>
+
+<%= form_for @animal do |f| %>
+
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :species %>
+<%= f.text_field :species %>
+
+<%= f.label :age %>
+<%= f.text_field :age %>
+
+<%= f.label :color %>
+<%= f.text_field :color %>
+
+<%= f.submit value="Add our new friend"%>
+
+<% end %>
