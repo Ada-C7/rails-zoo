@@ -1,0 +1,13 @@
+<%= form_for @animal do |zoo| %>
+  <%= zoo.label :name %>
+  <%= zoo.text_field :name %>
+
+  <%= zoo.label :species %>
+  <%= zoo.text_field :species %>
+
+  <%= zoo.label :age %>
+  <%= zoo.text_field :age %>
+
+  <%= zoo.submit value: "#{action_name.capitalize} Animal" %>
+  <%= button_to "Delete Animal", delete_animal_path(@animal.id), method: :delete, data: {confirm: "Are you sure you want to delete #{@animal.name}?"} %>
+<% end %>
