@@ -1,0 +1,25 @@
+<%= form_for @animal do |f| %>
+<ul>
+  <li>
+    <%= f.label :name %>
+  </li>
+  <li>
+    <%= f.text_field :name %>
+  </li>
+  <li>
+    <%= f.label :species %>
+  </li>
+  <li>
+    <%= f.text_area :species %>
+  </li>
+  <li>
+    <%= f.label :age %>
+  </li>
+  <li>
+    <%= f.number_field :age%>
+  </li>
+  <li>
+    <%= f.submit nil %>
+  </li>
+</ul>
+<% end %>

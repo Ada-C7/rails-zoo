@@ -1,9 +1,10 @@
 <h1>Animals#index</h1>
 
 <ul>
-  <% @animals.each_with_index do |animal| %>
+  <% @animals.each do |animal| %>
   <li>
     <%= link_to "#{animal.name} the #{animal.species}", animal_path(animal.id) %>
   </li>
   <% end %>
 </ul>
+<h2><%= link_to "Add New Animal", new_animal_path %></h2>
