@@ -1,2 +1,10 @@
-<h1>Animals#index</h1>
-<p>Find me in app/views/animals/index.html.erb</p>
+<h1>Welcome to our Zoo!</h1>
+<p>We cannot wait for you to get to know our animals</p>
+
+<ul>
+<% @animals.each do |animal| %>
+<li>This is <%= animal.name %>,</li>
+<li>who is a <%= animal.species %>.</li>
+<li>This animal is <%= animal.age %> years old.</li>
+</ul>
+<p> Please click on each animal's name for more information! </p>
