@@ -2,12 +2,14 @@
 
 <ol>
   <% @animals.each do |animal| %>
-  <li><%= animal.name%>
-<%= button_to "See info", animal_path(animal), method: :get %>
-<%= button_to "Edit info", edit_animal_path(animal), method: :get %>
-<%=button_to "Delete this animal", animal_path(animal), method: :delete, data:  {confirm: "Are you sure you want to banish this animal from our family?"} %>
 
-  <% end%>
+  <li>
+    <h3><%= "#{animal.name} the #{animal.species}"%>  </h3>
+    <%= image_tag "#{animal.image}", alt:"random animal pic"%>
+    <%= button_to "See info", animal_path(animal), method: :get %>
+    <%= button_to "Edit info", edit_animal_path(animal), method: :get %>
+    <%= button_to "Delete this animal", animal_path(animal), method: :delete, data:  {confirm: "Are you sure you want to banish this animal from our family?"} %>
+    <% end%>
     <br />
   </li>
 </ol>
