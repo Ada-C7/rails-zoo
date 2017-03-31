@@ -1,5 +1,5 @@
-<table>
-  <%= form_for @animal do |f| %>
+<%= form_for @animal do |f| %>
+  <table>
     <tr>
       <td>Name</td>
       <td><%= f.text_field :name %></td>
@@ -20,8 +20,8 @@
       <td>Photo URL</td>
       <td><%= f.text_field :photo_url %></td>
     </tr>
-</table>
+  </table>
 
-<%= f.submit "Submit" %>
+  <%= f.submit "Submit" %>
 
 <% end %>

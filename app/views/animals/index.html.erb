@@ -9,6 +9,7 @@
     <tr>
       <td><%= link_to animal.name, animal_path(animal.id) %></td>
       <td><%= animal.species %></td>
+      <td><%= link_to "edit", edit_animal_path(animal.id) %></td>
     </tr>
   <% end %>
 </table>
