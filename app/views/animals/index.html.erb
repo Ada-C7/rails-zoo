@@ -1,11 +1,12 @@
 <header>
-  <h1>Cyn's Zoo</h1>
+  <h1>Welcome to the Zoo</h1>
 </header>
 
 <main>
 
   <nav>
-    <p><%= link_to "Add an Animal", new_animal_path %></p>
+    <!-- with a button, the method defaults to post but you can change it - see example below -->
+    <p><%= button_to "Add an Animal", new_animal_path, :class => "button", :method => :get %></p>
   </nav>
 
   <section>
@@ -19,3 +20,4 @@
       <p> <%= link_to animal[:name].capitalize, animal_path(animal.id) %></p>
     <% end %>
   </section>
+</main>
