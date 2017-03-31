@@ -1,0 +1,4 @@
+<h1><%= @animal.name %></h1>
+<% year = "years" %>
+<% year = "year" if @animal.age < 2 %>
+<h2><%= "#{@animal.name} is a #{@animal.size} size #{@animal.species} who is #{@animal.age} #{year} old" %></h2>
