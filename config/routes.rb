@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # root 'welcome#index', as: 'welcome'
+  root 'welcome#index', as: 'welcome'
   get 'animals', to: 'animals#index', as: 'animals'
 
   get 'animals/new', to: 'animals#new', as: 'new_animal'
