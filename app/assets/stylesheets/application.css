@@ -31,6 +31,10 @@ a {
    color: black;
  }
 
+a:hover{
+  color:white;
+}
+
 .animal_pic img {
   width: 500px;
   border-radius: 40%;

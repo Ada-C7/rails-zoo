@@ -40,8 +40,4 @@ class AnimalsController < ApplicationController
     params.require(:animal).permit(:name, :species, :age, :image_link, :age_unit)
   end
 
-
-
-
-
 end
