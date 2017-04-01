@@ -96,3 +96,46 @@ SHOW
   background-color: #0E8044;
   text-align: justify;
 }
+
+/************************************************
+_FILED
+*************************************************/
+
+#_form_section{
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+#_form_section .label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#_form_section .field {
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+}
+
+#_form_section_submit {
+  text-align: center;
+}
+
+
+
+
+#edit_section {
+  text-align: center;
+  padding: 5%;
+}
+
+/*#edit_section img {
+  vertical-align: middle;
+}*/
+
+.button_link {
+  display: inline-block;
+}
+.button_image {
+  vertical-align: middle;
+}
