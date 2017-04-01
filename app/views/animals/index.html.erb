@@ -5,6 +5,7 @@
   <% @animals.each do |animal| %>
   <li>
     <%= link_to animal.name, animal_path(animal.id) %>
+    <%= link_to "Adopted", animal_path(animal), data: {method: :delete, confirm: "Has #{animal.name} been adopted?"} %>
   </li>
   <% end %>
 </ul>

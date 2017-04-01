@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   post 'animals', to: 'animals#create'
 
   get 'animals/:id', to: 'animals#show', as: 'animal'
+
+  delete 'animals/:id', to: 'animals#destroy'
 end

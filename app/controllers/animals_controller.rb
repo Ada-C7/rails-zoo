@@ -20,6 +20,13 @@ class AnimalsController < ApplicationController
     @animal = Animal.find(id)
   end
 
+  def destroy
+  animal = Animal.find(params[:id])
+  animal.destroy
+
+  redirect_to animals_path
+  end
+  
 private
   def animal_params
     return params.require(:animal).permit(:name, :species, :age)
