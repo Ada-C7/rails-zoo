@@ -56,3 +56,9 @@
   display: inline-block;
   float: right;
 }
+
+
+#show_section {
+  position: relative;
+  text-align: center;
+}
