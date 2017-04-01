@@ -1,3 +1,5 @@
+<% @animals_selected = true %>
+
 <main>
   <h2>Animals</h2>
   <ul>
@@ -7,7 +9,8 @@
         <%=
           link_to "[delete]", delete_animal_path(animal.id),
           data: { confirm: "Are you sure you want to delete this animal?" },
-          method: :delete
+          method: :delete,
+          class: "delete"
          %>
       </li>
     <% end %>

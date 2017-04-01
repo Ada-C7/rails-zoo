@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsZoo</title>
+    <title><%= @title %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,10 +11,28 @@
   <body>
     <header>
       <h1><%= link_to "Rails Zoo", root_path %></h1>
+      <nav>
+        <ul>
+          <% if @animals_selected %>
+            <li class="selected">
+          <% else %>
+            <li>
+          <% end %>
+            <%= link_to "Animals", animals_path %>
+          </li>
+          <% if @new_selected %>
+            <li class="selected">
+          <% else %>
+            <li>
+          <% end %>
+            <%= link_to "Add Animal", new_animal_path %>
+          </li>
+        </ul>
+      </nav>
     </header>
     <%= yield %>
     <footer>
-      &copy; <%= Time.current.year %>
+      <p>&copy; <%= Time.current.year %></p>
     </footer>
   </body>
 </html>
