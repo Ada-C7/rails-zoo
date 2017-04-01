@@ -10,7 +10,11 @@
             Age: <%= @animal.age %>
             <%= button_to "Edit Animal", edit_animal_path(@animal.id), method: :get %>
             <%= button_to "Delete Animal", delete_animal_path(@animal.id), method: :delete, data: {confirm: "Are you sure you want to delete #{@animal.name}?"} %>
+            <% if @animal.img_link.nil? %>
+              <% puts "No Photo"%>
+            <% else %>
+              <img src= <%= @animal.img_link %> alt="animal image">
+            <% end %>
           </li>
       </ul>
-      <img src="http://lorempixel.com/640/480/animals/" alt="animal image">
     </main>
