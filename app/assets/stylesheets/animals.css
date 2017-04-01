@@ -2,23 +2,35 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
 
+
+/************************************************
+INDEX
+*************************************************/
+
 #index_site {
   /*text-align: center;*/
 }
 
 #index_first_section {
   position: relative;
-  /*width: 60%;*/
-  /*margin-left: 20%;
-  margin-right: 20%;*/
+  vertical-align: middle;
 }
 
 #index_first_section h1 {
   display: inline-block;
-
+  line-height: 100px;
 }
 
-#index_first_section a {
+#index_first_section p {
+  display: inline-block;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0%;
+}
+
+#index_first_section img {
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -27,11 +39,12 @@
 }
 
 
+
+
 #index_list_section section{
+  position: relative;
   display: inline-block;
   width: 100%;
-  /*margin-left: 20%;
-  margin-right: 20%;*/
 }
 
 #index_list_section a {
@@ -40,6 +53,7 @@
 
 #index_list_section p {
   margin: 0;
+  vertical-align: middle;
 }
 
 #index_animal_name {
@@ -55,7 +69,21 @@
 #index_animal_buttons {
   display: inline-block;
   float: right;
+  /*position: absolute;
+  right: 0%;*/
 }
+
+#index_animal_buttons a {
+  display: inline-block;
+}
+#index_animal_buttons img {
+  vertical-align: middle;
+}
+
+
+/************************************************
+SHOW
+*************************************************/
 
 
 #show_section {
