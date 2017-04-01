@@ -28,21 +28,16 @@ class AnimalsController < ApplicationController
     unless animal.id == nil
       redirect_to animals_path
     end
-    # if animal.create(animal_params)
-    #   redirect_to animals_path
-    # end
   end
 
   def destroy
     Animal.destroy(params[:id])
-
     redirect_to animals_path
   end
 
   private
   def animal_params
     params.require(:animal).permit(:name, :species, :age, :image_link, :age_unit)
-
   end
 
 

@@ -1,62 +1,37 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
  @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
 
 body{
-   /*background-image:  url('nature_scene.jpg');*/
    background-image:  url('background.png');
    font-family: "Baloo Bhaina", fantasy, "sans-serif";
-   color : #870000;
-   color : #f7ff00;
-   /*color : white;*/
    color: black;
    font-weight: bolder;
    font-size: 1.1em;
    margin-left: 70px;
    background-repeat: repeat;
-   /*background: linear-gradient(to right,#6190E8,#A7BFE8);
-   /*background-color: salmon;*/
-
  }
 
  h1 {
    font-size: 2.2em;
    margin-top: 50px;
    margin-left: 50px;
-
  }
 
- .home_img img{
+.home_img img{
    width:200px;
    border-radius: 70%;
-
-
  }
- .index-img img {
+
+.index-img img {
    width:200px;
    border-radius: 50%;
  }
 
- a {
+a {
    text-decoration: none;
    color: black;
  }
 
-.animal_pic img{
-
+.animal_pic img {
   width: 500px;
   border-radius: 40%;
 }
@@ -67,32 +42,28 @@ p.animal_pic {
 }
 
 .details {
-
   display: inline-block;
   float : right;
   margin-top: 70px;
   margin-right: 300px;
-
-
 }
 
 table {
   margin-left: 50px;
-
 }
 
 tr {
   line-height: 50px;
   text-align: center;
 }
+
 td {
   padding-right: 20px;
 }
+
 .button {
   width: 150px;
   color: white;
-  background-color: #B06AB3;
   background-color: #00b3b4;
   border-radius: 999px;
-
 }
