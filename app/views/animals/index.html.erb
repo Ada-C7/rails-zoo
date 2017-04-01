@@ -1,13 +1,14 @@
-<h1>Animals#index</h1>
+<h1>Animal</h1>
 
 <ul>
   <% @animals.each_with_index do |animal, index| %>
   <li>
     <%= link_to animal.name, animal_path(animal.id)  %>
-    <%= link_to "Edit information for this cutie", edit_animal_path(animal.id) %>
-    <%= link_to "Delete this cutie from the data base", animals_path, method: :delete,
-    data: {confirm: "Are you sure you want to delete #{animal.name} from de data base?"} %>
-
+    <div>
+      <%= link_to "Edit information for this cutie", edit_animal_path(animal.id) %>
+      <%= button_to "Delete this cutie from the data base", animal_path(animal), method: :delete,
+      data: {confirm: "Are you sure you want to delete #{animal.name} from de data base?" } %>
+    </div>
   </li>
 
   <% end %>
