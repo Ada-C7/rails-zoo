@@ -1,6 +1,6 @@
 <h1> Animal Details </h1>
 
-<%= image_tag("https://cdn.pixabay.com/photo/2016/07/07/10/28/snail-1502214_1280.jpg", alt: "snail_picture", size: "300x200") %>
+<%= image_tag(@animal.image_url, alt: "animal picture", size: "300x200") %>
 <ul>
   <li>Name: <%= @animal.name %></li>
   <li>Species: <%= @animal.species %></li>
