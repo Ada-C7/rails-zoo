@@ -38,6 +38,10 @@
   list-style: none;
 }
 
+#index_list_section p {
+  margin: 0;
+}
+
 #index_animal_name {
   display: inline-block;
   width: 20%;

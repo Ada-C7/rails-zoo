@@ -13,7 +13,9 @@
  *= require_tree .
  *= require_self
  */
-
+body {
+     font-family: 'Bubblegum Sans';font-size: 22px;
+ }
 header {
   line-height: 100px;
   background-color: #08302f;
@@ -21,14 +23,17 @@ header {
   text-align: center;
 }
 
-header h1 {
+h1 {
   margin: 0;
 }
 
 main {
   padding-left: 20%;
   padding-right: 20%;
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: #08302f;
+  background-color: #b5e582;
 }
 
 main a {

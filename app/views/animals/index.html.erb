@@ -2,7 +2,7 @@
   <section id = "index_first_section">
     <h1>List of the inhabitants</h1>
     <p>
-      <%= link_to "New arrival", new_animal_path%>
+      <%= link_to image_tag("new1.png", alt: "New button", height: "50px"), new_animal_path%>
     </p>
   </section>
 
@@ -16,8 +16,8 @@
           a <%= animal.age %> year old <%= animal.species %>
       </p>
       <p id = "index_animal_buttons">
-        <%= link_to "Edit", edit_animal_path(animal)%>
-        <%= link_to "Delete", animal_path(animal),
+        <%= link_to image_tag("edit1.png", alt: "Edit buttom", height: "30px", class: "button"), edit_animal_path(animal)%>
+        <%= link_to image_tag("delete_blue1.png", alt: "Delete buttom", height: "30px", class: "button"), animal_path(animal),
         data: {method: :delete, confirm: "Are you sure you want to delete the animal #{animal.name}"}%>
       </p>
     </section>
