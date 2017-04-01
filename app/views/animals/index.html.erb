@@ -1,0 +1,8 @@
+<h1>RailsZoo</h1>
+<ul>
+  <% @animals.each do |animal|  %>
+    <li>
+      <%= animal[:name] %>, species: <%= animal[:species] %>, age: <%= animal[:age] %>
+    </li>
+  <% end %>
+</ul>
