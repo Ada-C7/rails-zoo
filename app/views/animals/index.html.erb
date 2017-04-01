@@ -1,14 +1,27 @@
-<ul>
-  <% @animals.each do |animal| %>
-    <li>
-      <%= link_to animal.name, animal_path(animal.id)%>
-      <%= animal.species %>
-      <%= animal.age %>
-      <%= link_to "Edit", edit_animal_path(animal)%>
-      <%= link_to "Delete", animal_path(animal),
-      data: {method: :delete, confirm: "Are you sure you want to delete the animal #{animal.name}"}%>
-    </li>
-  <% end %>
-</ul>
+<div id = "index_site">
+  <section id = "index_first_section">
+    <h1>List of the inhabitants</h1>
+    <p>
+      <%= link_to "New arrival", new_animal_path%>
+    </p>
+  </section>
 
-<%= link_to "New arrival", new_animal_path%>
+  <nav id = "index_list_section">
+    <% @animals.each do |animal| %>
+    <section>
+      <p id = "index_animal_name">
+        <%= link_to animal.name, animal_path(animal.id) %>
+      </p>
+      <p id = "index_animal_info">
+          a <%= animal.age %> year old <%= animal.species %>
+      </p>
+      <p id = "index_animal_buttons">
+        <%= link_to "Edit", edit_animal_path(animal)%>
+        <%= link_to "Delete", animal_path(animal),
+        data: {method: :delete, confirm: "Are you sure you want to delete the animal #{animal.name}"}%>
+      </p>
+    </section>
+
+    <% end %>
+  </nav>
+</div>

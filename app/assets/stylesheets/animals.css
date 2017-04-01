@@ -1,3 +1,54 @@
-// Place all the styles related to the Animals controller here.
+/*// Place all the styles related to the Animals controller here.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+#index_site {
+  /*text-align: center;*/
+}
+
+#index_first_section {
+  position: relative;
+  /*width: 60%;*/
+  /*margin-left: 20%;
+  margin-right: 20%;*/
+}
+
+#index_first_section h1 {
+  display: inline-block;
+
+}
+
+#index_first_section a {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0%;
+}
+
+
+#index_list_section section{
+  display: inline-block;
+  width: 100%;
+  /*margin-left: 20%;
+  margin-right: 20%;*/
+}
+
+#index_list_section a {
+  list-style: none;
+}
+
+#index_animal_name {
+  display: inline-block;
+  width: 20%;
+  float: left;
+}
+#index_animal_info {
+  display: inline-block;
+  width: 50%;
+  /*float: left;*/
+}
+#index_animal_buttons {
+  display: inline-block;
+  float: right;
+}
