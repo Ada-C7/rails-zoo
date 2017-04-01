@@ -90,3 +90,9 @@ SHOW
   position: relative;
   text-align: center;
 }
+
+#show_about_text {
+  padding: 3%;
+  background-color: #0E8044;
+  text-align: justify;
+}
