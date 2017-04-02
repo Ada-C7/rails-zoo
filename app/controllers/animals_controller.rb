@@ -30,6 +30,7 @@ class AnimalsController < ApplicationController
     animal.name = animal_params[:name]
     animal.species = animal_params[:species]
     animal.age = animal_params[:age]
+    animal.description = animal_params[:description]
     animal.img = animal_params[:img]
 
     if animal.save
@@ -46,7 +47,7 @@ class AnimalsController < ApplicationController
   private
 
   def animal_params
-    params.require(:animal).permit(:name, :species, :age, :img)
+    params.require(:animal).permit(:name, :species, :age, :description, :img)
   end
 
 end

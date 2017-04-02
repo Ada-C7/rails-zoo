@@ -2,9 +2,10 @@
   <h2> <%= @show_animal.name %> </h2>
   <h3> <%= @show_animal.species %> </h2>
   <h3> <%= @show_animal.age %> </h2>
+  <p>  <%= @show_animal.description %> </p>
   <%= image_tag @show_animal.img %>
   <%= link_to "Edit", edit_animal_path(@show_animal.id) %>
   <%= link_to "Delete", delete_animal_path(@show_animal.id),
-  data: { confirm: "Are you sure you want to delete this animal?" },
+  data: { confirm: "Are you sure you want to delete this animal? (Don't worry.. no animals will actually be harmed <3)" },
   method: :delete %>
 </div>
