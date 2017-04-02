@@ -2,7 +2,7 @@
 <ul>
   <% @animals.each do |animal|  %>
     <li>
-      <%= animal[:name] %>, species: <%= animal[:species] %>, age: <%= animal[:age] %>
+      <%= link_to animal.name, animal_path(animal.id) %>
     </li>
   <% end %>
 </ul>

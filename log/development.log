@@ -462,3 +462,46 @@ Processing by AnimalsController#show as HTML
 Completed 200 OK in 100ms (Views: 82.9ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/animals/" for ::1 at 2017-04-01 23:22:37 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.8ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 128ms (Views: 122.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/animals/1" for ::1 at 2017-04-01 23:22:39 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 65ms (Views: 58.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/animals/2" for ::1 at 2017-04-01 23:22:42 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAnimal Load (0.7ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 50ms (Views: 44.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/animals/3" for ::1 at 2017-04-01 23:24:54 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAnimal Load (1.5ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 101ms (Views: 74.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/animals" for ::1 at 2017-04-01 23:24:57 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (2.0ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 62ms (Views: 55.1ms | ActiveRecord: 2.0ms)
+
+
