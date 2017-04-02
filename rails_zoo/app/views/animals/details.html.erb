@@ -1,4 +1,7 @@
 <h1>Animal Details</h1>
-<p>Find me in app/views/animals/index.html.erb</p>
 
 <%= @animal.name  %>
+<%= @animal.age  %>
+<%= @animal.breed  %>
+
+<%= link_to('Delete' , animals_path(@animal) , :method => :destroy, data: {confirm: "Are you sure?"}) %>
