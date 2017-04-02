@@ -8,6 +8,9 @@
       <%= button_to "Delete", animal_path(animal.id), method: :delete,
       data: {confirm: "Are you sure to delete animal #{animal.name}"} %>
     </li>
+    <li>
+      <%= button_to "Edit", edit_animal_path(animal.id), method: :get%>
+    </li>
 
   </ul>
 
