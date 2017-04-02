@@ -11,7 +11,14 @@
   </head>
 
   <body>
-    <h1> <i class="fa fa-paw" aria-hidden="true"></i> ZOO</h1>
-    <%= yield %>
+    <header>
+      <%= link_to '<i class="fa fa-paw" aria-hidden="true"></i> ZOO'.html_safe, root_path, :id => "logo" %>
+    </header>
+    <section id="content">
+      <%= yield %>
+    </section>
+    <footer>
+      <p>&copy; 2017 | Kelsey McAlpine</p>
+    </footer>
   </body>
 </html>

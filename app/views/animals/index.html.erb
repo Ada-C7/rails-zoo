@@ -1,10 +1,8 @@
-<ul>
-  <p>
-    <% @animals.each do |animal| %>
-      <li>
-        <%= link_to animal.name, animal_path(animal.id) %>
-        <%= image_tag animal.img %>
-      </li>
-    <% end %>
-  </p>
-</ul>
+<% @animals.each do |animal| %>
+  <div class="animal-img">
+    <%= link_to "Learn More", animal_path(animal.id), :class => "button" %>
+    <%= image_tag animal.img %>
+  </div>
+<% end %>
+
+<%= link_to 'Add Animal', new_animal_path, :class => "button" %>
