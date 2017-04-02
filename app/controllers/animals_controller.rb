@@ -14,7 +14,7 @@ class AnimalsController < ApplicationController
   end
 
   def show
-    @animal = Animal.find(params[:id].to_i)
+    @animal = Animal.find(params[:id])
   end
 
   def edit
@@ -24,9 +24,14 @@ class AnimalsController < ApplicationController
   def update
     animal = Animal.find(params[:id])
     animal.update_attributes(params.require(:animal).permit(:details))
-    animal.save
 
     redirect_to animal_path(animal)
+  end
+
+  def destroy
+    Animal.find(params[:id]).destroy
+
+    redirect_to animals_path
   end
 
   private
