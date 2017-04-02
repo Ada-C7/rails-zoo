@@ -3,22 +3,24 @@
 </header>
 
 <main>
-  <section>
-  <h2>About</h2>
-
+  <nav>
+    <p><%= button_to "Home", animals_path, :class =>"button", :method => :get %></p>
     <p><%= button_to "Delete Animal", animal_path, :class => "button", :method => :delete %></p>
     <p><%= button_to "Edit Animal", edit_animal_path, :class=> "button", :method=> :get %></p>
+  </nav>
 
-    <ul>
-      <li>Species: <%= @animal[:species] %></li>
-      <li>Age: <%= @animal[:age] %></li>
-    </ul>
+  <div>
+  <h2>About</h2>
+    <article>
+      <ul>
+        <li>Species: <%= @animal[:species] %></li>
+        <li>Age: <%= @animal[:age] %></li>
+      </ul>
+    </article>
+  </div>
 
-  </section>
 </main>
 
 <footer>
-  <nav>
-    <%= link_to "Home", "/animals" %>
-  </nav>
+
 </footer>

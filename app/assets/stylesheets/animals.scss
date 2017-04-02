@@ -1,3 +1,25 @@
 // Place all the styles related to the animals controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  text-align: center
+}
+* {
+  // border: solid;
+
+}
+
+nav {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 15%;
+  margin-left: 3%;
+
+}
+
+div {
+  display: inline-block;
+  width: 65%;
+  vertical-align: text-top;
+}

@@ -23,9 +23,11 @@ class AnimalsController < ApplicationController
 
   def update
     animal = find_animal
-
     animal.update_attributes(animal_params)
     animal.save
+
+    redirect_to animal_path
+
   end
 
   def destroy
