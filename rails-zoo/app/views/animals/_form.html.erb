@@ -1,0 +1,15 @@
+<section>
+  <%= form_for @animal do |creature| %>
+  <%= creature.label :name %>
+  <%= creature.text_field :name  %>
+  
+  <%= creature.label :species %>
+  <%= creature.text_field :species%>
+
+  <%= creature.label :age %>
+  <%= creature.text_field :age %>
+  <%= creature.submit value: 'Submit'%>
+
+  <% end %>
+
+</section>
