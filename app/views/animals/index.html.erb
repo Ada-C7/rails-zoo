@@ -10,6 +10,7 @@
       <td><%= link_to animal.name, animal_path(animal.id) %></td>
       <td><%= animal.species %></td>
       <td><%= link_to "edit", edit_animal_path(animal.id) %></td>
+      <td><%= link_to "delete", animal_path(animal.id), method: :delete, data: {confirm: "Are you sure you want to delete this animal?"} %></td>
     </tr>
   <% end %>
 </table>
