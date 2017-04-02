@@ -1,10 +1,9 @@
-<h1>animals</h1>
-
 <ul>
   <p>
     <% @animals.each do |animal| %>
       <li>
         <%= link_to animal.name, animal_path(animal.id) %>
+        <img src= <%= animal.img %> alt="animal image">
       </li>
     <% end %>
   </p>
