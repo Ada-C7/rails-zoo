@@ -11,7 +11,7 @@
 
   </head>
 
-     <body class= "flexbox bride-and-groom">
+     <body <%= yield :background %>>
 
           <header class="header">
 
@@ -22,8 +22,10 @@
                </div>
                     <nav class="navigation">
                          <ul>
-                         <li><%= link_to "Home", root_path %></li>
-                         <li><%= link_to "RSVP", reservations_path %></li>
+                              <li><%= link_to "Home", root_path %></li>
+                              <li><%= link_to "RSVP", reservations_path %></li>
+                              <li><%= link_to "Conditions", conditions_path %></li>
+                              <li><%= link_to "Gifts", gifts_path %></li>
                          </ul>
                     </nav>
           </header>
@@ -46,13 +48,13 @@
                <div class="copyright"><h6> &copy; 2017 Labor of Love. All rights reserved. </h6></div>
 
                <ul class="social">
-                    <li class="social-facebook">
-                    <a class="social-link" href="#facebook" target="_blank"></a>
+                    <li class="social-facebook social-icon">
+                    <a class="social-link social-icon" href="#facebook" target="_blank"></a>
                     </li>
-                    <li class="social-instagram">
+                    <li class="social-instagram social-icon">
                     <a class="social-link" href="#instagram" target="_blank"></a>
                     </li>
-                    <li class="social-mail">
+                    <li class="social-mail social-icon">
                     <a class="social-link" href="mailto:janiceandmark@zawistoski.com"></a>
                     </li>
                </ul>

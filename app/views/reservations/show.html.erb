@@ -1,5 +1,10 @@
 <h1>Reservations#show</h1>
 
+<% content_for :background do %>
+     class="flexbox bride-and-groom background"
+<% end %>
+
+
 <h3> Guests </h3>
 <p> <%= @reservation.first_guest_first_name %> <%= @reservation.first_guest_last_name %> </p>
 <p> <%= @reservation.second_guest_first_name %> <%= @reservation.second_guest_last_name %> </p>

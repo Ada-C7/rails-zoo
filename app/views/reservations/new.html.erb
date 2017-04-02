@@ -1,3 +1,5 @@
-<h1>RSVP</h1>
+<% content_for :background do %>
+     class="flexbox bride-and-groom background"
+<% end %>
 
 <%= render partial: "rsvp-form", locals: {submit_text: "Add Reservation", form_method: :post}%>
