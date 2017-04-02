@@ -2,14 +2,15 @@
   <h1>
     Meet <%= @animal.name%>!
   </h1>
+  <img src = nil/>
   <p>
     <%= @animal.name%> is <%= @animal.age%> years old and is an <%= @animal.species%>
   </p>
   <p id = "show_about_text">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
-  <%= link_to image_tag("left1.png", alt: "Edit buttom", height: "30px", class: "button"), animals_path%>
-  <%= link_to image_tag("edit1.png", alt: "Edit buttom", height: "30px", class: "button"), edit_animal_path%>
-  <%= link_to image_tag("delete_blue1.png", alt: "Edit buttom", height: "30px", class: "button"), animal_path,
+  <%= link_to image_tag("left1.png", alt: "Back button", height: "30px", class: "button"), animals_path%>
+  <%= link_to image_tag("edit1.png", alt: "Edit button", height: "30px", class: "button"), edit_animal_path%>
+  <%= link_to image_tag("delete_blue1.png", alt: "Delete button", height: "30px", class: "button"), animal_path,
   data: {method: :delete, confirm: "Are you sure you want to delete #{@animal.name}"}%>
 </section>

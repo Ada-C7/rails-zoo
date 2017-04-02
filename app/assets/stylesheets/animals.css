@@ -21,6 +21,7 @@ INDEX
   position: relative;
   display: inline-block;
   width: 100%;
+  line-height: 1.5em;
 }
 
 #index_site p {
@@ -59,14 +60,24 @@ SHOW
   text-align: center;
 }
 
+#show_section h1 {
+  padding-bottom: 5%;
+}
+
+#show_section < img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 #show_about_text {
   padding: 3%;
-  background-color: #0E8044;
+  border: 4px solid #0E8044;
+  border-radius: 10px;
   text-align: justify;
 }
 
 /************************************************
-_FILED
+_FORM
 *************************************************/
 
 #_form_section{
