@@ -6,7 +6,9 @@
   <% elsif @animal.gender.downcase == "male" %>
     <%= "He" %>
   <% else %>
-    <%= animal.name %>
+    <%= @animal.name %>
   <% end %>
   <%= @animal.details %>.
 </p>
+
+<%= link_to "Back to Animals list", animals_path %>
