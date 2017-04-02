@@ -2,7 +2,7 @@
 
 <main>
   <h2>Animals</h2>
-  <ul>
+  <ul id="animal-list">
     <% @animals.each do |animal| %>
       <li>
         <%= link_to animal.name + " the " + animal.species, animal_path(animal.id) %>

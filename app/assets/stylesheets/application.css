@@ -114,6 +114,18 @@ input[type="submit"] {
   margin: auto;
 }
 
+/*** animal list ***/
+#animal-list {
+  padding: 0;
+}
+#animal-list li {
+  list-style-type: none;
+}
+
+#animal-list li::before {
+  content: "🐌";
+}
+
 /*** general styling ***/
 body {
   font-family: Arial, sans-serif;
