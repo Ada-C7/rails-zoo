@@ -17,8 +17,8 @@
           a <%= animal.age %> year old <%= animal.species %>
       </p>
       <p id = "index_animal_buttons">
-        <%= link_to image_tag("edit1.png", alt: "Edit buttom", height: "30px", class: "button_image"), edit_animal_path(animal), class: "button_link"%>
-        <%= link_to image_tag("delete_blue1.png", alt: "Delete buttom", height: "30px", class: "button_image"), animal_path(animal),
+        <%= link_to image_tag("edit1.png", alt: "Edit button", height: "30px", class: "button_image"), edit_animal_path(animal), class: "button_link"%>
+        <%= link_to image_tag("delete_blue1.png", alt: "Delete button", height: "30px", class: "button_image"), animal_path(animal),
         data: {method: :delete, confirm: "Are you sure you want to delete the animal #{animal.name}"}, class: "button_link"%>
       </p>
     </section>
