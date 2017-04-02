@@ -3,7 +3,10 @@
 
 <main>
   <h2><%= @animal.name %> the <%= @animal.species %></h2>
-  <img src="http://lorempixel.com/200/300/animals" alt="animal">
+
+  <% if @animal.image %>
+    <img src="<%= @animal.image %>" alt="<%= @animal.name + " the " + @animal.species %>">
+  <% end %>
   <p>
     <%= @animal.name %> is <%= @animal.age %> years old.
   </p>
