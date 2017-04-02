@@ -13,18 +13,10 @@
       <h1><%= link_to "Rails Zoo", root_path %></h1>
       <nav>
         <ul>
-          <% if @animals_selected %>
-            <li class="selected">
-          <% else %>
-            <li>
-          <% end %>
+          <li class="<%= 'selected' if @animals_selected %>">
             <%= link_to "Animals", animals_path %>
           </li>
-          <% if @new_selected %>
-            <li class="selected">
-          <% else %>
-            <li>
-          <% end %>
+          <li class="<%= 'selected' if @new_selected %>">
             <%= link_to "Add Animal", new_animal_path %>
           </li>
         </ul>
