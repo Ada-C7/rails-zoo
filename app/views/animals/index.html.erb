@@ -3,7 +3,7 @@
     <% @animals.each do |animal| %>
       <li>
         <%= link_to animal.name, animal_path(animal.id) %>
-        <img src= <%= animal.img %> alt="animal image">
+        <%= image_tag animal.img %>
       </li>
     <% end %>
   </p>
