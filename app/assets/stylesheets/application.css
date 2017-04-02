@@ -37,6 +37,7 @@ body {
   min-height: 100vh;
 }
 
+/*** header ***/
 header {
   background-color: pink;
   padding: 2%;
@@ -47,19 +48,8 @@ header h1 {
   font-size: 2.5em;
 }
 
-main {
-  padding: 2%;
-  height: 60%;
-  flex: 1;
-}
-
-footer {
-  padding: 2%;
-  background-color: pink;
-}
-
-footer p {
-  color: indigo;
+header a {
+  transition: all 0.5s;
 }
 
 /*** navigation ***/
@@ -87,6 +77,41 @@ header nav li a {
 header nav li.selected a {
   background-color: indigo;
   color: lavender;
+}
+
+/*** main ***/
+main {
+  padding: 2%;
+  height: 60%;
+  flex: 1;
+}
+
+/*** footer ***/
+footer {
+  padding: 2%;
+  background-color: pink;
+}
+
+footer p {
+  color: indigo;
+}
+
+/*** forms ***/
+form {
+  width: 400px;
+  max-width: 90%;
+  margin: auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin: 2%;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100px;
+  margin: auto;
 }
 
 /*** fonts and such ***/
@@ -117,8 +142,4 @@ a.delete {
 
 a.delete:hover {
   color: orange;
-}
-
-header a {
-  transition: all 0.5s;
 }
