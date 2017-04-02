@@ -11,4 +11,10 @@ class StaticController < ApplicationController
      def blueprint
      end
 
+     def travel
+     end
+
+     def rsvp
+     end
+
 end

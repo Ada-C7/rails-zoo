@@ -350,9 +350,19 @@ html, body {
 			}
 
 
+.accountant {
+	background-color: #8a402e;
+	background-image: asset-data-url("accountant.png");
+}
+
 .bride-and-groom {
 	background-color: #2c5c58;
 	background-image: asset-data-url("bride-and-groom.png");
+}
+
+.designer {
+	background-color: #8a402e;
+	background-image: asset-data-url("designer.png");
 }
 
 .developer {
@@ -360,13 +370,13 @@ html, body {
 	background-image: asset-data-url("developer.png");
 }
 
-.accountant {
-	background-color: #8a402e;
-	background-image: asset-data-url("accountant.png");
-}
-
 .engaged {
 	background-color: #2c5c58;
+	background-image: asset-data-url("engaged.png");
+}
+
+.traveler {
+	background-color: #8a402e;
 	background-image: asset-data-url("engaged.png");
 }
 
