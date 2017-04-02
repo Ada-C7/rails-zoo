@@ -1,3 +1,12 @@
 // Place all the styles related to the Animals controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  background-color: rgba(0, 300, 30, .3);
+}
+
+h1{font-family: 'Nixie One', cursive;text-align: center;font-weight:600;}
+
+ul{list-style:none;}
+
+a{text-decoration: none; color:gray;}
