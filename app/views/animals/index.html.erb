@@ -4,6 +4,10 @@
     <li>
       <%= link_to animal.name, animal_path(animal.id) %>
     </li>
+    <li>
+      <%= button_to "Delete", animal_path(animal.id), method: :delete,
+      data: {confirm: "Are you sure to delete animal #{animal.name}"} %>
+    </li>
 
   </ul>
 
