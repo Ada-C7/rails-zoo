@@ -1,0 +1,8 @@
+<h1> The Animals </h1>
+<ul>
+  <% @animals.each do |animal| %>
+  <li>
+    <%= "#{animal.name} - #{animal.species}" %>
+  </li>
+  <% end %>
+<ul>
