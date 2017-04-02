@@ -3,4 +3,6 @@
 Species: <%= @animal[:species]%>
 Age: <%= @animal[:age]%>
 
+<%= link_to "Click to Update #{@animal[:name]}'s Information'", edit_animal_path %>
+
 <%= link_to 'Return to Animal List', animals_path %>
