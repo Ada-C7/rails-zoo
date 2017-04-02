@@ -2,82 +2,50 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
 
+.button_link {
+  display: inline-block;
+}
+.button_image {
+  vertical-align: middle;
+}
+
+a {
+  list-style: none;
+}
+
 
 /************************************************
 INDEX
 *************************************************/
-
-#index_site {
-  /*text-align: center;*/
-}
-
-#index_first_section {
-  position: relative;
-  vertical-align: middle;
-}
-
-#index_first_section h1 {
-  display: inline-block;
-  line-height: 100px;
-}
-
-#index_first_section p {
-  display: inline-block;
-  position: absolute;
-  margin: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0%;
-}
-
-#index_first_section img {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0%;
-}
-
-
-
-
-#index_list_section section{
+#index_site section {
   position: relative;
   display: inline-block;
   width: 100%;
 }
 
-#index_list_section a {
-  list-style: none;
-}
-
-#index_list_section p {
+#index_site p {
+  display: inline-block;
   margin: 0;
   vertical-align: middle;
 }
 
-#index_animal_name {
+#index_header_text{
   display: inline-block;
-  width: 20%;
-  float: left;
-}
-#index_animal_info {
-  display: inline-block;
-  width: 50%;
-  /*float: left;*/
-}
-#index_animal_buttons {
-  display: inline-block;
-  float: right;
-  /*position: absolute;
-  right: 0%;*/
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-#index_animal_buttons a {
-  display: inline-block;
+#index_add_button {
+  float: right;
 }
-#index_animal_buttons img {
-  vertical-align: middle;
+
+#index_animal_info {
+  width: 60%;
+}
+
+#index_animal_buttons {
+  float: right;
 }
 
 
@@ -121,21 +89,12 @@ _FILED
   text-align: center;
 }
 
-
+/************************************************
+EDIT
+*************************************************/
 
 
 #edit_section {
   text-align: center;
   padding: 5%;
-}
-
-/*#edit_section img {
-  vertical-align: middle;
-}*/
-
-.button_link {
-  display: inline-block;
-}
-.button_image {
-  vertical-align: middle;
 }

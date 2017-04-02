@@ -1,24 +1,25 @@
 <div id = "index_site">
   <section id = "index_first_section">
-    <h1>List of the inhabitants</h1>
-    <p>
-      <%= link_to image_tag("new1.png", alt: "New button", height: "50px"), new_animal_path%>
+    <h1 id = "index_header_text">List of the inhabitants</h1>
+    <p id = "index_add_button">
+      <%= link_to image_tag("new1.png", alt: "New button", height: "50px", class: "button_image"), new_animal_path, class: "button_link"%>
     </p>
   </section>
 
-  <nav id = "index_list_section">
+  <nav>
     <% @animals.each do |animal| %>
-    <section>
-      <p id = "index_animal_name">
-        <%= link_to animal.name, animal_path(animal.id) %>
-      </p>
+    <section id = "index_list_section">
+      <!-- <p id = "index_animal_name">
+        <%#= link_to animal.name, animal_path(animal.id) %>
+      </p> -->
       <p id = "index_animal_info">
+          <%= link_to animal.name, animal_path(animal.id) %>,
           a <%= animal.age %> year old <%= animal.species %>
       </p>
       <p id = "index_animal_buttons">
-        <%= link_to image_tag("edit1.png", alt: "Edit buttom", height: "30px", class: "button"), edit_animal_path(animal)%>
-        <%= link_to image_tag("delete_blue1.png", alt: "Delete buttom", height: "30px", class: "button"), animal_path(animal),
-        data: {method: :delete, confirm: "Are you sure you want to delete the animal #{animal.name}"}%>
+        <%= link_to image_tag("edit1.png", alt: "Edit buttom", height: "30px", class: "button_image"), edit_animal_path(animal), class: "button_link"%>
+        <%= link_to image_tag("delete_blue1.png", alt: "Delete buttom", height: "30px", class: "button_image"), animal_path(animal),
+        data: {method: :delete, confirm: "Are you sure you want to delete the animal #{animal.name}"}, class: "button_link"%>
       </p>
     </section>
 
