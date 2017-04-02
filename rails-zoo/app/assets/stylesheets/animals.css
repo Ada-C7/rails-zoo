@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Delius+Unicase');
+
+main{
+  width: 80%;
+  margin-left: 10%;
+  border: 1px solid cyan;
+  border-top: none;
+  padding:10px;
+}
+
+body{
+  background-color: lightcoral;
+}
+
+*{
+  color:white;
+  font-family: 'Delius Unicase';
+}
+
+ul{
+  padding:10px 0px 0px 0px;
+  border: 5px solid orange;
+  width: 80%;
+  margin: 10px auto;
+  background-color: coral;
+}
+
+a{
+  text-decoration: none;
+  color: cyan;
+  margin: 5px;
+}
+
+li{
+  list-style: none;
+  text-align: center;
+  margin:5px auto;
+}
+
+section > *{
+display: block;
+margin: auto;
+}
+
+section p {
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  margin: 5px auto;
+}
+
+h1{
+  text-align: center;
+  font-size: 3rem;
+  color: cyan;
+  background-color: orange;
+  border-radius: 10%;
+  padding: 8px 0px 8px 0px;
+}

@@ -1,9 +1,19 @@
+<main>
+
 <h1> <%= @animal[:name] %>'s Page </h1>
 
-Species: <%= @animal[:species]%>
-Age: <%= @animal[:age]%>
+<section>
 
-<%= link_to "Click to Update #{@animal[:name]}'s Information'", edit_animal_path %>
-<p><%= link_to 'Delete',animal_path(params[:id]), data: {:confirm => 'You sure?'}, :method => :delete%></p>
+<%= image_tag("#{@animal[:name]}.gif", :alt => "#{@animal[:name]}'s picture") %>
+
+<p>Species: <%= @animal[:species]%></p>
+<p>Age: <%= @animal[:age]%></p>
+
+<%= link_to "Click to Update #{@animal[:name]}'s Information", edit_animal_path %>
+<%= link_to 'Delete',animal_path(params[:id]), data: {:confirm => 'You sure?'}, :method => :delete%>
 
 <%= link_to 'Return to Animal List', animals_path %>
+
+</section>
+
+</main>
