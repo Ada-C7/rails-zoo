@@ -1,0 +1,15 @@
+<h1> Zoooooooooooooooo </h1>
+
+<%= link_to 'Click to add a new friend to the zoo!!', new_animal_path %>
+
+<ul>
+
+<% @animals.each do |animal| %>
+  <li>Name: <%= animal[:name] %></li>
+  <li>Species: <%= animal[:species]%></li>
+  <li>Age: <%= animal[:age]%></li>
+  <%= image_tag("#{animal[:name]}.gif", :alt => "#{animal[:name]}'s picture") %>
+  <p><%= link_to 'Get to know me more', animal_path(animal[:id]) %></p>
+<%end%>
+
+</ul>
