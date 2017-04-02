@@ -1,0 +1,12 @@
+<h1> <%= @animal.name %> </h1>
+<img src="http://lorempixel.com/400/200/animals">
+<p> <%= "#{@animal.name} is a #{@animal.age} year old #{@animal.species}." %>
+  <% if @animal.gender.downcase == "female" %>
+    <%= "She" %>
+  <% elsif @animal.gender.downcase == "male" %>
+    <%= "He" %>
+  <% else %>
+    <%= animal.name %>
+  <% end %>
+  <%= @animal.details %>.
+</p>
