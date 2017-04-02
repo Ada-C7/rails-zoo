@@ -11,12 +11,12 @@
     <%= @animal.name %> is <%= @animal.age %> years old.
   </p>
   <p>
-    <%= link_to "Edit " + @animal.name, edit_animal_path %> |
+    <%= link_to "Edit " + @animal.name, edit_animal_path, class: "btn" %>
     <%=
       link_to "Delete " + @animal.name, delete_animal_path,
       data: { confirm: "Are you sure you want to delete this animal?" },
       method: :delete,
-      class: "delete"
+      class: "delete btn"
     %>
   </p>
 </main>
