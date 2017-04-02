@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+    root to: 'animals#index'
 
     get 'animals', to: 'animals#index', as: 'animals'
     get 'animals/new', to: 'animals#new', as: 'new_animal'
