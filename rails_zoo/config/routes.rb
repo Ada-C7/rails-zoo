@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root 'animals#index'
 
   get 'animals/index'
+
+
   get 'animals/details'
 
 
