@@ -4,5 +4,6 @@ Species: <%= @animal[:species]%>
 Age: <%= @animal[:age]%>
 
 <%= link_to "Click to Update #{@animal[:name]}'s Information'", edit_animal_path %>
+<p><%= link_to 'Delete',animal_path(params[:id]), data: {:confirm => 'You sure?'}, :method => :delete%></p>
 
 <%= link_to 'Return to Animal List', animals_path %>
