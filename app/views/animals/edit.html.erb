@@ -1,6 +1,11 @@
 <header>
-<h1>Edit Form</h1>
+  <h1>Edit Form</h1>
 </header>
+
 <main>
-  <%= render partial: "form", locals: { submit_text: "Edit Animal"} %>
+    <%= render partial: "form", locals: { submit_text: "Edit Animal"} %>
 </main>
+
+<footer>
+  <p><%= link_to "Home", animals_path %></p>
+</footer>

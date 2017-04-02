@@ -5,10 +5,6 @@
 h1 {
   text-align: center
 }
-* {
-  // border: solid;
-
-}
 
 nav {
   display: inline-block;
@@ -22,4 +18,12 @@ div {
   display: inline-block;
   width: 65%;
   vertical-align: text-top;
+}
+
+form {
+  margin-left: 2%;
+}
+
+footer {
+  margin: 3% 2% 2% 2%;
 }
