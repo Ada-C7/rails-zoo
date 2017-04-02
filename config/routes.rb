@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
      get '/conditions', to: 'static#conditions', as: 'conditions'
      get '/gifts', to: 'static#gifts', as: 'gifts'
-
+     get '/blueprint', to: 'static#blueprint', as: 'blueprint'
 
      get '/reservations/new', to: 'reservations#new', as: 'add_reservation'
      post '/reservations', to: 'reservations#create'

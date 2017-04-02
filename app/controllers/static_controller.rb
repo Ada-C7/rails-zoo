@@ -7,4 +7,8 @@ class StaticController < ApplicationController
 
      def gifts
      end
+
+     def blueprint
+     end
+
 end
