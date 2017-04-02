@@ -2,3 +2,14 @@
 <% year = "years" %>
 <% year = "year" if @animal.age < 2 %>
 <h2><%= "#{@animal.name} is a #{@animal.size} size #{@animal.species} who is #{@animal.age} #{year} old" %></h2>
+<% images = {
+  "Lion" => "http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/H-P/photoark-lion.png.adapt.945.1.jpg",
+  "Tiger" => "http://www.defenders.org/sites/default/files/styles/large/public/tiger-dirk-freder-isp.jpg",
+  "Parrot" => "http://yourshot.nationalgeographic.com/u/ss/fQYSUbVfts-T7pS2VP2wnKyN8wxywmXtY0-FwsgxoQUWd2L_2rSSP29UbBoVNNXRntljg5qYZCqmiRcvhnjh/",
+  "Peacock" => "http://animal-dream.com/data_images/peacock/peacock6.jpg",
+  "Monkey" => "https://yt3.ggpht.com/-_IXzYFNWU8U/AAAAAAAAAAI/AAAAAAAAAAA/6tXWVmD0E64/s900-c-k-no-mo-rj-c0xffffff/photo.jpg",
+  "Wolf" => "http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/A-G/gray-wolf-closeup.jpg.adapt.945.1.jpg",
+  "Fox"  => "http://vignette4.wikia.nocookie.net/animal-jam-clans-1/images/1/1b/Red-fox-06.jpg/revision/latest?cb=20170106034447",
+  "Penguin" => "https://static.independent.co.uk/s3fs-public/styles/story_medium/public/thumbnails/image/2014/03/18/19/pg-31-penguins-1-rex.jpg"
+} %>
+<%= image_tag(images["#{@animal.species}"], width: "200", alt: "Animal Picture") %>
