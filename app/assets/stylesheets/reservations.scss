@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, span,
 blockquote, pre, a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -44,10 +45,15 @@ table {
 }
 
 html, body {
-    font-size: 16px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: normal;
-    min-height: 100%;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+
+	color: white;
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: normal;
 }
 
 	@media all and (min-width: 960px) {
@@ -142,18 +148,20 @@ html, body {
 					}
 
 					.navigation .active {
+
 						background: #749f88;
-						padding: 1em;
 						border-radius: .8em;
+
 					}
 
 		.main {
 		    display: flex;
 		    flex-direction: row;
 		    flex: 1 1 auto;
-              min-height: 100vh;
+              min-height: 60vh;
 
 		    align-items: center;
+		    padding: 0 3em 3em;
 
 		    /*background-color: orange;*/
 		}
@@ -195,7 +203,7 @@ html, body {
 					display: flex;
 
 					margin: 0 3em 0 0;
-					padding-bottom: 2em;
+					padding-bottom: 1em;
 
 					/*background-color: blue;*/
 				}
@@ -256,7 +264,7 @@ html, body {
 				display: flex;
 
 				background-color: white;
-				width: 1em;
+				width: 8px;
 				height: 8em;
 				margin: 0 3em;
 			}
@@ -302,9 +310,6 @@ html, body {
 				margin-right: 3em;
 
 				background-image: asset-data-url("social-facebook.png");
-				background-size: cover;
-				height: 4em;
-				width: 4em;
 			}
 
 				.social-facebook:hover {
@@ -313,27 +318,28 @@ html, body {
 
 			.social-mail {
 				background-image: asset-data-url("social-mail.png");
-				background-size: cover;
-				height: 4em;
-				width: 4em;
 			}
 
 				.social-mail:hover {
 					background-image: asset-data-url("social-mail-hover.png");
 				}
 
-			.social-instagram{
+			.social-instagram {
 				margin-right: 3em;
 
 				background-image: asset-data-url("social-instagram.png");
+			}
+
+			.social-instagram:hover {
+				 background-image: asset-data-url("social-instagram-hover.png");
+			}
+
+
+			.social-icon {
 				background-size: cover;
 				height: 4em;
 				width: 4em;
 			}
-
-				.social-instagram:hover {
-					 background-image: asset-data-url("social-instagram-hover.png");
-				}
 
 			.social-link {
 				position: absolute;
@@ -342,30 +348,29 @@ html, body {
 				height: 3em;
 				width: 3em;
 			}
+
+
 .bride-and-groom {
 	background-color: #2c5c58;
 	background-image: asset-data-url("bride-and-groom.png");
-	background-position: center top;
-	background-size: cover;
 }
 
 .developer {
 	background-color: #434138;
-	background-image: url("../images/about.png");
-	background-position: center top;
-	background-size: cover;
+	background-image: asset-data-url("developer.png");
 }
 
 .accountant {
 	background-color: #8a402e;
-	background-image: url("../images/tips.png");
-	background-position: center top;
-	background-size: cover;
+	background-image: asset-data-url("accountant.png");
 }
 
 .engaged {
 	background-color: #2c5c58;
-	background-image: url("../images/contact.png");
+	background-image: asset-data-url("engaged.png");
+}
+
+.background {
 	background-position: center top;
 	background-size: cover;
 }
@@ -380,96 +385,53 @@ html, body {
      display: none;
 }
 
-
+h1, h2, h3 {
+	font-family: 'Gravitas One', serif;
+	letter-spacing: -.01em;
+	text-transform: lowercase;
+}
 
 h1 {
-	border: 0;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
-
-	color: white;
-	font-family: 'Gravitas One', serif;
 	font-size: 4.8em;
-	letter-spacing: -.04em;
-	line-height: 1.1em;
-	text-transform: lowercase;
 }
 
 h2 {
-	border: 0;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
-
-	color: white;
-	font-family: 'Gravitas One', serif;
-	font-size: 3.6em;
-	letter-spacing: -.04em;
-	line-height: 1.1em;
-	text-transform: lowercase;
+	font-size: 3.0em;
 }
 
 h3 {
-	border: 0;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
+	font-size: 2.0em;
+}
 
-	color: white;
-	font-family: 'Gravitas One', serif;
-	font-size: 2.4em;
-	letter-spacing: -.04em;
-	text-transform: lowercase;
+h4, h5, h6, p, span, a, input, textarea {
+	font-weight:400;
 }
 
 h4 {
-	border: 0;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
-
-	color: white;
 	font-size: 2.4em;
-	font-weight:400;
 }
 
 h6 {
-	border: 0;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
-
-	color: white;
 	font-size: 1em;
-	font-weight:400;
 	letter-spacing: .06em;
 	text-transform: uppercase;
 }
 
 p, span {
-	color: white;
 	font-size: 1.6em;
-	font-weight: 400;
 	letter-spacing: .04em;
 	line-height: 1.8em;
 }
 
 @media all and (max-width: 599px) {
-    p {
+    p, span {
 	   font-size: 2.4em;
     }
 }
 
 a {
-	border: 0;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
-
 	color: white;
 	font-size: 1.2em;
-	font-weight:400;
 	letter-spacing: .08em;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -530,11 +492,13 @@ input {
 
 input:hover {
 	background: white;
-	color: #af4f35;
 	border: solid .6em #af4f35;
 	border-bottom: none;
 	border-right: none;
 	border-top: none;
+
+	color: #af4f35;
+
 }
 
 textarea {
