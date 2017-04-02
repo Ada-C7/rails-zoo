@@ -18,9 +18,15 @@ class AnimalsController < ApplicationController
   end
 
   def edit
+    @animal = Animal.find(params[:id])
   end
 
   def update
+    animal = Animal.find(params[:id])
+    animal.update_attributes(params.require(:animal).permit(:details))
+    animal.save
+
+    redirect_to animal_path(animal)
   end
 
   private

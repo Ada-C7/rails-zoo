@@ -11,4 +11,6 @@
   <%= @animal.details %>.
 </p>
 
+<%= button_to "Update #{@animal.name}'s Info", edit_animal_path, method: :get %>
+
 <%= link_to "Back to Animals list", animals_path %>
