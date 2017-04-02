@@ -90,11 +90,11 @@ _FILED
 }
 
 /************************************************
-EDIT
+EDIT and NEW
 *************************************************/
 
 
-#edit_section {
+#edit_section, #new_section  {
   text-align: center;
   padding: 5%;
 }
