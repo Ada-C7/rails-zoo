@@ -1,0 +1,19 @@
+<%= form_for @animal, method: form_method do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :species %>
+<%= f.text_field :species %>
+
+<%= f.label :age %>
+<%= f.text_field :age %>
+
+<%= f.label :birthday %>
+<%= f.date_field :birthday %>
+
+<%= f.label :image_url, "Image URL:" %>
+<%= f.text_field :image_url %>
+
+<%= f.submit action_name, class: form_class %>
+
+<% end %>
