@@ -53,8 +53,6 @@ INDEX
 /************************************************
 SHOW
 *************************************************/
-
-
 #show_section {
   position: relative;
   text-align: center;
@@ -64,8 +62,9 @@ SHOW
   padding-bottom: 5%;
 }
 
-#show_section < img {
-  width: 100%;
+#show_image {
+  max-width:50%;
+  height:auto;
   border-radius: 10px;
 }
 
@@ -103,7 +102,6 @@ _FORM
 /************************************************
 EDIT and NEW
 *************************************************/
-
 
 #edit_section, #new_section  {
   text-align: center;
