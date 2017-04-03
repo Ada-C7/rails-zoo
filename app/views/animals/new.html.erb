@@ -1,3 +1,5 @@
+<section class="new">
+  <h1>New Animal</h1>
 <%= form_for @animal do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
@@ -9,4 +11,7 @@
   <%= f.text_field :age %>
 
   <%= f.submit value: "Add new animal" %>
+
+  <p><%= link_to "Cancel", animals_path %>
 <% end %>
+</section>

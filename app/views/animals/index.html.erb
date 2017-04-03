@@ -1,8 +1,11 @@
-<h1>RailsZoo</h1>
-<ul>
-  <% @animals.each do |animal|  %>
+<section class="content">
+  <h1>RailsZoo</h1>
+  <ul>
+    <% @animals.each do |animal|  %>
     <li>
       <%= link_to animal.name, animal_path(animal.id) %>
     </li>
-  <% end %>
-</ul>
+    <% end %>
+  </ul>
+  <p><%= link_to "Add a new animal", new_animal_path %></p>
+</section>
