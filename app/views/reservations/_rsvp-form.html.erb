@@ -38,12 +38,27 @@
 <h6> Sweet words of endearment? </h6> <br>
 <%= f.label :message, class: 'hidden'  %>
 <%= f.text_area :message, placeholder: 'message to the bride and groom' %>
+<br>
 
-<%= f.label :status, class: 'hidden'  %>
-<%= f.hidden_field :status, value: "RSVP'd" %>
+<% if form_method == :post %>
 
-<%= f.label :status, class: 'hidden'  %>
-<%= f.hidden_field :status, value: "Not yet paid." %>
+     <%= f.label :status, class: 'hidden'  %>
+     <%= f.hidden_field :status, value: "RSVP'd" %>
+
+     <%= f.label :status, class: 'hidden'  %>
+     <%= f.hidden_field :status, value: "Not yet paid." %>
+
+<% else %>
+
+     <h6> Latest Movement </h6> <br>
+     <%= f.label :status, class: 'hidden'  %>
+     <%= f.text_field :status, value: "RSVP'd" %>
+
+     <%= f.label :paid, class: 'hidden'  %>
+     <%= f.text_field :paid, value: "Not yet paid." %>
+     <br>
+
+<% end %>
 
 <%= f.submit submit_text %>
 
