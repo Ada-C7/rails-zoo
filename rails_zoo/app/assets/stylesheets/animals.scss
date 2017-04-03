@@ -5,3 +5,8 @@
 li {
   list-style: none;
 }
+
+a[href] {
+  text-decoration: none;
+  color: darkgreen;
+}
