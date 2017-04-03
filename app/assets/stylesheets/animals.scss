@@ -1,3 +1,58 @@
 // Place all the styles related to the Animals controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300|Shadows+Into+Light');
+
+html {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+main {
+  padding: 50px;
+}
+
+ul {
+  margin-bottom: 40px;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  color: green;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: orange;
+}
+
+.add-new {
+  text-decoration: none;
+  padding: 10px;
+  border: solid 2px black;
+  margin: 20px;
+}
+
+.add-new:hover {
+  color: red;
+  border: dashed 2px red;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+textarea {
+  display: block;
+}
+
+.new-button {
+  margin-top: 20px;
+  display: block;
+  color: red;
+}

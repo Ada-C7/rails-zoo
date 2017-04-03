@@ -17,6 +17,6 @@
 
 <%= link_to "Edit this animal", edit_animal_path %>
 
-<%= link_to "Delete this animal", delete_animal_path(@result_animal), data: { confirm: "are you sure you want to delete?"}, method: :delete %>
+<%= link_to "Delete this animal", delete_animal_path(@result_animal), data: { confirm: "are you sure you want to delete this animal?"}, method: :delete, class: "delete-button" %>
 
 <%= link_to "Back to all animals", animals_path %>
