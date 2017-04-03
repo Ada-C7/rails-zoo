@@ -1,5 +1,5 @@
 <h1> <%= @animal.name %> </h1>
-<%= image_tag(@animal.image, alt: "Cute animal pic") %>
+<%= image_tag(@animal.image, alt: "Cute animal pic", height: "300px") %>
 <p> <%= "#{@animal.name} is a #{@animal.age} year old #{@animal.species}." %>
   <%= render partial: "gender", locals: {animal: @animal} %>
   <%= @animal.details %>.
