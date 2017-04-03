@@ -15,12 +15,20 @@ class AnimalsController < ApplicationController
     @animal = Animal.find(params[:id])
   end
 
+  def update
+    animal = Animal.find(params[:id])
+
+    if animal.update(strong_params)
+      redirect_to animal_path
+    end
+  end
+
   def create
     # @animal = Animal.create name: params[:animal][:name], species: params[:animal][:species], age: params[:animal][:age]
 
     @animal = Animal.create strong_params
 
-    unless animal.id == nil
+    unless @animal.id == nil
       redirect_to animals_path #index page
     end
   end
