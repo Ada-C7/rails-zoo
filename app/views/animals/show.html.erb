@@ -1,25 +1,15 @@
-<h1>Salmon Profile</h1>
-<h3><%= @animal.name %></h3>
-<%= image_tag(@animal.photo_url) unless @animal.photo_url.empty? %>
-<table>
+<h1><%= @animal.name %></h1>
+<%= image_tag(@animal.photo_url, width: "500") unless @animal.photo_url.empty? %>
 
-  <% if !@animal.species.empty? %>
-    <tr>
-      <td>Species</td>
-      <td><%= @animal.species %>
-      <% unless @animal.scientific_name.empty? %>
-        (<em><%= @animal.scientific_name %></em>)</td>
-      <% end %>
-    </tr>
-  <% end %>
-
-  <% if !@animal.age.nil? %>
-    <tr>
-      <td>Age</td>
-      <td><%= @animal.age %> years</td>
-    </tr>
-  <% end %>
-
-</table>
+  <p>
+    <% unless @animal.species.empty? %>
+      Species: <%= @animal.species.capitalize %> (<em><%= @animal.scientific_name %></em>)
+    <% end %>
+  </p>
+  <p>
+    <% if !@animal.age.nil? %>
+      Age: <%= @animal.age %> year(s)
+    <% end %>
+  </p>
 
 <%= link_to "<<", animals_path %>
