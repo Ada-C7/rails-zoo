@@ -1,4 +1,4 @@
-<h1> List of All Animals </h1>
+<h2> Meet our charges! </h2>
 
 <ul>
   <% @animals.each do |animal| %>
@@ -13,4 +13,4 @@
   <% end %>
 </ul>
 
-<%= link_to "Add Animals", new_animal_path %>
+<%= link_to "Add Animals", new_animal_path, class: :button %>
