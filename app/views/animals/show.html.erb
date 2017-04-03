@@ -13,7 +13,9 @@
   "Penguin" => "https://static.independent.co.uk/s3fs-public/styles/story_medium/public/thumbnails/image/2014/03/18/19/pg-31-penguins-1-rex.jpg"
 } %>
 <%= image_tag(images["#{@animal.species}"], width: "200", alt: "Animal Picture") %>
-<%= button_to "Edit", edit_animal_path(@animal.id), method: :get %>
-<%= button_to "Delete", animal_path(@animal.id), method: :delete,
-data: {confirm: "Are you sure to delete #{@animal.name}?"}%>
-<%= button_to "Animal list", animals_path, method: :get %>
+<ul>
+  <li><%= button_to "Edit", edit_animal_path(@animal.id), method: :get %></li>
+  <li><%= button_to "Delete", animal_path(@animal.id), method: :delete,
+  data: {confirm: "Are you sure to delete #{@animal.name}?"}%></li>
+  <li><%= button_to "Animal list", animals_path, method: :get %></li>
+</ul>

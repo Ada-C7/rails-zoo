@@ -1,7 +1,7 @@
-
+<h1>Welcome to Animal List</h1>
 <% @animals.each do |animal|%>
   <ul>
-    <li>
+    <li class="bold">
       <%= link_to animal.name, animal_path(animal.id) %>
     </li>
     <li>
@@ -15,4 +15,6 @@
   </ul>
 
 <% end %>
+<nav class="button">
   <%= link_to "Add an Animal", new_animal_path %>
+</nav>
