@@ -1,0 +1,40 @@
+<h1>Create a New Animal</h1>
+
+<%= form_for(@animal) do |f| %>
+<ul>
+  <% @animal.errors.full_messages.each do |error| %>
+  <li><%= error %></li>
+  <% end %>
+</ul>
+<p>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+</p>
+<p>
+  <%= f.label :species %><br />
+  <%= f.text_area :species %>
+</p>
+<p>
+  <%= f.label :age %><br />
+  <%= f.text_area :age %>
+</p>
+<p>
+  <%= f.label :leg_numbers %><br />
+  <%= f.text_area :leg_numbers %>
+</p>
+<p>
+
+  <%= f.radio_button :image, "http://loremflickr.com/320/240/dog" %>
+  <%= f.label :Dog %><br />
+  <img src="http://loremflickr.com/320/240/dog"><br />
+  <%= f.radio_button :image, "http://loremflickr.com/320/240/cat" %>
+  <%= f.label :Cat %><br />
+  <img src="http://loremflickr.com/320/240/cat"><br />
+  <%= f.radio_button :image, "http://loremflickr.com/320/240/animals" %><br />
+  <%= f.label :All_the_other %><br />
+  <img src="http://loremflickr.com/320/240/animals">
+</p>
+<p>
+  <%= f.submit %>
+</p>
+<% end %>
