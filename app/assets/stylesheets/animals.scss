@@ -80,3 +80,40 @@ textarea {
   display: block;
   color: red;
 }
+
+.show-list {
+  margin-bottom: 40px;
+}
+
+.edit-button {
+  color: black;
+  text-decoration: none;
+  padding: 7px;
+  border: solid 2px black;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.edit-button:hover {
+  background-color: yellow;
+}
+
+.delete-button {
+  color: black;
+  text-decoration: none;
+  padding: 7px;
+  border: solid 2px black;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.delete-button:hover {
+  background-color: red;
+}
+
+.home-button {
+  display: block;
+  color: orange;
+  text-decoration: none;
+  margin-top: 50px;
+}
