@@ -5,8 +5,7 @@
 <ul class="index-list">
 <% @animals.each do |animal| %>
   <li>
-    <%= link_to animal.name, animal %>,
-    Species: <%= animal.species %>, Age: <%= animal.age %>, Birthday: <%= animal.birthday %>
+    <%= link_to animal.name, animal %>
   </li>
 
 <% end %>
