@@ -1,8 +1,8 @@
-<h1> Animal Details </h1>
+<h1> Animal Profile </h1>
 
 <%= image_tag(@animal.image_url, alt: "animal picture", size: "300x200") %>
 <ul>
-  <li>Name: <%= @animal.name %></li>
+  <li><%= @animal.name %> says hello!</li>
   <li>Species: <%= @animal.species %></li>
   <li>Age: <%= @animal.age %></li>
 </ul>

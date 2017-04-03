@@ -8,13 +8,18 @@
   font-family: "Open Sans";
 }
 
-h1 {
+body {
+  margin: 0;
+}
+
+h1, .name {
  font-family: "IM Fell Double Pica", serif;
+ text-align: center;
 }
 
 main {
-  height: 620px;
-  // text-align: center;
+  text-align: center;
+  min-height: 615px;
 }
 
 .background-image {
@@ -26,6 +31,35 @@ main {
   height: auto;
 }
 
+ul {
+  list-style: none;
+  padding: 0
+}
+
 #copyright {
   color: white;
+}
+
+// home page
+
+.animal-profile {
+  display: inline-block;
+}
+
+.home_photo {
+  border: solid black 4px;
+  height: 150px;
+  width: auto;
+  max-width: 200px;
+  border-radius: 100%;
+}
+
+// new and edit form
+
+.new_animal {
+  display:inline-block;
+  border: dashed 3px black;
+  padding: 1%;
+  text-align: left;
+  border-radius: 5%;
 }
