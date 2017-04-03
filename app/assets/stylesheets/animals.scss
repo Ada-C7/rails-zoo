@@ -1,29 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans:600');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow:400|Chivo:700');
 
 * {
   margin: 0;
   padding: 0;
-}
-
-h2 {
-  font-family: 'Alfa Slab One', cursive;
-  text-transform: uppercase;
-  letter-spacing: .07em;
-  font-size: 2em;
-  color: white;
-  padding-bottom: .5em;
-  margin-bottom: .5em;
-  border-bottom: 2px solid white;
-}
-
-h3 {
-
-}
-
-h3, p, a, {
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-  text-decoration: none;
 }
 
 body {
@@ -32,33 +11,30 @@ body {
   background-color: #d3d3d3;
 }
 
-// STYLING HEADER
-// **********************************
+h2, h3, h4, p, a {
+  font-kerning: normal;
+}
 
-header {
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
-  position: fixed;
-  display: block;
-  padding: 2em;
+h2, h3, p, a, {
+  font-family: 'Chivo', sans-serif;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: 2em;
+}
+
+.heading {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-weight: 400
+}
+
+img {
   width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-
-#logo {
-  color: rgba(255, 255, 255, .75);
-  font: 2.5em/1 'Alfa Slab One', cursive;
-  letter-spacing: .05em;
-}
-
-#logo:hover {
-  color: rgba(255, 255, 255, .5);
-}
-
-header #add-animal {
-  float: right;
-  align: right;
+  height: 100%;
 }
 
 .button {
@@ -77,6 +53,29 @@ header #add-animal {
   background: rgba(255, 255, 255, .5);
 }
 
+// HEADER
+// **********************************
+
+header {
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+  position: fixed;
+  display: block;
+  padding: 2em;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#logo {
+  color: rgba(255, 255, 255, .7);
+  font: 2.5em/1 'Archivo Black', sans-serif;
+}
+
+#logo:hover {
+  color: rgba(255, 255, 255, .5);
+}
+
 .animal-img {
   position: relative;
   float: right;
@@ -84,25 +83,66 @@ header #add-animal {
 }
 
 .animal-img .button {
+  letter-spacing: .05em;
   position: absolute;
   margin: auto;
   bottom: 5em;
   right: 5em;
 }
 
-.animal-img #facts {
+// SHOW PAGE
+// **********************************
+
+.show-animal {
+
+}
+
+.show-animal img {
+  position: relative;
+}
+
+.show-animal #content {
   background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+  display: block;
   position: absolute;
   width: 95%;
   bottom: 0;
   left: 0;
-  padding: 2em 2em 4em 2em;
+  padding: 2em;
 }
 
-img {
-  width: 100%;
-  height: 100%;
+.show-animal #content h3 {
+  padding-bottom: .5em;
+  margin-bottom: .5em;
+  border-bottom: 2px solid white;
 }
+
+.show-animal #title {
+  padding-bottom: .5em;
+  margin-bottom: .5em;
+  border-bottom: 4px solid white;
+}
+
+.show-animal #facts, #description, #buttons {
+  display: inline-block;
+  float: left;
+  width: 30%;
+}
+
+.show-animal #facts, #description {
+  padding-right: 20px;
+}
+
+.show-animal #buttons {
+  text-align: right;
+}
+
+.show-animal #buttons .button {
+  width: 50%;
+}
+
+// FORMS
+// **********************************
 
 #form {
   padding: 4em;

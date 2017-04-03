@@ -1,13 +1,23 @@
-<div class="animal-img">
+<div class="show-animal">
   <%= image_tag @show_animal.img %>
-    <section id="facts">
+  <section id="content">
+    <section id="title">
       <h2> <%= @show_animal.name %> </h2>
-      <h3> SPECIES: <%= @show_animal.species %> </h2>
-        <h3> AGE: <%= @show_animal.age %> </h2>
-          <p>  <%= @show_animal.description %> </p>
-          <%= link_to "Edit", edit_animal_path(@show_animal.id) %>
-          <%= link_to "Delete", delete_animal_path(@show_animal.id),
-          data: { confirm: "Are you sure you want to delete this animal? (Don't worry.. no animals will actually be harmed <3)" },
-          method: :delete %>
-      </section>
-    </div>
+    </section>
+    <section id="facts">
+      <h3> <span class="heading">species</span> <%= @show_animal.species %> </h3>
+      <h3> <span class="heading">age</span> <%= @show_animal.age %> </h3>
+      <h3> <span class="heading">location</span> </h3>
+    </section>
+    <section id="description">
+      <h3> <span class="heading">description</span> </h3>
+      <p>  <%= @show_animal.description %> </p>
+    </section>
+    <section id="buttons">
+      <%= link_to "Edit", edit_animal_path(@show_animal.id), :class => "button" %>
+      <%= link_to "Delete", delete_animal_path(@show_animal.id), :class => "button",
+      data: { confirm: "Are you sure you want to delete this animal? (Don't worry.. no animals will actually be harmed <3)" },
+      method: :delete %>
+    </section>
+  </section>
+</div>
