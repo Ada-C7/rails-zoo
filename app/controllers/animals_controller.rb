@@ -17,7 +17,6 @@ class AnimalsController < ApplicationController
   end
 
   def edit
-    # show
     @animal = find_animal
   end
 
@@ -25,9 +24,7 @@ class AnimalsController < ApplicationController
     animal = find_animal
     animal.update_attributes(animal_params)
     animal.save
-
     redirect_to animal_path
-
   end
 
   def destroy
