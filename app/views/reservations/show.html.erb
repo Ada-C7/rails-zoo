@@ -6,27 +6,42 @@
      <li class="title"> <h1> RSVP 0<%= @reservation.id %> </h1>
      </li>
 
-     <h6> Guests </h6>
-          <p>
-               <%= @reservation.first_guest_first_name %> <%= @reservation.first_guest_last_name %>
+     <% if @reservation.number_of_guests == 2 %>
+          <h6> <%= "2 Guests" %> </h6>
+     <% else %>
+          <h6> <%= "1 Guest" %> </h6>
+     <% end %>
 
-               <%= @reservation.second_guest_first_name == nil || @reservation.second_guest_first_name == "" ? "" : "and" %>
+     <p>
+          <%= @reservation.first_guest_first_name %> <%= @reservation.first_guest_last_name %>
 
-               <%= @reservation.second_guest_first_name == nil || @reservation.second_guest_first_name == "" ? "" : @reservation.second_guest_first_name %>
+          <%= @reservation.second_guest_first_name == nil || @reservation.second_guest_first_name == "" ? "" : "and" %>
 
-               <%= @reservation.second_guest_first_name == nil || @reservation.second_guest_first_name == "" ? "" : @reservation.second_guest_last_name %>
-          </p>
+          <%= @reservation.second_guest_first_name == nil || @reservation.second_guest_first_name == "" ? "" : @reservation.second_guest_first_name %>
+
+          <%= @reservation.second_guest_first_name == nil || @reservation.second_guest_first_name == "" ? "" : @reservation.second_guest_last_name %>
+     </p>
 
      <h6> Email </h6>
      <p> <%= @reservation.email %> </p>
+
      <h6> Phone </h6>
      <p> <%= @reservation.phone %> </p>
+
      <h6> Message </h6>
      <p> <%= @reservation.message %> </p>
+
      <h6> Diet </h6>
-     <p> <%= if @reservation.diet == nil || @reservation.diet == "" then "No dietary restrictions."; end %> </p>
+     <p> <% if @reservation.diet == nil || @reservation.diet == "" %>
+          No dietary restrictions.
+          <% else %>
+          <%= @reservation.diet %>
+          <% end %>
+     </p>
+
      <h6> Status </h6>
      <p> <%= @reservation.status %> </p>
+
      <h6> Paid </h6>
      <p> <%= @reservation.paid %> </p>
 
@@ -37,6 +52,7 @@
                <%= button_to "Delete", delete_reservation_path(@reservation.id),
                     data: { confirm: "Are you confident you'd like to delete this reservation?" },
                     method: :delete %>
+               <%= button_to "Back", reservations_path, method: :get %>
           </span>
      </li>
 </ul>

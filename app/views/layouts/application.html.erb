@@ -40,11 +40,13 @@
                </section>
           </main>
 
-          <section class="section">
-               <ul class="feature">
-               <%= yield :feature%>
-               </ul>
-          </section>
+          <% if content_for?(:feature) %>
+               <section class="section">
+                    <ul class="feature">
+                    <%= yield :feature%>
+                    </ul>
+               </section>
+          <% end %>
 
           <footer class="footer">
                <div class="copyright"><h6> &copy; 2017 Labor of Love. All rights reserved. </h6></div>

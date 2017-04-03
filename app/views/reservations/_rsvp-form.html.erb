@@ -52,12 +52,11 @@
 
      <h6> Latest Movement </h6> <br>
      <%= f.label :status, class: 'hidden'  %>
-     <%= f.text_field :status, value: "RSVP'd" %>
+     <%= f.select :status, options_for_select([["Not Yet RSVP\'d", "Not Yet RSVP\'d"], ["RSVP\'d", "RSVP\'d"], ['Declined', 'Declined']]), prompt: "please select" %>
 
      <%= f.label :paid, class: 'hidden'  %>
-     <%= f.text_field :paid, value: "Not yet paid." %>
-     <br>
-
+     <%= f.select :paid, options_for_select([['Not Yet Paid', 'Not Yet Paid'], ['Lay Away', 'Lay Away'], ['Paid', 'Paid']]), prompt: "please select" %>
+     <br><br>
 <% end %>
 
 <%= f.submit submit_text %>

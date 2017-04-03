@@ -2,4 +2,7 @@
      class="flexbox bride-and-groom background"
 <% end %>
 
+<li class="title"> <h1> Edit RSVP 0<%= @reservation.id %> </h1>
+</li>
+
 <%= render partial: "rsvp-form", locals: {submit_text: "Edit Reservation", form_method: :patch} %>
