@@ -7,6 +7,11 @@
 }
 .button_image {
   vertical-align: middle;
+  height: 30px;
+}
+.button_image_a {
+  vertical-align: middle;
+  height: 60px;
 }
 
 a {
