@@ -1,31 +1,46 @@
 <%=form_for @reservation, method: form_method do | f | %>
 
+<h6> How many in your party?</h6><br>
+<%= f.label :number_of_guests, class: 'hidden' %>
+<%= f.select(:number_of_guests, options_for_select([['Just Me', 1], ['Me and a
+     +1', 2]])) %>
+<br><br>
+
+<h6> Your First and Last Name </h6><br>
 <%= f.label :first_guest_first_name, class: 'hidden' %>
 <%= f.text_field :first_guest_first_name, placeholder: 'first name' %>
 
 <%= f.label :first_guest_last_name, class: 'hidden'  %>
 <%= f.text_field :first_guest_last_name, placeholder: 'last name' %>
+<br>
 
+<h6> Your +1's First and Last Name </h6><br>
 <%= f.label :second_guest_first_name, class: 'hidden'  %>
 <%= f.text_field :second_guest_first_name, placeholder: 'first name' %>
 
 <%= f.label :second_guest_last_name, class: 'hidden'  %>
 <%= f.text_field :second_guest_last_name, placeholder: 'last name' %>
+<br>
 
+<h6> Best way to keep in touch? </h6> <br>
 <%= f.label :email, class: 'hidden'  %>
 <%= f.text_field :email, placeholder: 'email' %>
 
 <%= f.label :phone, class: 'hidden'  %>
 <%= f.text_field :phone, placeholder: 'phone' %>
+<br>
 
+<h6> Are you persnickety? </h6> <br>
+<%= f.label :diet, class: 'hidden'  %>
+<%= f.text_area :diet, placeholder: 'dietary concerns' %>
+<br>
+
+<h6> Sweet words of endearment? </h6> <br>
 <%= f.label :message, class: 'hidden'  %>
 <%= f.text_area :message, placeholder: 'message to the bride and groom' %>
 
-<%= f.label :diet, class: 'hidden'  %>
-<%= f.text_area :diet, placeholder: 'dietary concerns' %>
-
 <%= f.label :status, class: 'hidden'  %>
-<%= f.text_area :status %>
+<%= f.hidden_field :status %>
 
 <%= f.submit submit_text %>
 
