@@ -11,6 +11,10 @@ class AnimalsController < ApplicationController
     @result_animal = Animal.find(params[:id])
   end
 
+  def edit
+    @animal = Animal.find(params[:id])
+  end
+
   def create
     # @animal = Animal.create name: params[:animal][:name], species: params[:animal][:species], age: params[:animal][:age]
 
