@@ -11,11 +11,14 @@
   "Wolf" => "http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/A-G/gray-wolf-closeup.jpg.adapt.945.1.jpg",
   "Fox"  => "http://vignette4.wikia.nocookie.net/animal-jam-clans-1/images/1/1b/Red-fox-06.jpg/revision/latest?cb=20170106034447",
   "Penguin" => "https://static.independent.co.uk/s3fs-public/styles/story_medium/public/thumbnails/image/2014/03/18/19/pg-31-penguins-1-rex.jpg"
-} %>
-<%= image_tag(images["#{@animal.species}"], width: "200", alt: "Animal Picture") %>
-<ul>
-  <li><%= button_to "Edit", edit_animal_path(@animal.id), method: :get %></li>
-  <li><%= button_to "Delete", animal_path(@animal.id), method: :delete,
-  data: {confirm: "Are you sure to delete #{@animal.name}?"}%></li>
-  <li><%= button_to "Animal list", animals_path, method: :get %></li>
-</ul>
+  } %>
+
+  <%unless images["#{@animal.species}"] == nil%>
+  <%= image_tag(images["#{@animal.species}"], width: "200", alt: "Animal Picture") %>
+  <%end%>
+  <ul>
+    <li><%= button_to "Edit", edit_animal_path(@animal.id), method: :get %></li>
+    <li><%= button_to "Delete", animal_path(@animal.id), method: :delete,
+    data: {confirm: "Are you sure to delete #{@animal.name}?"}%></li>
+    <li><%= button_to "Animal list", animals_path, method: :get %></li>
+  </ul>
