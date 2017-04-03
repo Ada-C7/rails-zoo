@@ -12,7 +12,7 @@ class AnimalsController < ApplicationController
   end
 
   def create
-    animal = Animal.create animal_params
+    animal = Animal.create(animal_params)
     redirect_to animals_path unless animal.id == nil
   end
 
