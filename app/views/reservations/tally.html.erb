@@ -1,0 +1,21 @@
+<% content_for :background do %>
+     class="flexbox bride-and-groom background"
+<% end %>
+
+<ul class="list">
+     <li class="title"> <h1> Tally </h1>
+     </li>
+
+
+     <li class="list-item"><p>Total Guests: <%= @reservations.inject(0) { |tally, reservation| tally + reservation.number_of_guests} %></p>
+
+     <li class="list-item"><p>Total Guests RSVP'd: <%=  %></p>
+
+     <li class="list-item"><p>Total Guests Declined: <%= %></p>
+
+     <li class="last-list-item">
+          <span>
+               <%= button_to "Back", reservations_path, method: :get %>
+          </span>
+     </li>
+</ul>

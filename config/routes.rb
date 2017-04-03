@@ -9,9 +9,10 @@ Rails.application.routes.draw do
      get '/travel', to: 'static#travel', as: 'travel'
      get '/rsvp', to: 'static#rsvp', as: 'rsvp'
 
-
      get '/reservations/new', to: 'reservations#new', as: 'new_reservation'
      post '/reservations', to: 'reservations#create'
+
+     get '/reservations/tally', to: 'reservations#tally', as: 'tally_reservations'
 
      get '/reservations/:id/edit', to: 'reservations#edit', as: 'edit_reservation'
      patch '/reservations/:id', to: 'reservations#update'
