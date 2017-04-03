@@ -2,8 +2,8 @@
 
 <h6> How many in your party?</h6><br>
 <%= f.label :number_of_guests, class: 'hidden' %>
-<%= f.select(:number_of_guests, options_for_select([['Just Me', 1], ['Me and a
-     +1', 2]])) %>
+<%= f.select :number_of_guests, options_for_select([['Just Me', 1], ['Me and a
+     +1', 2]]), prompt: "please select" %>
 <br><br>
 
 <h6> Your First and Last Name </h6><br>
@@ -40,7 +40,10 @@
 <%= f.text_area :message, placeholder: 'message to the bride and groom' %>
 
 <%= f.label :status, class: 'hidden'  %>
-<%= f.hidden_field :status %>
+<%= f.hidden_field :status, value: "RSVP'd" %>
+
+<%= f.label :status, class: 'hidden'  %>
+<%= f.hidden_field :status, value: "Not yet paid." %>
 
 <%= f.submit submit_text %>
 

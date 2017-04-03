@@ -2,13 +2,15 @@
      class="flexbox bride-and-groom background"
 <% end %>
 
-<ul class="content">
+<ul class="list">
      <li class="title"><h1>RSVP List</h1></li>
      <% @reservations.each do | reservation | %>
-          <li>
-               <%= link_to reservations_path do %>
+          <li class="list-item">
+               <%= link_to reservation_path(reservation.id) do %>
                     Reservation 0<%= reservation.id %>
                <% end %>
+          </li>
+          <li class="list-item">
                <p>
                     <%= reservation.first_guest_first_name %> <%= reservation.first_guest_last_name %>
 
@@ -19,12 +21,15 @@
                     <%= reservation.second_guest_first_name == nil || reservation.second_guest_first_name == "" ? "" : reservation.second_guest_last_name %>
                </p>
           </li>
-          <li>
-               <button class="button-small"><%= link_to "Edit", edit_reservation_path(reservation.id) %></button>
-               <button class="button-small"><%= link_to "Delete", delete_reservation_path(reservation.id),
-                    data: { confirm: "Are you confident you'd like to delete this reservation?" },
-                    method: :delete %></button>
-          </li>
+          <li class="last-list-item">
+               <span>
+                    <%= button_to "Edit", edit_reservation_path(reservation.id), method: :get %>
 
+                    <%= button_to "Delete", delete_reservation_path(reservation.id),
+                         data: { confirm: "Are you confident you'd like to delete this reservation?" },
+                         method: :delete %>
+               </span>
+          </li>
+          <br><br>
      <% end %>
 </ul>

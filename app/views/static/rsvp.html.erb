@@ -3,8 +3,11 @@
 <% end %>
 
 <ul class="content">
-     <li class="title"><h1> 160 bucks per guest </h1></li>
+     <li class="title"><h1> 150 bucks per guest </h1></li>
      <li class="tagline"><h4> We know it's spendy. But we're worth it. </h4></li>
+     <li>
+     <%= button_to "RSVP", new_reservation_path, method: :get, class: 'button' %>
+     </li>
 </ul
 
 <% content_for :feature do %>

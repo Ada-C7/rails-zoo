@@ -183,12 +183,23 @@ html, body {
 
                     .list {
                     display: flex;
-
+				flex-direction: column;
                     margin: 0 3em 0 0;
-                    padding-bottom: 1em;
 
                     /*background-color: red;*/
                     }
+
+				.list-item {
+				padding-bottom: .1em;
+
+				/*background-color: red;*/
+				}
+
+				.last-list-item {
+				padding-bottom: 3em;
+
+				/*background-color: red;*/
+				}
 
 				.title {
 					display: flex;
@@ -351,37 +362,33 @@ html, body {
 
 
 .accountant {
-	background-color: #8a402e;
 	background-image: asset-data-url("accountant.png");
 }
 
 .bride-and-groom {
-	background-color: #2c5c58;
 	background-image: asset-data-url("bride-and-groom.png");
 }
 
 .designer {
-	background-color: #8a402e;
 	background-image: asset-data-url("designer.png");
 }
 
 .developer {
-	background-color: #434138;
 	background-image: asset-data-url("developer.png");
 }
 
 .engaged {
-	background-color: #2c5c58;
 	background-image: asset-data-url("engaged.png");
 }
 
 .traveler {
-	background-color: #434138;
 	background-image: asset-data-url("traveler.png");
 }
 
 .background {
+	background-color: #336561;
 	background-position: center top;
+	background-repeat: no-repeat;
 	background-size: cover;
 }
 
@@ -453,7 +460,14 @@ a {
 	    }
 	}
 
-input:not([type=submit]):not([type=file]), textarea {
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 1.2em .6em;
+}
+
+input:not([type=submit]):not([type=file]), textarea, select {
 	display: flex;
 
 	background: transparent;
@@ -479,12 +493,12 @@ input:not([type=submit]):not([type=file]) {
 	transition: all 0.3s ease-in-out;
 }
 
-textarea {
+textarea, select {
 	padding: 1.2em .6em;
 	margin-bottom: 1em;
 }
 
-input:not([type=submit]):not([type=file]):hover, textarea:hover {
+input:not([type=submit]):not([type=file]):hover, textarea:hover, select:hover {
 	background: white;
 	border: solid .6em #af4f35;
 	border-bottom: none;
@@ -492,7 +506,6 @@ input:not([type=submit]):not([type=file]):hover, textarea:hover {
 	border-top: none;
 
 	color: #af4f35;
-
 }
 
 ::-webkit-input-placeholder {
@@ -538,5 +551,10 @@ input[type=submit] {
 
 span input[type=submit] {
      font-size: .8em;
-     margin-right: .4em;
+     margin-right: .2em;
+}
+
+.button_to {
+	display: inline-block;
+
 }

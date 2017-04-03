@@ -1,29 +1,42 @@
-<h1>Reservations#show</h1>
-
 <% content_for :background do %>
      class="flexbox bride-and-groom background"
 <% end %>
 
+<ul class="list">
+     <li class="title"> <h1> RSVP 0<%= @reservation.id %> </h1>
+     </li>
 
-<h3> Guests </h3>
-<p> <%= @reservation.first_guest_first_name %> <%= @reservation.first_guest_last_name %> </p>
-<p> <%= @reservation.second_guest_first_name %> <%= @reservation.second_guest_last_name %> </p>
+     <h6> Guests </h6>
+          <p>
+               <%= @reservation.first_guest_first_name %> <%= @reservation.first_guest_last_name %>
 
-<h3> Email </h3>
-<p> <%= @reservation.email %> </p>
-<h3> Phone </h3>
-<p> <%= @reservation.phone %> </p>
-<h3> Message </h3>
-<p> <%= @reservation.message %> </p>
-<h3> Diet </h3>
-<p> <%= if @reservation.diet == nil || @reservation.diet == "" then "No dietary restrictions."; end %> </p>
-<h3> Status </h3>
-<p> <%= if @reservation.status == nil || @reservation.status == "" then "Not yet responded."; end %> </p>
-<h3> Paid </h3>
-<p> <%= @reservation.paid ? "Paid" : "Not yet paid." %> </p>
+               <%= @reservation.second_guest_first_name == nil || @reservation.second_guest_first_name == "" ? "" : "and" %>
 
-<%= link_to "Edit", edit_reservation_path(@reservation.id) %>
-<%= link_to "Delete", delete_reservation_path(@reservation.id),
-     data: { confirm: "Are you confident you'd like to delete this reservation?" },
-     method: :delete
-%>
+               <%= @reservation.second_guest_first_name == nil || @reservation.second_guest_first_name == "" ? "" : @reservation.second_guest_first_name %>
+
+               <%= @reservation.second_guest_first_name == nil || @reservation.second_guest_first_name == "" ? "" : @reservation.second_guest_last_name %>
+          </p>
+
+     <h6> Email </h6>
+     <p> <%= @reservation.email %> </p>
+     <h6> Phone </h6>
+     <p> <%= @reservation.phone %> </p>
+     <h6> Message </h6>
+     <p> <%= @reservation.message %> </p>
+     <h6> Diet </h6>
+     <p> <%= if @reservation.diet == nil || @reservation.diet == "" then "No dietary restrictions."; end %> </p>
+     <h6> Status </h6>
+     <p> <%= @reservation.status %> </p>
+     <h6> Paid </h6>
+     <p> <%= @reservation.paid %> </p>
+
+     <li class="last-list-item">
+          <span>
+               <%= button_to "Edit", edit_reservation_path(@reservation.id), method: :get %>
+
+               <%= button_to "Delete", delete_reservation_path(@reservation.id),
+                    data: { confirm: "Are you confident you'd like to delete this reservation?" },
+                    method: :delete %>
+          </span>
+     </li>
+</ul>
