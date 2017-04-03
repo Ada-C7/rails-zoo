@@ -453,7 +453,7 @@ a {
 	    }
 	}
 
-input[type=text], textarea {
+input:not([type=submit]):not([type=file]), textarea {
 	display: flex;
 
 	background: transparent;
@@ -472,7 +472,7 @@ input[type=text], textarea {
 	transition: all 0.3s ease-in-out;
 }
 
-input[type=text] {
+input:not([type=submit]):not([type=file]) {
 	padding: .6em .6em;
 	margin-bottom: .6em;
 
@@ -484,7 +484,7 @@ textarea {
 	margin-bottom: 1em;
 }
 
-input[type=text]:hover, textarea:hover {
+input:not([type=submit]):not([type=file]):hover, textarea:hover {
 	background: white;
 	border: solid .6em #af4f35;
 	border-bottom: none;
