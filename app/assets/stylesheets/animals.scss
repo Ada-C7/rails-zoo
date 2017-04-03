@@ -8,25 +8,49 @@ html {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+h1 {
+  margin: 10px;
+}
+
+header h1 {
+  display: inline-block;
+  width: 50%;
+}
+
+header nav {
+  display: inline-block;
+  width: 35%;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: red;
+}
+
 main {
   padding: 50px;
 }
 
-ul {
+.index-list {
   margin-bottom: 40px;
 }
 
-li {
+.index-list li {
   list-style: none;
 }
 
-li a {
+.index-list li a {
   color: green;
   font-weight: bolder;
   text-decoration: none;
 }
 
-li a:hover {
+.index-list li a:hover {
   color: orange;
 }
 

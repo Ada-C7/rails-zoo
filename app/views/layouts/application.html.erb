@@ -9,10 +9,22 @@
 </head>
 
 <body>
+  <header>
+    <h1>Jackie's Awesome Zoo</h1>
+    <nav>
+        <ul>
+          <li><%= link_to "Animals", animals_path %></li>
+        </ul>
+      </nav>
+  </header>
   <main>
 
     <%= yield %>
   </main>
-
+  <footer>
+    <div class="copyright">
+            &copy;2017 Jackie Watanabe
+    </div>
+  </footer>
 </body>
 </html>
