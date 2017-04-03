@@ -515,7 +515,7 @@ input:not([type=submit]):not([type=file]):hover, textarea:hover {
 	opacity: 0.3;
 }
 
-.button, input[type=submit] {
+input[type=submit] {
 	padding: .6em .8em;
 
 	background-color: #af4f35;
@@ -532,11 +532,11 @@ input:not([type=submit]):not([type=file]):hover, textarea:hover {
 	text-transform: uppercase;
 }
 
-	.button:hover, input[type=submit]:hover {
+	input[type=submit]:hover {
 		background-color: #ca5839;
 	}
 
-.button-small {
+span input[type=submit] {
      font-size: .8em;
      margin-right: .4em;
 }

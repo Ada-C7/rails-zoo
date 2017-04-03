@@ -10,7 +10,7 @@ Rails.application.routes.draw do
      get '/rsvp', to: 'static#rsvp', as: 'rsvp'
 
 
-     get '/reservations/new', to: 'reservations#new', as: 'add_reservation'
+     get '/reservations/new', to: 'reservations#new', as: 'new_reservation'
      post '/reservations', to: 'reservations#create'
 
      get '/reservations/:id/edit', to: 'reservations#edit', as: 'edit_reservation'
