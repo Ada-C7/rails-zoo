@@ -11,7 +11,7 @@
      <li class="subtitle"> <h2> Come rested. Come hungry. </h2>
      <li class="divider"></li>
      <li class="description">
-          <p>  <strong> All are welcome to all events. </strong> <br><br>
+          <span>  <strong> All are welcome to all events. </strong> <br><br>
                <strong> FRIDAY: </strong> <br>
                <strong> Shack Up </strong> (Check In): <br> 3pm until 8pm <br>
                <strong> Catfish Fry </strong> (Rehearsal dinner hosted by the Groom's Mama and her Beau): <br> 7:30pm until midnight <br> Dress is deco casual for the evening. <br><br>
@@ -27,7 +27,7 @@
                <strong> SUNDAY: </strong> <br>
                <strong> Brown Bottle Flu Remedy </strong> (Send Off Brunch hosted by the Groom's Papa and his Belle): <br> 10am until 12 noon <br> Dress is vintage smart. <br><br>
 
-               <a href="#" target="_blank"><button class="button-small"> RSVP </button></a>
-          </p>
+               <%= button_to "RSVP", add_reservation_path, method: :get, class: 'button button-small' %>
+          </span>
      </li>
 <% end %>

@@ -11,13 +11,14 @@
      <li class="subtitle"> <h2> how it breaks down </h2>
      <li class="divider"></li>
      <li class="description">
-          <p> <strong> MARK: </strong> The $150 per guest is to help us subsidize the cost of your accomodation.   We'll take care of the rest. Find a way to get to Clarksdale. Pay up the $150 per guest. We'll take care of the rest. Grub, booze and entertainment will be on us for the weekend. <br><br>
+          <span> 
+               <strong> MARK: </strong> The $150 per guest is to help us subsidize the cost of your accomodation.   We'll take care of the rest. Find a way to get to Clarksdale. Pay up the $150 per guest. We'll take care of the rest. Grub, booze and entertainment will be on us for the weekend. <br><br>
 
-          <strong> JANICE: </strong> Once you've paid your $150, we'll reserve your shack, room or silo on your behalf. Don't go bothering the folks at Shackup Inn. They're ... particular. And unfortunately, we can't take requests. Room assignments are more art than science. But rest assured, we've given lots of thought to the comfort and convenience of each of our guests. That includes you. <br><br>
+               <strong> JANICE: </strong> Once you've paid your $150, we'll reserve your shack, room or silo on your behalf. Don't go bothering the folks at Shackup Inn. They're ... particular. And unfortunately, we can't take requests. Room assignments are more art than science. But rest assured, we've given lots of thought to the comfort and convenience of each of our guests. That includes you. <br><br>
 
-          <strong> MARK: </strong> Aren't quite ready to pay your $150 in full? No worries. </strong> Simply RSVP so that we know you're coming and let us know if you need help with a layaway plan. We do ask that everyone be paid in full by 1 June 2017. <br><br>
+               <strong> MARK: </strong> Aren't quite ready to pay your $150 in full? No worries. </strong> Simply RSVP so that we know you're coming and let us know if you need help with a layaway plan. We do ask that everyone be paid in full by 1 June 2017. <br><br>
 
-          <a href="#" target="_blank"><button class="button-small"> RSVP </button></a>
-          </p>
+               <%= button_to "RSVP", add_reservation_path, method: :get, class: 'button button-small' %>
+          </span>
      </li>
 <% end %>

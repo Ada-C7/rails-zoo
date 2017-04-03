@@ -17,4 +17,6 @@ class StaticController < ApplicationController
      def rsvp
      end
 
+     def new_reservation
+     end
 end

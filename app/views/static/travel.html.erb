@@ -1,5 +1,5 @@
 <% content_for :background do %>
-     class="flexbox developer background"
+     class="flexbox traveler background"
 <% end %>
 
 <ul class="content">
@@ -11,7 +11,7 @@
      <li class="subtitle"> <h2> logistics </h2>
      <li class="divider"></li>
      <li class="description">
-          <p>  <strong> Address of the Accomodations </strong> <br>
+          <span>  <strong> Address of the Accomodations </strong> <br>
                Rehearsal dinner hosted by the Groom's Mama and her Beau <br><br>
                <strong> Recommended Airport </strong> <br>
                Rehearsal dinner hosted by the Groom's Mama and her Beau <br><br>
@@ -20,7 +20,7 @@
                <strong> Map </strong> <br>
                Rehearsal dinner hosted by the Groom's Mama and her Beau <br><br>
 
-               <a href="#" target="_blank"><button class="button-small"> RSVP </button></a>
-          </p>
+               <%= button_to "RSVP", add_reservation_path, method: :get, class: 'button button-small' %>
+          </span>
      </li>
 <% end %>

@@ -376,8 +376,8 @@ html, body {
 }
 
 .traveler {
-	background-color: #8a402e;
-	background-image: asset-data-url("engaged.png");
+	background-color: #434138;
+	background-image: asset-data-url("traveler.png");
 }
 
 .background {
@@ -453,91 +453,46 @@ a {
 	    }
 	}
 
+input[type=text], textarea {
+	display: flex;
 
-button {
-	padding: .6em .8em;
-
-	background-color: #af4f35;
-	border: none;
+	background: transparent;
+	border: solid .6em white;
+	border-bottom: none;
+	border-right: none;
+	border-top: none;
 	border-radius: .4em;
+
 	color: white;
-	display: inline-block;
-	font-family: 'Source Sans Pro', serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1.8em;
 	font-weight: 400;
-	letter-spacing: .04rem;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
+	letter-spacing: .04em;
+
+	transition: all 0.3s ease-in-out;
 }
 
-	button:hover {
-		background-color: #ca5839;
-	}
-
-.button-small {
-     font-size: .8em;
-     margin-right: .4em;
-}
-
-input {
-	display: flex;
+input[type=text] {
 	padding: .6em .6em;
 	margin-bottom: .6em;
 
-	background: transparent;
-	border: solid .6em white;
-	border-bottom: none;
-	border-right: none;
-	border-top: none;
-	border-radius: .4em;
-
-	color: white;
-	font-size: 1.8em;
-	font-weight: 400;
-	letter-spacing: .04em;
-
 	transition: all 0.3s ease-in-out;
-	}
-
-input:hover {
-	background: white;
-	border: solid .6em #af4f35;
-	border-bottom: none;
-	border-right: none;
-	border-top: none;
-
-	color: #af4f35;
-
 }
 
 textarea {
-	display: flex;
 	padding: 1.2em .6em;
 	margin-bottom: 1em;
+}
 
-	background: transparent;
-	border: solid .6em white;
-	border-bottom: none;
-	border-right: none;
-	border-top: none;
-	border-radius: .4em;
-
-	color: white;
-	font-size: 1.8em;
-	font-weight: 400;
-	letter-spacing: .04em;
-
-	transition: all 0.3s ease-in-out;
-	}
-
-textarea:hover {
+input[type=text]:hover, textarea:hover {
 	background: white;
-	color: #af4f35;
 	border: solid .6em #af4f35;
 	border-bottom: none;
 	border-right: none;
 	border-top: none;
+
+	color: #af4f35;
+
 }
 
 ::-webkit-input-placeholder {
@@ -558,4 +513,30 @@ textarea:hover {
 :-moz-placeholder {
 	color: white;
 	opacity: 0.3;
+}
+
+.button, input[type=submit] {
+	padding: .6em .8em;
+
+	background-color: #af4f35;
+	border: none;
+	border-radius: .4em;
+	color: white;
+	display: inline-block;
+	font-family: 'Source Sans Pro', serif;
+	font-size: 1.8em;
+	font-weight: 400;
+	letter-spacing: .04rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+	.button:hover, input[type=submit]:hover {
+		background-color: #ca5839;
+	}
+
+.button-small {
+     font-size: .8em;
+     margin-right: .4em;
 }
