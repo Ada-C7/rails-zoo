@@ -1,14 +1,14 @@
 <h1><%= @animal.name %></h1>
-<%= image_tag(@animal.photo_url, width: "500") unless @animal.photo_url.empty? %>
+<%= image_tag(@animal.photo_url, class: "feature_photo") unless @animal.photo_url.empty? %>
 
   <p>
     <% unless @animal.species.empty? %>
-      Species: <%= @animal.species.capitalize %> (<em><%= @animal.scientific_name %></em>)
+      <strong>Species</strong> - <%= @animal.species.capitalize %> <em>(<%= @animal.scientific_name %>)</em>
     <% end %>
   </p>
   <p>
     <% if !@animal.age.nil? %>
-      Age: <%= @animal.age %> year(s)
+      <strong>Age</strong> - <%= @animal.age %> year(s)
     <% end %>
   </p>
 

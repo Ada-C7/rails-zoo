@@ -1,3 +1,40 @@
 // Place all the styles related to the animals controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #fee9e6;
+  margin: 0;
+}
+
+table {
+  margin: 0 auto 20px;
+}
+
+td {padding: 5px;}
+
+input, label, select {
+  margin: 5px;
+}
+
+input, select {
+  margin-bottom: 20px;
+}
+
+select {
+  width: 130px;
+}
+
+img.icon {
+  width: 20px;
+}
+
+img.thumbnail {
+  width: 100px;
+}
+
+img.feature_photo {
+  max-width: 500px;
+}

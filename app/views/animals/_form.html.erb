@@ -4,12 +4,12 @@
   <%= f.text_field :name %><br />
 
   <%= f.label :species %><br />
-  <%= select("animal", "species", Animal::SPECIES_DATA.keys, include_blank: true, required: true) %><br />
+  <%= select("animal", "species", Animal::SALMON_SPECIES.keys, {include_blank: true}, required: true ) %><br />
 
   <%= f.label :age %><br />
   <%= f.text_field :age %><br />
 
-  <%= f.label "Photo URL" %><br />
+  <%= f.label :photo_url %><br />
   <%= f.text_field :photo_url %><br />
 
   <%= f.submit "Submit" %>

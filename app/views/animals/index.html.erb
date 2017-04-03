@@ -3,10 +3,10 @@
 <table>
   <% @animals.each do |animal| %>
     <tr>
-      <td><%= link_to image_tag(animal.photo_url, width: "100"), animal_path(animal.id) %></td>
+      <td><%= link_to image_tag(animal.photo_url, class: "thumbnail"), animal_path(animal.id) %></td>
       <td><%= link_to animal.name, animal_path(animal.id) %></td>
-      <td><%= link_to image_tag('pencil-icon', width: "20"), edit_animal_path(animal.id) %></td>
-      <td><%= link_to image_tag('trash-icon', width: "20"), animal_path(animal.id), method: :delete, data: {confirm: "Are you sure you want to delete this animal?"} %></td>
+      <td><%= link_to image_tag('pencil-icon', class: "icon"), edit_animal_path(animal.id) %></td>
+      <td><%= link_to image_tag('trash-icon', class: "icon"), animal_path(animal.id), method: :delete, data: {confirm: "Are you sure you want to delete this animal?"} %></td>
     </tr>
   <% end %>
 </table>
