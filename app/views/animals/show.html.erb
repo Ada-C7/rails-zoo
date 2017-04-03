@@ -1,12 +1,14 @@
 <h1> <%= @animal.name %> </h1>
-<img src="http://lorempixel.com/400/200/animals">
+<%= image_tag(@animal.image, alt: "Cute animal pic") %>
 <p> <%= "#{@animal.name} is a #{@animal.age} year old #{@animal.species}." %>
   <%= render partial: "gender", locals: {animal: @animal} %>
   <%= @animal.details %>.
 </p>
 
-<%= button_to "Update #{@animal.name}'s Info", edit_animal_path, method: :get %>
-<%= button_to "Notify of #{@animal.name}'s Passing", animal_path(@animal.id), method: :delete,
-    data: {confirm: "Are you sure #{@animal.name}passed away?"} %>
+<nav>
+  <%= button_to "Update #{@animal.name}'s Info", edit_animal_path, method: :get %>
+  <%= button_to "Notify of #{@animal.name}'s Passing", animal_path(@animal.id), method: :delete,
+      data: {confirm: "Are you sure #{@animal.name}passed away?"} %>
 
-<%= link_to "Back to Animals list", animals_path %>
+  <%= link_to "Back to Animals list", animals_path %>
+</nav>
