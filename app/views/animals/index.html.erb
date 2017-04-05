@@ -1,0 +1,12 @@
+<h1>Animals at Chantal's sanctuary</h1>
+
+<ul>
+  <% @animals.each do |animal| %>
+  <li>
+    "<%= link_to animal.name, animal_path(animal.id) %>", <%= animal.species %>,
+    <%= animal.age %> years old
+  </li>
+  <% end %>
+</ul>
+
+<a href="/animals/new">Add another friend to our sanctuary! </a>
