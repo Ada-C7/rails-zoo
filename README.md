@@ -1,6 +1,7 @@
 # Rails Zoo
 
 TESTING BRANCHES!! Cool.
+test 2
 
 In this project, you will create a new rails application to track the animals in your Rails Zoo!
 
