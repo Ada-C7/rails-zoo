@@ -1,0 +1,25 @@
+<body >
+
+
+
+  <h1>Our Zoo</h1>
+  <table class="main_table">
+    <th>
+      Animal
+    </th>
+    <th>
+    </th>
+
+    <% @animals.each do |animal| %>
+    <tr>
+      <td>
+        <%= link_to animal.name, animal_path(animal.id)%>
+      </td>
+      <td class="delete_link">
+        <%= link_to "Delete", delete_animal_path(animal.id), class: "delete", data: { confirm: "Are you sure you want to delete this animal?"}, method: :delete %>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+  <%= link_to 'Add new', new_animal_path %>
+</body>

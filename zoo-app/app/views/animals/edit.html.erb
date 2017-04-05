@@ -1,0 +1,10 @@
+
+
+<h1>Edit <%= @animal.name %></h1>
+
+<%= render partial: "form", locals: { action_name: "Update", form_method: :patch }%>
+
+
+<p>
+  <%= link_to "Back to List", animals_path %>
+</p>
