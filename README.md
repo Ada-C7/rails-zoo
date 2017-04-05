@@ -8,8 +8,6 @@ Each requirements section of this assignment has three sections: **think, create
 - The **create** section contains what you would see in a "normal" project's requirements.
 - The **verify** section contains the steps to verify your work in the **create** section. This gives you a moment to double check your work before moving on to the next requirement.
 
-
-
 ## Setup
 1. Fork and clone this project
 2. Create a new rails application _within this folder_ using  `rails new .`
