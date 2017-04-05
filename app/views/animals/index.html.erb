@@ -1,0 +1,21 @@
+<p>
+  Welcome to Rails Zoo!
+</p>
+
+<section class="zoo">
+  <% @animals.each do |animal| %>
+    <article class="animal">
+      <p>
+        <%= link_to "#{animal.name} the #{animal.species}", animal_path(animal.id) %>
+      </p>
+
+      <%= link_to animal_path(animal.id) do %>
+        <%= image_tag "#{animal.img}", alt: "#{animal.species}" %>
+        <% end %>
+    </article>
+    <% end %>
+</section>
+
+<h1 id="new">
+  <%= link_to "Add a New Animal", new_animal_path %>
+</h1>
