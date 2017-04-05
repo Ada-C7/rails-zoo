@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre|Caveat+Brush|Gochi+Hand|Itim|Scope+One');
+
+// font-family: 'Gochi Hand', cursive;
+// font-family: 'Abhaya Libre', serif;
+// font-family: 'Caveat Brush', cursive;
+// font-family: 'Itim', cursive;
+// font-family: 'Scope One', serif;
+
+* {
+  font-family: 'Caveat Brush', cursive;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.25em;
+  color: black;
+}
+
+a:hover {
+  color: forestgreen;
+}
+
+.animal-image-thumbnail img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 10px 30px 10px 30px;
+  border: 3px black solid;
+}
+
+.animal-main-title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.index-animal {
+  // width: 300px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.index-animal-sidebar {
+  padding: 20px 0;
+  overflow: scroll;
+}
+
+.new-animal-header, .edit-animal-header {
+  padding-bottom: 20px;
+  padding-left: 40px;
+  font-size: 2.25em;
+  color: #CC5600;
+}
+
+footer {
+  height: 200px;
+  width: 100%;
+  bottom: 0;
+  font-size: .8em;
+  position: absolute;
+}
+
+.button-new-animal {
+  padding: 30px 0;
+}
+
+.home-button {
+  padding-bottom: 30px;
+}
+
+.button-new-animal, .home-button {
+  font-size: 1.25em;
+}
+
+.side-bar {
+  position: fixed;
+  text-align: center;
+  height: 100%;
+  width: 200px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  color: forestgreen;
+  background-color: white;
+  border-right: 4px black solid;
+}
+
+.side-bar p, h1 {
+  text-align: center;
+}
+
+.side-bar header, .edit-form h2 {
+  padding: 15px 0;
+}
+
+input {
+  margin-left: 10px;
+  font-size: 1em;
+}
+
+.container .new-form {
+  background-image: url("https://www.thesun.co.uk/wp-content/uploads/2016/10/nintchdbpict000272062433.jpg?w=960&strip=all");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grey-box {
+  display: inline-block;
+  background-color: lightgrey;
+  opacity: .5;
+  height: 400px;
+}
+
+.edit-container {
+  background-image: url("http://cdn.pcwallart.com/images/cute-baby-puffins-wallpaper-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.input-form {
+  font-size: 1.5em;
+}
+
+.content {
+  height: 650px;
+}
+
+.button-save-form {
+  margin-top: 30px;
+}
+
+.website-title {
+  font-size: 2em;
+}
+
+.animal-title-sidebar {
+  padding: 3px 0;
+}
+
+.index-animal-sidebar {
+  overflow: scroll;
+}
+
+.all-zoo-animals {
+  margin-bottom: 50px;
+}
+
+.content {
+  text-align: center;
+  padding-top: 30px;
+  display: block;
+  margin-left: 204px;
+}
+
+.show-animal {
+  text-align: center;
+}
+
+.edit-form {
+  padding-left: 40px;
+}
+
+.edit-form li, .new-form li {
+  padding: 5px;
+}
+
+.edit-form, .new-form {
+  text-align: left;
+  padding-left: 100px;
+}
+
+.show-animal.animals-nav {
+  padding-top: 20px;
+}
+
+.animals-nav p {
+  display: inline-block;
+  padding: 0 15px 10px 15px;
+}
+
+.animal-data p {
+  font-size: 2em;
+}
+
+.show-animal-image {
+  border: 2px black solid;
+  margin: 20px;
+  width: 50%;
+}
+
+.show-animal.animal-name {
+  font-size: 3em;
+}
+
+.edit-animal-header {
+  margin-left: 40px;
+}

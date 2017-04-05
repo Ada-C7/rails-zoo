@@ -1,0 +1,29 @@
+<%= form_for @animal do |f| %>
+  <ul class="input-form">
+    <li>
+      <%= f.label :name %>:
+      <%= f.text_field :name %>
+    </li>
+    <li>
+      <%= f.label :species %>:
+      <%= f.text_field :species %>
+    </li>
+    <li>
+      <%= f.label :age %>:
+      <%= f.text_field :age %>
+    </li>
+    <li>
+      <%= f.label :image %>:
+      <%= f.text_field :image %>
+    </li>
+
+    <li class="button-save-form">
+      <%= f.submit "save" %>
+    </li>
+    <li>
+      <%= button_to "cancel", animals_path, method: :get %>
+    </li>
+  </ul>
+
+
+<% end %>

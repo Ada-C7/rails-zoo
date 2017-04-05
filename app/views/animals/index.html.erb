@@ -1,0 +1,20 @@
+<%= render partial: "sidebar" %>
+
+<section class="content all-zoo-animals">
+  <% @animals.each do |animal| %>
+
+    <ul class="index-animal">
+      <li class="animal-main-title">
+        <%= animal.name %>
+      </li>
+      <li class="animal-image-thumbnail">
+        <a href="<%= animal_path(animal.id) %>"/>
+
+          <img src="<%= animal.image %>"/>
+        </a>
+      </li>
+
+    </ul>
+
+  <% end %>
+</section>

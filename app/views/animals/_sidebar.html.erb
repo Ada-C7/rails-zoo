@@ -1,0 +1,35 @@
+<aside class="side-bar">
+
+  <header>
+    <h1 class="website-title">
+      <%= link_to "virtual zoo", animals_path %>
+    </h1>
+  </header>
+
+  <section class="sidebar-main">
+    <p class="meet-the-animals">meet the animals</p>
+
+    <ul class="index-animal-sidebar">
+      <% @animals.each do |animal| %>
+        <li class="animal-title-sidebar">
+          <%= link_to animal.name, animal_path(animal.id) %>
+        </li>
+      <% end %>
+    </ul>
+
+  </section>
+
+  <footer>
+    <p class="button-new-animal">
+      <%= link_to "add new animal", animals_new_path, method: :get %>
+    </p>
+    <p class="home-button">
+      <%= link_to "return to main zoo", animals_path %>
+    </p>
+    <p class="sidebar-footer">
+      &copy; <%= link_to "aurora anderson", to: "http://github.com/auroralemieux" %>
+    </p>
+  </footer>
+
+
+</aside>

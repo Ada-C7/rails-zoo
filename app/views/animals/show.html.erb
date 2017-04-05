@@ -1,0 +1,24 @@
+<%= render partial: "sidebar" %>
+
+<section class="show-animal content">
+  <h3 class="show-animal animal-name">Hi, I'm <%= @animal.name %>!</h1>
+
+  <section class="show-animal animal-data">
+    <%= image_tag @animal.image, class: "show-animal-image" %>
+    <p>
+      Age: <%= @animal.age %>
+    </p>
+    <p>
+      Species: <%= @animal.species %>
+    </p>
+
+  </section>
+  <section class="show-animal animals-nav">
+    <p class="edit-animal-button">
+      <%= link_to "edit", edit_animal_path, method: :get %>
+    </p>
+    <p class="delete-animal-button">
+      <%= link_to "delete", animal_delete_path(@animal.id), method: :delete, data: { confirm: "Really delete this animal?" } %>
+    </p>
+  </section>
+</section>
