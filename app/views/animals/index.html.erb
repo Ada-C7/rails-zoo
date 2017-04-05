@@ -1,0 +1,47 @@
+<body>
+
+<h1>Welcome to Rails Zoo</h1>
+
+<table>
+  <tr>
+    <th>
+    <th>
+     Name
+    </th>
+    <th id="table_head2">
+    Species
+    </th>
+    <th>
+    Age
+    </th>
+    <th>
+
+    </th>
+  </tr>
+
+<% @animals.each do |animal|%>
+  <tr>
+
+    <td class="home_img"><%= link_to (image_tag animal.image_link), animal_path(animal.id) %></td>
+
+    <td><%= link_to animal.name, animal_path(animal.id) %></td>
+
+    <td><%= animal.species %></td>
+
+    <td><%= animal.age %></td>
+
+    <td><%= animal.age_unit %></td>
+    <td>
+    <%= button_to "Update", edit_animal_path(animal.id), :class => "button", method: :get %></td>
+
+    <td>
+    <%= button_to "Delete", delete_animal_path(animal.id), :class => "button", method: :delete, data: {confirm: "Are you sure you want to delete this"} %></td>
+
+  </tr>
+  <% end %>
+</table>
+
+<p >
+<%= link_to "Create New Animal", new_animal_path , :class => "button"%>
+</p>
+</body>
