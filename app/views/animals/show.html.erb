@@ -1,0 +1,19 @@
+<article class="show">
+  <h1><%= @animal.name %> the <%= @animal.species %></h1>
+  <section>
+    <% if @animal.image == nil %>
+      <img src="http://lorempixel.com/200/200/animals" alt="animal photo">
+    <% else %>
+      <%= image_tag(@animal.image, alt:"animal photo") %>
+    <% end %>
+    <p>
+      <%= @animal.name %> the <%= @animal.species %> is <%= @animal.age %> years old.
+    </p>
+
+    <p id="links">
+      <%= link_to "Edit Animal", edit_animal_path %>
+
+      <%= link_to "Remove Animal", delete_animal_path, method: :delete, data: { confirm: "Are you sure?"} %>
+    </p>
+  </section>
+</article>

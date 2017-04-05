@@ -17,8 +17,24 @@ Each requirements section of this assignment has three sections: **think, create
 ## Primary Requirements
 ### Create Controller & Model
 **Think**:
-- What Rails CLI command do we use to generate a new controller? Are controllers supposed to be singular or plural?
-- What Rails CLI command do we use to generate a new model? Are models supposed to be singular or plural? Where do we put the fields in the migration?
+- What Rails CLI command do we use to generate a new controller?
+ Rails Generate controller name(s) action(optional)
+
+Are controllers supposed to be singular or plural?  
+Plural according to conventions.
+
+- What Rails CLI command do we use to generate a new model?
+rails generate model name(singular) data columnns
+
+Are models supposed to be singular or plural?
+Models are singular.
+
+Where do we put the fields in the migration?
+In the migration file, you put name of table, name of column, and data type as such:   
+def change
+    add_column :tasks, :complete_by, :date
+    add_column :tasks, :status, :string
+  end
 
 **Create**:
 1. a rails controller with the name `animals`
@@ -35,7 +51,10 @@ Each requirements section of this assignment has three sections: **think, create
 ### View All Animals
 **Think**:
 - Which route (including controller#action) do you use for viewing _all_ of a given resource?
+Index.  Route is get '/animals', to: 'animals#index'
+
 - Which _model method_ do you use to retrieve _every item_ from the database?
+Animal.all
 
 **Create**:
 1. the route
@@ -48,8 +67,8 @@ Each requirements section of this assignment has three sections: **think, create
 
 ### View One Animal
 **Think**:
-- Which route (including controller#action) do you use for viewing a _single_ resource?
-- Which _model method_ do you use to retrieve a _single_ item from the database?
+- Which route (including controller#action) do you use for viewing a _single_ resource? get '/animals/:id', to: 'animals#show'
+- Which _model method_ do you use to retrieve a _single_ item from the database? Animal.find(:id)
 
 **Create**:
 1. the route (including the param)
@@ -64,8 +83,16 @@ Each requirements section of this assignment has three sections: **think, create
 
 ### Create an Animal
 **Think**:
-- Which **routes** (including controller#action) do you use for creating a new resource? What is the purpose of each route and how do they work together to complete the whole action?
+- Which **routes** (including controller#action) do you use for creating a new resource?
+get '/animals/new', to: animals#new, as: new_animal
+post '/animals', to: animals#create
+
+What is the purpose of each route and how do they work together to complete the whole action?
+Get gets the form to fill out the info for a new Animal.
+Post posts that information and saves it to the database.
+
 - Which _model methods_ do you use to create and save a new item to the database?
+Animal.new and Animal.save
 
 **Create**:
 1. the routes

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyZoo</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= image_tag("animals.jpg", id: "back", alt: "background-image") %>
+    <header>
+      <ul id="navbar">
+        <li>
+          <%= link_to "Home", animals_path %>
+        </li>
+        <li>
+          <%= link_to "New Animal", new_animal_path %>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+</html>

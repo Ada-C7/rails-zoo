@@ -1,0 +1,13 @@
+<article class="index">
+  <h1>My Zoo</h1>
+  <% @animals.each do |animal| %>
+    <%= link_to animal_path(animal.id) do %>
+      <div class="animal">
+        <p class>
+          <%= animal.name %><br />the <%= animal.species %>
+        </p>
+      </div>
+    <% end %>
+  <% end %>
+
+</article>
