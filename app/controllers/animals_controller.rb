@@ -23,11 +23,6 @@ class AnimalsController < ApplicationController
     redirect_to animals_path
   end
 
-
-
-
-
-
   def new
     @animal = Animal.new
   end
