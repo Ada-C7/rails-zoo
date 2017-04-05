@@ -1,0 +1,14 @@
+<h2> Animal Profile </h2>
+
+<%= image_tag(@animal.image_url, alt: "animal picture", size: "300x200", class: :profile_photo) %>
+<ul>
+  <li><%= @animal.name %> says hello!</li>
+  <li>Species: <%= @animal.species %></li>
+  <li>Age: <%= @animal.age %></li>
+</ul>
+
+<%= link_to "Delete", delete_animal_path(@animal.id),
+    data: {confirm: "Are you sure you want to delete this animal?"},
+    method: :delete, class: :button %>
+<%= link_to "Update", edit_animal_path(@animal.id), class: :button %>
+<%= link_to "Home", animals_path, class: :button %>

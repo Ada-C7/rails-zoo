@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seattle Safari</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="background-image">
+    <header>
+      <h1> Seattle Safari </h1>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+    <footer>
+      <h4 id="copyright"> &copy; Alena Messmer 2017 </h4>
+    </footer>
+  </body>
+</html>

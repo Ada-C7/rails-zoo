@@ -1,0 +1,16 @@
+<h2> Meet our charges! </h2>
+
+<ul>
+  <% @animals.each do |animal| %>
+    <div class="animal-profile">
+      <li class="name">
+        <%= link_to animal.name, animal_path(animal.id), class: :name %>
+       </li>
+      <li>
+       <%= link_to image_tag(animal.image_url, alt: "Animal Picture", class: :home_photo), animal_path(animal.id) %>
+     </li>
+    </div>
+  <% end %>
+</ul>
+
+<%= link_to "Add Animals", new_animal_path, class: :button %>
