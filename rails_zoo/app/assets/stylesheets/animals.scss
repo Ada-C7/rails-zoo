@@ -1,0 +1,32 @@
+// Place all the styles related to the Animals controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+  background-color: lightyellow;
+  color: gray;
+  font-family: fantasy;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+a[href] {
+  text-decoration: none;
+  color: darkgreen;
+}
+
+body {
+  text-align: center;
+  margin-top: 100px;
+}
+
+ul {
+  border-style: dashed;
+  border-color: lightblue;
+  border-width: thin;
+  width: 50%;
+  margin-left: 250px;
+}

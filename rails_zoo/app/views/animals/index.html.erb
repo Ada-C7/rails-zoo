@@ -1,0 +1,10 @@
+<h1>Welcome to our Zoo!</h1>
+<p>We cannot wait for you to get to know our animals..</p>
+
+<ul>
+<% @animals.each do |animal| %>
+<li>This is <%= link_to animal.name, animal_path(animal.id) %> !</li>
+  <% end %>
+</ul>
+<p> Please click on each animal's name for more information! </p>
+<p> <%= link_to "New Animal", new_animal_path %> </p>
