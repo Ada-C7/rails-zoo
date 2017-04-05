@@ -1,0 +1,14 @@
+<main>
+
+
+
+<ul>
+
+<% @animals.each do |animal| %>
+   <li><%= link_to animal.name, animal_path(animal.id)  %> the <%= animal.species %> </li>
+   <% end %>
+
+
+</ul>
+
+</main>
