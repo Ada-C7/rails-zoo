@@ -1,0 +1,13 @@
+<header>
+  <h1>A Closer Look!</h1>
+</header>
+
+<img src=<%= @animal.img_link %> />
+
+<p>
+<%= @animal.name %> is a <%= @animal.species %> who is <%= @animal.age %> year(s) old.
+</p>
+
+<%= link_to "Edit", edit_animal_path(@animal.id) %>
+
+<%= link_to "Home", animals_path %>
