@@ -1,0 +1,10 @@
+<h2><%= @animal.name %></h2>
+
+<%= image_tag 'http://lorempixel.com/300/300/animals/', alt: 'random animal' %>
+
+<h3><%= @animal.species %> | <%= @animal.age %></h3>
+
+<%= link_to "Edit Bulletin", edit_animal_path(@animal) %>
+
+<%= link_to "Delete Bulletin", delete_animal_path(@animal), data: { confirm: "Are you sure you want to delete this bulletin?"},
+method: :delete %>

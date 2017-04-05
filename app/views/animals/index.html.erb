@@ -1,0 +1,15 @@
+<h1>All Animals</h1>
+<p> Rails Zoo is an online animal rescue bulletin board focused on connecting anminals to the best care physicans, assiting animals back to their natural habitat, the best home and care for the animals who unfrotunely can't return home. </p>
+<p> Browse our current postings to learn more about each animal </p>
+
+<ul class: "animals">
+  <% @animals.each do |animal| %>
+    <li>
+    <%= link_to animal.name, animal_path(animal.id) %> | <%= animal.species %> | <%= animal.age %>
+    </li>
+  <% end %>
+</ul>
+
+<p>
+<%= link_to "Post New Animal", new_animal_path %>
+</p>
