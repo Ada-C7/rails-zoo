@@ -1872,3 +1872,205 @@ Processing by AnimalsController#show as HTML
 Completed 200 OK in 34ms (Views: 29.5ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/animals" for ::1 at 2017-03-30 14:28:28 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 51ms (Views: 46.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/animals/7" for ::1 at 2017-03-30 14:28:30 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mAnimal Load (0.1ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 33ms (Views: 28.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/animals" for ::1 at 2017-03-30 14:28:49 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 43ms (Views: 39.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/animals/2" for ::1 at 2017-03-30 14:28:51 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 31ms (Views: 25.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/animals/2/edit" for ::1 at 2017-03-30 14:28:56 -0700
+Processing by AnimalsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAnimal Load (0.1ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering animals/edit.html.erb within layouts/application
+  Rendered animals/_form.html.erb (8.7ms)
+  Rendered animals/edit.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/animals" for ::1 at 2017-03-30 14:29:06 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 48ms (Views: 44.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/animals/new" for ::1 at 2017-03-30 14:29:07 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/_form.html.erb (4.5ms)
+  Rendered animals/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 49ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals" for ::1 at 2017-03-30 14:29:15 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 42ms (Views: 37.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-04-03 10:07:51 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 364ms (Views: 351.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/animals/1" for ::1 at 2017-04-03 10:08:07 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 37ms (Views: 22.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/animals/1/edit" for ::1 at 2017-04-03 10:08:14 -0700
+Processing by AnimalsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.1ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/edit.html.erb within layouts/application
+  Rendered animals/_form.html.erb (26.4ms)
+  Rendered animals/edit.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 52ms (Views: 47.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/animals/1" for ::1 at 2017-04-03 10:08:19 -0700
+Processing by AnimalsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vJ6Fg0iVrY78h0w+ArU1TPhXbd6lvZ911mxOt3IpQy9Otdp+p1+ii42qsKLUORFN8ogPtHXuQFllT0875R7Crg==", "animal"=>{"name"=>"Nilpferd", "species"=>"hippopotamus", "sci_name"=>"Hippopotamus amphibius", "age"=>"17", "image"=>"http://www.krugerpark.co.za/images/1-hippopotamus-gc590a.jpg"}, "commit"=>"Update Animal", "id"=>"1"}
+  [1m[36mAnimal Load (0.1ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "animals" SET "age" = ?, "updated_at" = ? WHERE "animals"."id" = ?[0m  [["age", 17], ["updated_at", 2017-04-03 17:08:19 UTC], ["id", 1]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/animals/1
+Completed 302 Found in 12ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/animals/1" for ::1 at 2017-04-03 10:08:19 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimal Load (0.1ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/animals" for ::1 at 2017-04-03 10:08:25 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/animals/7" for ::1 at 2017-04-03 10:08:28 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mAnimal Load (0.1ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 30ms (Views: 25.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/animals" for ::1 at 2017-04-03 10:08:43 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 39ms (Views: 34.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/animals/5" for ::1 at 2017-04-03 10:08:46 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 25ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-04-03 10:23:09 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 291ms (Views: 278.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/animals/new" for ::1 at 2017-04-03 10:24:04 -0700
+Processing by AnimalsController#new as HTML
+  Rendering animals/new.html.erb within layouts/application
+  Rendered animals/_form.html.erb (13.0ms)
+  Rendered animals/new.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animals" for ::1 at 2017-04-03 10:26:44 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/animals/4" for ::1 at 2017-04-03 10:26:46 -0700
+Processing by AnimalsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering animals/show.html.erb within layouts/application
+  Rendered animals/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/animals/4/edit" for ::1 at 2017-04-03 10:26:49 -0700
+Processing by AnimalsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAnimal Load (0.2ms)[0m  [1m[34mSELECT  "animals".* FROM "animals" WHERE "animals"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering animals/edit.html.erb within layouts/application
+  Rendered animals/_form.html.erb (6.2ms)
+  Rendered animals/edit.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 34ms (Views: 28.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/animals" for ::1 at 2017-04-03 10:27:01 -0700
+Processing by AnimalsController#index as HTML
+  Rendering animals/index.html.erb within layouts/application
+  [1m[36mAnimal Load (0.5ms)[0m  [1m[34mSELECT "animals".* FROM "animals"[0m
+  Rendered animals/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 37ms (Views: 32.8ms | ActiveRecord: 0.5ms)
+
+
