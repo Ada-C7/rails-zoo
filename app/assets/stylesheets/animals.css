@@ -1,0 +1,109 @@
+/*// Place all the styles related to the Animals controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+.button_link {
+  display: inline-block;
+}
+.button_image {
+  vertical-align: middle;
+  height: 30px;
+}
+.button_image_a {
+  vertical-align: middle;
+  height: 60px;
+}
+
+/************************************************
+INDEX
+*************************************************/
+#index_site section {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  line-height: 1.5em;
+}
+
+#index_site p {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+#index_header_text{
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#index_add_button {
+  float: right;
+}
+
+#index_animal_info {
+  width: 60%;
+}
+
+#index_animal_buttons {
+  float: right;
+}
+
+
+/************************************************
+SHOW
+*************************************************/
+#show_section {
+  position: relative;
+  text-align: center;
+}
+
+#show_section h1 {
+  padding-bottom: 5%;
+}
+
+#show_image {
+  max-width:50%;
+  height:auto;
+  border-radius: 10px;
+}
+
+#show_about_text {
+  padding: 3%;
+  border: 4px solid #0E8044;
+  border-radius: 10px;
+  text-align: justify;
+}
+
+/************************************************
+_FORM
+*************************************************/
+
+#_form_section{
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+#_form_section .label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#_form_section .field {
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+}
+
+#_form_section_submit {
+  text-align: center;
+}
+
+/************************************************
+EDIT and NEW
+*************************************************/
+
+#edit_section, #new_section  {
+  text-align: center;
+  padding: 5%;
+}

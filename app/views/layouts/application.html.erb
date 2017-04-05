@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsZoo</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href='//fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+  </head>
+
+  <body>
+    <header>
+      <div id ="home_image">
+        <%= link_to image_tag("zoo1.png", alt: "Home", height: "40px"), animals_path %>
+      </div>
+      <h1>Rails Zoo</h1>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+</html>
