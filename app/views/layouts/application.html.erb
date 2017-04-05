@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jackie's Zoo</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <header>
+    <h1>Jackie's Awesome Zoo</h1>
+    <nav>
+        <ul>
+          <li><%= link_to "Animals", animals_path %></li>
+    
+        </ul>
+      </nav>
+  </header>
+  <main>
+
+    <%= yield %>
+  </main>
+  <footer>
+    <div class="copyright">
+            &copy;2017 Jackie Watanabe
+    </div>
+  </footer>
+</body>
+</html>

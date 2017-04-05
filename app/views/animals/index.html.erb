@@ -1,0 +1,14 @@
+<!-- <h1>Jackie's Zoo</h1> -->
+<h2>Animal Roster</h2>
+<!-- <p>Find me in app/views/animals/index.html.erb</p> -->
+
+<ul class="index-list">
+<% @animals.each do |animal| %>
+  <li>
+    <%= link_to animal.name, animal %>
+  </li>
+
+<% end %>
+</ul>
+
+<%= link_to "Add new animal", new_animal_path, class: "add-new" %>
