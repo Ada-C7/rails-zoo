@@ -1,0 +1,10 @@
+<h1>Our Animals</h1>
+
+
+<ul>
+  <li><%=" Animal ##{@animal.id}: #{@animal.name} is a #{@animal.age} year old #{@animal.species}."%> </li>
+
+</ul>
+
+<%=link_to "Return Home", animals_path%>
+<%=link_to "Add an animal", new_animal_path=%>
