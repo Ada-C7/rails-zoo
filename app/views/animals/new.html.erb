@@ -1,0 +1,11 @@
+<h2>Add an Animal</h2>
+
+<section><%= form_for @animal do |f| %>
+<ul>
+  <li>Name: <%= f.text_field :name %></li>
+  <li>Species: <%= f.text_field :species %></li>
+  <li>Age: <%= f.number_field :age %></li>
+  <li>Image URL: <%= f.text_field :image_url %></li>
+  <%= f.submit %>
+</ul>
+<% end %></section>

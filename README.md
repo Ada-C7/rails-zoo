@@ -18,7 +18,10 @@ Each requirements section of this assignment has three sections: **think, create
 ### Create Controller & Model
 **Think**:
 - What Rails CLI command do we use to generate a new controller? Are controllers supposed to be singular or plural?
+>Answer: You would use the command 'rails generate controller plural_noun'. Plural form is used because the controller will be referencing multiple instances of the object.
+
 - What Rails CLI command do we use to generate a new model? Are models supposed to be singular or plural? Where do we put the fields in the migration?
+>Answer: You would use the command 'rails generate model singular_noun'. The tables will be labeled with the plural format but the model itself should be singular.
 
 **Create**:
 1. a rails controller with the name `animals`
@@ -35,7 +38,10 @@ Each requirements section of this assignment has three sections: **think, create
 ### View All Animals
 **Think**:
 - Which route (including controller#action) do you use for viewing _all_ of a given resource?
+> get '/animals', to: 'animals#index'
+
 - Which _model method_ do you use to retrieve _every item_ from the database?
+> Animal.all
 
 **Create**:
 1. the route
@@ -49,7 +55,10 @@ Each requirements section of this assignment has three sections: **think, create
 ### View One Animal
 **Think**:
 - Which route (including controller#action) do you use for viewing a _single_ resource?
+> get '/animals/:id', to: 'animals#show', as: 'animal'
+
 - Which _model method_ do you use to retrieve a _single_ item from the database?
+> Animal.find(id)
 
 **Create**:
 1. the route (including the param)
@@ -65,7 +74,12 @@ Each requirements section of this assignment has three sections: **think, create
 ### Create an Animal
 **Think**:
 - Which **routes** (including controller#action) do you use for creating a new resource? What is the purpose of each route and how do they work together to complete the whole action?
+> get '/animals/new', to: 'animals#new' AND
+> post '/animals', to: 'animals#create'
+
 - Which _model methods_ do you use to create and save a new item to the database?
+> Animal.new AND
+> Animal.save
 
 **Create**:
 1. the routes
@@ -84,6 +98,34 @@ Each requirements section of this assignment has three sections: **think, create
 
 ## Optional
 - Complete the edit/update action
+
+> (R) Add routes in routes.rb edit/update
+> get 'animals/:id/edit', to: 'animals#edit', as: 'edit_animal' AND
+> patch 'animals/:id', to: 'animals#update'
+
+> (C) Add methods in animals Controller (edit/update)
+> edit method will find a specific record (to edit) AND
+> update will find a specific record and update + save new values + redirect AND
+> create private method to designate which params to allow
+
+> (V) Add new View file for edit
+> add form to update the record with user input
+
 - Complete the delete action
+
+> (R) Add a route in routes.rb for delete
+> delete 'animal/:id', to: 'animal#destroy'
+
+> (C) Add a method in the animals Controller (destroy) + link back to all animals
+
+> (V) Create a link to delete each animal in the index.html AND
+> call the destroy method AND display popup warning
+
 - Add an image field to the model for an Animal
   - this field will store the location of an image on the internet and be used to display the image on the animal's show page
+
+> (M) Add a new column to store a URL (as string?)
+
+> (V) Add a way to get user input for the URL in new/edit forms
+
+> (V) Display image of the animal (if one exists) in the show page
