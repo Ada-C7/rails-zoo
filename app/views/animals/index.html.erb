@@ -1,0 +1,20 @@
+<h1>Welcome to Animal List</h1>
+<% @animals.each do |animal|%>
+  <ul>
+    <li class="bold">
+      <%= link_to animal.name, animal_path(animal.id) %>
+    </li>
+    <li>
+      <%= button_to "Delete", animal_path(animal.id), method: :delete,
+      data: {confirm: "Are you sure to delete animal #{animal.name}"} %>
+    </li>
+    <li>
+      <%= button_to "Edit", edit_animal_path(animal.id), method: :get%>
+    </li>
+
+  </ul>
+
+<% end %>
+<nav class="button">
+  <%= link_to "Add an Animal", new_animal_path %>
+</nav>

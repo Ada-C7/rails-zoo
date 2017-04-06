@@ -1,0 +1,22 @@
+<section>
+  <%= form_for @animal do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name%> <!-- #, value: "initial name", class: "name-field" %> -->
+
+    <%= f.label :species %>
+    <%= f.text_field :species %>
+
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+
+    <%= f.label :size %>
+    <%= f.text_field :size %>
+
+    <%= f.submit value: "#{submit_text} Animal"%>
+  <% end %>
+
+
+  <ul class ="button">
+    <li><%= link_to "Go back to the Animal list", animals_path %></li>
+  </ul>
+</section>
