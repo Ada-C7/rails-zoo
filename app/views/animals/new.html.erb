@@ -1,0 +1,12 @@
+<header>
+  <h1>Add a New Animal</h1>
+</header>
+
+<main>
+  <%= render partial: "form", locals: { submit_text: "Add Animal"} %>
+</main>
+
+<footer>
+  <p><%= link_to "Home", animals_path %></p>
+  <p><%= link_to 'Back', :back %></p>
+</footer>
