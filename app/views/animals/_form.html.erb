@@ -1,0 +1,20 @@
+<section id="form">
+  <%= form_for @animal do | f | %>
+    <%= f.label :name %>
+    <%= f.text_field :name, size: "100%" %>
+
+    <%= f.label :species %>
+    <%= f.text_field :species, size: "100%" %>
+
+    <%= f.label :age %>
+    <%= f.text_field :age, size: "100%" %>
+
+    <%= f.label :description %>
+    <%= f.text_field :description, size: "100%" %>
+
+    <%= f.label "Image" %>
+    <%= f.text_field :img, size: "100%" %>
+
+    <%= f.submit %>
+  <% end %>
+</section>

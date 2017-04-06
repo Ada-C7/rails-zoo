@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsZoo</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <%= favicon_link_tag 'favicon-paw.ico' %>
+  </head>
+
+  <body>
+    <header>
+      <%= link_to '<i class="fa fa-paw" aria-hidden="true"></i> RAILS ZOO'.html_safe, root_path, :id => "logo" %>
+    </header>
+    <section id="content">
+      <%= yield %>
+    </section>
+  </body>
+</html>
