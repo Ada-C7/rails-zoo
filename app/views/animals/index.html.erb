@@ -1,0 +1,9 @@
+<h1>The Office - Zoo Edition</h1>
+<ul>
+  <% @animals.each do |animal| %>
+  <li><%= link_to animal[:name], animal_path(animal[:id]) %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Add an Animal", new_animal_path %>
+<!-- <p>Find me in app/views/animals/index.html.erb</p> -->
