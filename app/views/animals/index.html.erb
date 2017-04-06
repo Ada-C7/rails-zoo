@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Ting's Animal Zoo </title>
+  </head>
+  <body>
+    <main>
+      <h2> All of the Animals </h2>
+      <ul>
+        <% @animals.each do |animal| %>
+          <li>
+            <%= link_to "Name: #{animal.name}", animal_path(animal.id) %>
+            <%= button_to "Edit Animal", edit_animal_path(animal.id), method: :get %>
+            <%= button_to "Delete Animal", delete_animal_path(animal.id), method: :delete, data: {confirm: "Are you sure you want to delete #{animal.name}?"} %>
+          </li>
+        <% end %>
+      </ul>
+      <%= button_to "Add new animal", new_animal_path, method: :get %>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,2 @@
+<%= render partial: "form", locals: { action_name: "Edit"} %>
+<%= button_to "Delete Animal", delete_animal_path(@animal.id), method: :delete, data: {confirm: "Are you sure you want to delete #{@animal.name}?"} %>
