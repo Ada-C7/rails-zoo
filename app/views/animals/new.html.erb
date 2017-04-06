@@ -1,0 +1,21 @@
+<h1>Add an animal!</h1>
+
+
+<%= form_for @animal do |f| %>
+
+  <%=f.label :name %>
+  <%=f.text_field :name %>
+
+  <%=f.label :species %>
+  <%=f.text_field :species %>
+
+  <%=f.label :age %>
+  <%=f.text_field :age %>
+
+  <%= f.label :profile %>
+  <%= f.text_area :profile, size: "40x6" %>
+
+
+  <%= f.submit "Add a new friend!" %>
+
+<% end %>
