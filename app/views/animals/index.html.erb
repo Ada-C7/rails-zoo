@@ -1,0 +1,10 @@
+<h1>List of Animals</h1>
+
+<ul class="animal-list">
+
+<% @animals.each do |animal| %>
+<li><%= link_to animal.name, animal_path(animal.id) %></li>
+<% end %>
+</ul>
+
+<%= button_to "Would you like to create a new animal?", new_animal_path, class: "button", method: :get %>
