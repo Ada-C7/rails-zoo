@@ -1,0 +1,31 @@
+<%= form_for @animal do |f| %>
+<ul>
+  <li>
+    <%= f.label :photo_url, "Profile Photo Link" %>
+  </li>
+  <li>
+    <%= f.text_field :photo_url, class:"form"%>
+  </li>
+  <li>
+    <%= f.label :name %>
+  </li>
+  <li>
+    <%= f.text_field :name, class:"form" %>
+  </li>
+  <li>
+    <%= f.label :species %>
+  </li>
+  <li>
+    <%= f.text_area :species, class:"form" %>
+  </li>
+  <li>
+    <%= f.label :age %>
+  </li>
+  <li>
+    <%= f.number_field :age, class:"form"%>
+  </li>
+  <li>
+    <%= f.submit nil, class:"form" %>
+  </li>
+</ul>
+<% end %>

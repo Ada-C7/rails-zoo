@@ -1,0 +1,19 @@
+<h1 class="banner">Wild Cat Sanctuary</h1>
+
+<ul class="list">
+  <% @animals.each do |animal| %>
+  <div class="img_name">
+    <li>
+      <%= link_to image_tag(animal.photo_url, class:"small_pic"), animal_path(animal.id) %>
+    </li>
+    <li>
+      <%= link_to "#{animal.name} the #{animal.species}", animal_path(animal.id) %>
+    </li>
+  </div>
+
+  <% end %>
+</ul>
+
+<div class="options">
+  <h2><%= link_to "Add New Animal", new_animal_path %></h2>
+</div>
