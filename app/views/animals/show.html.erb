@@ -1,0 +1,22 @@
+<% @title = " - " + @animal.name + " the " + @animal.species %>
+<% @animals_selected = true %>
+
+<main>
+  <h2><%= @animal.name %> the <%= @animal.species %></h2>
+
+  <% if @animal.image && @animal.image != ""%>
+    <img src="<%= @animal.image %>" alt="<%= @animal.name + " the " + @animal.species %>">
+  <% end %>
+  <p>
+    <%= @animal.name %> is <%= @animal.age %> years old.
+  </p>
+  <p>
+    <%= link_to "Edit " + @animal.name, edit_animal_path, class: "btn" %>
+    <%=
+      link_to "Delete " + @animal.name, delete_animal_path,
+      data: { confirm: "Are you sure you want to delete this animal?" },
+      method: :delete,
+      class: "delete btn"
+    %>
+  </p>
+</main>
