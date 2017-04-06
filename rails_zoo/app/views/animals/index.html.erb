@@ -1,0 +1,17 @@
+<h1>Animals Index</h1>
+
+
+
+<ul>
+  <% @animals.each do |animal|%>
+
+  <li>
+    <%= link_to animal.name, { :action => 'details', :id => animal.id} %>
+
+
+
+</li>
+  <% end %>
+</ul>
+
+<%= link_to('New' , { :action => 'new'})%>

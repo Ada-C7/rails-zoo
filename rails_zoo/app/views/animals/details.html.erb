@@ -1,0 +1,7 @@
+<h1>Animal Details</h1>
+
+<%= @animal.name  %>
+<%= @animal.age  %>
+<%= @animal.breed  %>
+
+<%= link_to('Delete' , animals_path(@animal) , :method => :destroy, data: {confirm: "Are you sure?"}) %>
