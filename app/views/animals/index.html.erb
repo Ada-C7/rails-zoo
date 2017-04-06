@@ -1,0 +1,15 @@
+
+  <main>
+    <h1>ANN-imals</h1>
+    <ul>
+      <% @animals.each do |a| %>
+      <li>
+      <%= link_to a.name, each_animal_path(a.id) %> : <%= a.species %> in the <%= a.location %>
+      </li>
+      <% end %>
+    </ul>
+    <h2><%= link_to "{ add an ann-imal }", new_animal_path %> </h2>
+  </main>
+  <footer>
+    copyright ann dai 2017
+  </footer>

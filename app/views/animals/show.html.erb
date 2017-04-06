@@ -1,0 +1,13 @@
+
+  <main>
+    <h1><%= @animal.name %></h1>
+    <img src="/assets/<%=@animal.name%>.jpg" style="width:300px;height:220px">
+    <h3>Species: <%= @animal.species %></h3>
+    <h3>Age: <%= @animal.age %></h3>
+    <h3>Likes to eat <%= @animal.fave_food %></h3>
+    <!-- <h2><%= link_to "{ delete this ann-imal }", url_for(method: :destroy, data: {confirm: "Are you sure?"} %> </h2> -->
+  </main>
+
+  <footer>
+    copyright ann dai 2017
+  </footer>
