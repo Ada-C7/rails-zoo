@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import url('https://fonts.googleapis.com/css?family=Walter+Turncoat');
+
+
+* {
+  font-family: 'Walter Turncoat', cursive;
+  color: #731f63;
+}
+body {
+  background-color: #a2c161;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #739628;
+}
+em {
+  font-style: italic;
+}
+.container,
+nav {
+  width: 450px;
+  margin: 20px auto 0px;
+}
+.container {
+  text-align: center;
+  border: solid 1px #731f63;
+  padding: 20px;
+  background-color: #f0f8b9;
+}
+.spacer {
+  height: 50px;
+}
+.navlink {
+  text-align: center;
+  margin-top: 5px;
+}
+.animalpic {
+  width: 300px;
+  border: solid 1px #731f63;
+}
+label {
+  display: inline-block;
+  text-align: left;
+  width: 20%;
+}
+input {
+  display: inline-block;
+  width: 75%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.submit {
+  width: 75%;
+}
+.button {
+  width: 100px;
+  background-color: #a2c161;
+  border-width: 1px;
+  margin-top: 10px;
+  margin-left: -10%;
+}

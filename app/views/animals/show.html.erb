@@ -1,0 +1,19 @@
+<section class="container">
+  <img class="animalpic" src="<%= @animal.image %>"
+  <br/>
+  <p>Name: <%= @animal.name %></p>
+  <p>Species: <%= @animal.species %></p>
+  <p>Scientific name: <em><%= @animal.sci_name %></em></p>
+  <p>Age: <%= @animal.age %></p>
+  <br/>
+</section>
+
+<nav>
+  <div class="navlink">
+    <%= link_to "[return to all animals]", animals_path %> |
+    <%= link_to "[edit animal]", edit_animal_path %> |
+    <%= link_to "[delete animal]", delete_animal_path(@animal.id),
+    data: {confirm: "Delete this animal?"},
+    method: :delete %>
+  </div>
+</nav>

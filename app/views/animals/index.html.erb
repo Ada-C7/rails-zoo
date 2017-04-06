@@ -1,0 +1,16 @@
+<section class="container">
+
+  <h1>All of the animals</h1>
+
+  <% @animals.each do |animal| %>
+    <%= link_to animal.name, animal_path(animal.id) %>
+    <br/>
+  <% end %>
+  <div class="spacer">
+
+  </div>
+</section>
+<div class="navlink">
+  <%= link_to "[add a new animal]", new_animal_path %>
+</div>
+</nav>
