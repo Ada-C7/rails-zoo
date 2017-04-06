@@ -1,0 +1,13 @@
+<h1>Sahana's Sanctuary</h1>
+<h2>Meet our animals!</h2>
+
+<ul>
+  <% @animals.each do |animal| %>
+  <li>
+    <%= link_to animal.name, animal_path(animal.id) %>
+    <%= link_to "Adopted", animal_path(animal), data: {method: :delete, confirm: "Has #{animal.name} been adopted?"} %>
+  </li>
+  <% end %>
+</ul>
+
+<%= link_to "Add a new animal", new_animal_path %>
