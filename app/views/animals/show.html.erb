@@ -1,0 +1,20 @@
+<section id="show">
+
+  <h1> <%= @result_animal.name %></h1>
+
+  <p>
+    <strong>Species:</strong> <%= @result_animal.species %>
+  </p>
+  <p>
+    <strong>Age:</strong> <%= @result_animal.age %>
+  </p>
+  <p>
+    <%= link_to "Edit", edit_animal_path(@result_animal.id) %>
+  </p>
+  <p>
+    <%= link_to "Delete", delete_animal_path(@result_animal.id), data: {confirm: "Are you sure you want to remove this animal?" }, method: :delete %>
+  </p>
+  <p>
+    <%= link_to "Back to list", animals_path %>
+  </p>
+</section>

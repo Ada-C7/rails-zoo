@@ -1,0 +1,14 @@
+<h1>Zoo Animals!</h1>
+
+<section>
+  <ul>
+    <% @animals.each do |animal| %>
+    <li>
+      <%= link_to animal.name, animal_path(animal.id) %>
+    </li>
+    <% end %>
+  </ul>
+  <p>
+    <%= link_to "Add Animal", new_animal_path %>
+  </p>
+</section>
