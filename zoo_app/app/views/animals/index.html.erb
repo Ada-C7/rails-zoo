@@ -1,0 +1,23 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Nunito" rel="stylesheet">
+</head>
+
+
+<h1>Rails Zoo</h1>
+
+<% @animals.each do |a| %>
+<section class="animals" >
+<a href="/animals/<%= a.id %>"<ul class = "animal">
+  <h2>
+  <%= a.name %>
+  </h2>
+  <li>
+    species: <%= a.species %>
+  </li>
+  <li>
+    age: <%= a.age %>
+  </li>
+</ul></a>
+</section>
+
+<% end %>

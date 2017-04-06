@@ -1,0 +1,45 @@
+// Place all the styles related to the Animals controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+body {
+   background-image: url("zoo.jpeg");
+   background-repeat:no-repeat;
+   background-size:cover;
+   text-align:center;
+   color:white;
+   a {
+     text-decoration:none;
+     color:black;
+   }
+ }
+
+h1 {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 2.0em;
+}
+
+.animals {
+  display:inline-block;
+  vertical-align: middle;
+  .animal {
+    color:white;
+    position:relative;
+    // border-style:solid;
+    list-style:none;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+
+    h2 {
+      margin-right:30px;
+    }
+
+    &:hover {
+      color:blue;
+    }
+  }
+
+}
