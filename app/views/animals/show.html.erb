@@ -1,0 +1,7 @@
+<h1><%= @animal.name %></h1>
+<p>I am <%= @animal.age %> years old</p>
+<p>I have <%= @animal.leg_numbers %> legs</p>
+<img src=<%=@animal.image%>><br />
+<%= button_to "Bye", animal_path(@animal.id), method: :delete, data: {confirm: "Will you really delete me?"} %>
+<%= button_to "Edit", edit_animal_path(@animal.id) %>
+<%= link_to "<< Back to Animals List", animals_path %>

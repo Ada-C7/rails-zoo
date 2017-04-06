@@ -1,0 +1,28 @@
+<h1>Fix your animal</h1>
+
+<%= form_for(@animal) do |f| %>
+<ul>
+  <% @animal.errors.full_messages.each do |error| %>
+  <li><%= error %></li>
+  <% end %>
+</ul>
+<p>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+</p>
+<p>
+  <%= f.label :species %><br />
+  <%= f.text_area :species %>
+</p>
+<p>
+  <%= f.label :age %><br />
+  <%= f.text_area :age %>
+</p>
+<p>
+  <%= f.label :leg_numbers %><br />
+  <%= f.text_area :leg_numbers %>
+</p>
+<p>
+  <%= f.submit %>
+</p>
+<% end %>
