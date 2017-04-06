@@ -1,0 +1,9 @@
+<span>
+  <% if animal.gender.downcase == "female" %>
+    <%= "She" %>
+  <% elsif animal.gender.downcase == "male" %>
+    <%= "He" %>
+  <% else %>
+    <%= animal.name %>
+  <% end %>
+</span>

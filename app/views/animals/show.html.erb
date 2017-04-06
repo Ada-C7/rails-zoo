@@ -1,0 +1,14 @@
+<h1> <%= @animal.name %> </h1>
+<%= image_tag(@animal.image, alt: "Cute animal pic", height: "300px") %>
+<p> <%= "#{@animal.name} is a #{@animal.age} year old #{@animal.species}." %>
+  <%= render partial: "gender", locals: {animal: @animal} %>
+  <%= @animal.details %>.
+</p>
+
+<nav>
+  <%= button_to "Update #{@animal.name}'s Info", edit_animal_path, method: :get %>
+  <%= button_to "Notify of #{@animal.name}'s Passing", animal_path(@animal.id), method: :delete,
+      data: {confirm: "Are you sure #{@animal.name}passed away?"} %>
+
+  <%= link_to "Back to Animals list", animals_path %>
+</nav>

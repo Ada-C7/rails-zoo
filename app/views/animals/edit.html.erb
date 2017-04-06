@@ -1,0 +1,10 @@
+<h1>Update an Animal</h1>
+<section>
+  <%= form_for @animal do |f| %>
+    <%= f.label :details %>
+    <%= f.text_field :details, size: "70x10" %>
+
+    <%= f.submit value: "Update" %>
+  <% end %>
+</section>
+<%= link_to "Back to #{@animal.name}'s Page", animal_path %>
