@@ -1,0 +1,8 @@
+<section>
+  <%= form_for @animal do |t| %>
+    Name: <%= t.text_field :name %>
+    Species: <%= t.text_field :species %>
+    Age: <%= t.number_field :age %>
+    <%= t.submit value: "#{submit_text}"%>
+  <%end%>
+</section>
