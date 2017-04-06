@@ -1,0 +1,13 @@
+h1 {
+
+    background-color: #f2f2f2;
+    font-family: cursive;
+    color: blueviolet;
+    text-align: center;
+    font-size: -webkit-xxx-large;
+}
+
+div {
+  float: right;
+  font-style: italic;
+}

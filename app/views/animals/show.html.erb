@@ -1,0 +1,9 @@
+<h1>Animals</h1>
+
+<h2> Name: <%= @animal[:name] %> </h2>
+<h3> Specie: <%= @animal[:species] %> </h3>
+<h3> Age: <%= @animal[:age] %> </h3>
+<h3> Weight: <%= @animal[:weight] %> </h3>
+
+<%= link_to "Back to the fantastic animal's list", animals_path %>
+<%= link_to "Edit information for this cutie", edit_animal_path %>

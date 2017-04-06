@@ -1,0 +1,17 @@
+<h1>Animal</h1>
+
+<ul>
+  <% @animals.each_with_index do |animal, index| %>
+  <li>
+    <%= link_to animal.name, animal_path(animal.id)  %>
+      <div>
+      <%= link_to "Edit information for this cutie", edit_animal_path(animal.id) %>
+      <%= link_to "Delete this cutie from the data base", animal_path(animal), method: :delete,
+      data: {confirm: "Are you sure you want to delete #{animal.name} from de data base?" } %>
+    </div>
+  </li>
+
+  <% end %>
+</ul>
+
+<%= link_to "Add a new member to the family", new_animal_path %>
