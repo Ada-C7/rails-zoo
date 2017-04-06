@@ -1,0 +1,16 @@
+<h1>Meet <%= @animal[:name]%></h1>
+
+<%= image_tag "http://lorempixel.com/400/200/animals", alt: "Photo of animal" %>
+
+<p><%= "#{@animal[:name]} is a/n #{@animal[:species]}." %></p>
+<p><%= " #{@animal[:name]} is #{@animal[:age]} year/s old." %></p>
+
+<p><%= "Favorite Food: #{@animal[:food]}" %></p>
+
+<p><%= " Favorite Toy: #{@animal[:toy]} " %></p>
+
+<p class="links"><%= link_to "Update Animal Info", edit_animal_path %></p>
+
+<p class="links"><%= link_to "Release Animal Into the Wild", animal_path(@animal), method: :delete, data: { confirm: "Are you sure you want to release #{@animal.name} into the wild? You may never see them again." } %></p>
+
+<p class="links"><%= link_to "Get to Know More of Our Animals", animals_path%></p>

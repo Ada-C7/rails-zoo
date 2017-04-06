@@ -1,0 +1,28 @@
+// Place all the styles related to the Animals controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+* {
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  background-color: #c2f0c2;
+  list-style-type: none;
+}
+
+div {
+  margin-top: 50px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 2px solid black;
+}
+
+#image, li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.links {
+  margin-top: 30px;
+}
