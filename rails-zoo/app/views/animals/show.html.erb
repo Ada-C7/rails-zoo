@@ -1,0 +1,11 @@
+<h2><%= @animal[:name] %></h2>
+<ul>
+  <li>Species: <%= @animal[:species]%></li>
+  <li>Age: <%= @animal[:age]%> years old</li>
+</ul>
+
+<!-- <% animal_image = " https://www.google.com/search?tbm=isch&q=" << @animal[:species] %> -->
+
+<%  animal_image = " http://loremflickr.com/480/360/" << @animal[:species] %>
+
+<%= image_tag "http://loremflickr.com/320/240/#{@animal[:species]}"%>

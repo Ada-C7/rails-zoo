@@ -1,0 +1,11 @@
+<h2>Behold God's wonderful creatures!</h2>
+
+<ul>
+  <% @animals.each do |animal| %>
+  <li><%= link_to animal[:name], animal_path(animal.id) %>, the <%= animal[:species]%>:  <%= animal[:age]%> years old</li>
+  <% end %>
+</ul>
+
+<p>
+  <%= button_to "Create Creature", new_animal_path %>
+</p>
