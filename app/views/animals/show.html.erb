@@ -1,0 +1,15 @@
+<h1>Show an Animal</h1>
+<ul>
+    <li>
+        Name: <%= @animal.name %>
+    </li>
+    <li>
+        Species: <%= @animal.species %>
+    </li>
+    <li>
+        Age: <%= @animal.age %>
+    </li>
+    <%=link_to "Edit", edit_animal_path(params[:id]) %>
+    <%= link_to "Delete", delete_animal_path(@animal.id),
+        data: {confirm: "Do you really want to delete?"}, method: :delete %>
+</ul>

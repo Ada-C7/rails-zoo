@@ -1,0 +1,11 @@
+<h1>Animals</h1>
+<!-- <p>Find me in app/views/animals/index.html.erb</p> -->
+<ul>
+    <% @animals.each do |animal| %>
+        <li>
+            <%= link_to animal.name, animal_path(animal.id)%> is a <%= animal.species %> that is <%= animal.age %>
+        </li>
+    <% end %>
+</ul>
+
+<%= link_to "Create New", new_animal_path %>
